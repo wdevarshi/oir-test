@@ -3,44 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progress Dashboard - OIR Practice</title>
+    <title>Dashboard — OIR Practice</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>📊 PROGRESS DASHBOARD</h1>
+            <h1>Dashboard</h1>
             <p>Air Force Selection Board Preparation</p>
-            <p style="font-size: 0.9em; margin-top: 10px;">For Bhavisha | Target: May 4, 2026</p>
+            <p class="personal">For Bhavisha · Target: May 4, 2026</p>
         </div>
 
         <div class="dashboard-content">
             <!-- Overall Stats -->
             <section class="dashboard-section">
-                <h2>Overall Statistics</h2>
+                <h2>Overall</h2>
                 <div id="overallStats" class="stats-grid">
                     <div class="stat-card">
-                        <div class="stat-label">Tests Taken</div>
+                        <div class="stat-label">Tests</div>
                         <div class="stat-value" id="testsTaken">0</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-label">Unique Tests</div>
+                        <div class="stat-label">Unique</div>
                         <div class="stat-value" id="uniqueTests">0</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-label">Average Score</div>
-                        <div class="stat-value" id="avgScore">-</div>
+                        <div class="stat-label">Average</div>
+                        <div class="stat-value" id="avgScore">–</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-label">Best Score</div>
-                        <div class="stat-value" id="bestScore">-</div>
+                        <div class="stat-label">Best</div>
+                        <div class="stat-value" id="bestScore">–</div>
                     </div>
                 </div>
             </section>
 
             <!-- Test History -->
             <section class="dashboard-section">
-                <h2>Test History</h2>
+                <h2>History</h2>
                 <div id="testHistory" class="test-history">
                     <!-- History will be injected here -->
                 </div>
@@ -48,7 +48,7 @@
 
             <!-- Section-wise Performance -->
             <section class="dashboard-section">
-                <h2>Section-wise Performance (All Tests)</h2>
+                <h2>Performance by Section</h2>
                 <div id="sectionPerformance" class="section-performance">
                     <!-- Section stats will be injected here -->
                 </div>
@@ -57,19 +57,19 @@
             <!-- Actions -->
             <section class="dashboard-actions">
                 <button class="btn-primary" onclick="exportToCSV()">
-                    📥 Export Results (CSV)
+                    Export CSV
                 </button>
                 <button class="btn-secondary" onclick="location.href='index.html'">
-                    🏠 Back to Home
+                    Home
                 </button>
                 <button class="btn-danger" onclick="resetAllProgress()">
-                    🗑️ Reset All Data
+                    Reset Data
                 </button>
             </section>
         </div>
 
         <div class="footer">
-            <p>Created with 🧈 by Tofu | For AFSB Preparation | May 4, 2026</p>
+            <p>Created with 🧈 by Tofu</p>
         </div>
     </div>
 
@@ -85,7 +85,7 @@
             if (results.length === 0) {
                 document.getElementById('testHistory').innerHTML = `
                     <div class="empty-state">
-                        <p>📭 No tests taken yet.</p>
+                        <p>No tests taken yet.</p>
                         <p><a href="index.html">Start your first test →</a></p>
                     </div>
                 `;
@@ -120,10 +120,10 @@
                     </div>
                     <div class="history-body">
                         <div class="history-score">
-                            Score: <strong>${result.score}/50 (${result.percentage}%)</strong>
+                            <strong>${result.score}/50 (${result.percentage}%)</strong>
                         </div>
                         <div class="history-time">
-                            Time: ${Math.floor(result.timeTaken / 60)}m ${result.timeTaken % 60}s
+                            ${Math.floor(result.timeTaken / 60)}m ${result.timeTaken % 60}s
                         </div>
                         <div class="history-sections">
                             ${Object.entries(result.sectionScores).map(([section, data]) => `

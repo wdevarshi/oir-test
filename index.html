@@ -3,37 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OIR Practice Platform - AFSB Preparation</title>
+    <title>OIR Practice — AFSB Preparation</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>🎯 OIR PRACTICE PLATFORM</h1>
+            <h1>OIR Practice</h1>
             <p>Air Force Selection Board Preparation</p>
-            <p style="font-size: 0.9em; margin-top: 10px;">For Bhavisha | Target: May 4, 2026</p>
+            <p class="personal">For Bhavisha · Target: May 4, 2026</p>
         </div>
 
         <div class="stats-section">
-            <h2>📊 Your Progress</h2>
+            <h2>Progress</h2>
             <div id="overallStats" class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-label">Tests Taken</div>
+                    <div class="stat-label">Tests</div>
                     <div class="stat-value" id="testsTaken">0</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-label">Average Score</div>
-                    <div class="stat-value" id="avgScore">-</div>
+                    <div class="stat-label">Average</div>
+                    <div class="stat-value" id="avgScore">–</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-label">Best Score</div>
-                    <div class="stat-value" id="bestScore">-</div>
+                    <div class="stat-label">Best</div>
+                    <div class="stat-value" id="bestScore">–</div>
                 </div>
             </div>
         </div>
 
         <div class="tests-section">
-            <h2>📝 Available Tests</h2>
+            <h2>Tests</h2>
             <div id="testsGrid" class="tests-grid">
                 <!-- Test cards will be injected here -->
             </div>
@@ -41,15 +41,15 @@
 
         <div class="actions-section">
             <button class="action-btn" onclick="location.href='dashboard.html'">
-                📈 View Full Dashboard
+                Dashboard
             </button>
             <button class="action-btn secondary" onclick="startRandomTest()">
-                🎲 Random Test
+                Random Test
             </button>
         </div>
 
         <div class="footer">
-            <p>Created with 🧈 by Tofu | For AFSB Preparation | May 4, 2026</p>
+            <p>Created with 🧈 by Tofu</p>
         </div>
     </div>
 
@@ -127,10 +127,10 @@
                                 <span class="status-text">Completed</span>
                             </div>
                             <div class="test-score">
-                                <div class="score-label">Best Score:</div>
+                                <div class="score-label">Best:</div>
                                 <div class="score-value">${bestScore}/50 (${bestPercentage}%)</div>
                             </div>
-                            ${attemptCount > 1 ? `<p class="attempt-count">Attempted ${attemptCount} times</p>` : ''}
+                            ${attemptCount > 1 ? `<p class="attempt-count">${attemptCount} attempts</p>` : ''}
                         ` : `
                             <div class="test-status not-taken">
                                 <span class="status-icon">🆕</span>
@@ -140,11 +140,11 @@
                     </div>
                     <div class="test-actions">
                         <button class="btn-primary" onclick="startTest(${test.id})">
-                            ${attemptCount > 0 ? '🔄 Retake Test' : '🚀 Start Test'}
+                            ${attemptCount > 0 ? 'Retake' : 'Start'}
                         </button>
                         ${attemptCount > 0 ? `
                             <button class="btn-secondary" onclick="viewResults(${test.id})">
-                                📊 View Results
+                                Results
                             </button>
                         ` : ''}
                     </div>
