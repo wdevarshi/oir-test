@@ -1,0 +1,415 @@
+{
+  "testId": 4,
+  "title": "OIR Mock Test 4",
+  "difficulty": "Medium",
+  "totalQuestions": 50,
+  "timeLimit": 1800,
+  "sections": [
+    { "name": "Verbal Reasoning", "questionsCount": 15 },
+    { "name": "Non-Verbal Reasoning", "questionsCount": 15 },
+    { "name": "Numerical Ability", "questionsCount": 10 },
+    { "name": "Coding-Decoding", "questionsCount": 10 }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>ENORMOUS</strong>:",
+      "options": ["Tiny", "Huge", "Small", "Little"],
+      "correct": 1,
+      "explanation": "'Enormous' means very large. 'Huge' has the same meaning."
+    },
+    {
+      "id": 2,
+      "section": "Verbal Reasoning",
+      "question": "Antonym of <strong>VICTORY</strong>:",
+      "options": ["Win", "Success", "Defeat", "Triumph"],
+      "correct": 2,
+      "explanation": "'Victory' means winning. 'Defeat' means losing (opposite)."
+    },
+    {
+      "id": 3,
+      "section": "Verbal Reasoning",
+      "question": "Complete the analogy: <strong>Eye : See :: Ear : ?</strong>",
+      "options": ["Hear", "Sound", "Drum", "Listen"],
+      "correct": 0,
+      "explanation": "Eye is used to see. Ear is used to hear."
+    },
+    {
+      "id": 4,
+      "section": "Verbal Reasoning",
+      "question": "Find the odd one out:",
+      "options": ["Chair", "Table", "Sofa", "Apple"],
+      "correct": 3,
+      "explanation": "Chair, Table, and Sofa are furniture. Apple is a fruit (odd one)."
+    },
+    {
+      "id": 5,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>BRAVE</strong>:",
+      "options": ["Fearful", "Courageous", "Scared", "Timid"],
+      "correct": 1,
+      "explanation": "'Brave' means ready to face danger. 'Courageous' has the same meaning."
+    },
+    {
+      "id": 6,
+      "section": "Verbal Reasoning",
+      "question": "If RIVER is coded as SJWFS, then OCEAN is coded as:",
+      "options": ["PDFBO", "PDEBO", "PEFBO", "PDFBN"],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: R→S, I→J, V→W, E→F, R→S. So O→P, C→D, E→F, A→B, N→O = PDFBO."
+    },
+    {
+      "id": 7,
+      "section": "Verbal Reasoning",
+      "question": "Choose the correctly spelt word:",
+      "options": ["Goverment", "Government", "Govornment", "Govermennt"],
+      "correct": 1,
+      "explanation": "The correct spelling is 'Government' with 'e' after 'n'."
+    },
+    {
+      "id": 8,
+      "section": "Verbal Reasoning",
+      "question": "Antonym of <strong>SHALLOW</strong>:",
+      "options": ["Deep", "Low", "Flat", "Thin"],
+      "correct": 0,
+      "explanation": "'Shallow' means not deep. 'Deep' is the direct opposite."
+    },
+    {
+      "id": 9,
+      "section": "Verbal Reasoning",
+      "question": "Complete: <strong>School : Students :: Hospital : ?</strong>",
+      "options": ["Doctor", "Patients", "Nurses", "Medicine"],
+      "correct": 1,
+      "explanation": "Students are found in a school. Patients are found in a hospital."
+    },
+    {
+      "id": 10,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>SIMPLE</strong>:",
+      "options": ["Complex", "Easy", "Difficult", "Hard"],
+      "correct": 1,
+      "explanation": "'Simple' means easy to understand or do. 'Easy' has the same meaning."
+    },
+    {
+      "id": 11,
+      "section": "Verbal Reasoning",
+      "question": "Find the odd one out:",
+      "options": ["Hammer", "Screwdriver", "Wrench", "Banana"],
+      "correct": 3,
+      "explanation": "Hammer, Screwdriver, and Wrench are tools. Banana is a fruit (odd one)."
+    },
+    {
+      "id": 12,
+      "section": "Verbal Reasoning",
+      "question": "Antonym of <strong>WIDE</strong>:",
+      "options": ["Broad", "Narrow", "Large", "Big"],
+      "correct": 1,
+      "explanation": "'Wide' means having great extent from side to side. 'Narrow' means the opposite."
+    },
+    {
+      "id": 13,
+      "section": "Verbal Reasoning",
+      "question": "Complete the analogy: <strong>Cold : Ice :: Hot : ?</strong>",
+      "options": ["Fire", "Water", "Steam", "Snow"],
+      "correct": 2,
+      "explanation": "Cold produces ice. Hot produces steam (from water)."
+    },
+    {
+      "id": 14,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>GENUINE</strong>:",
+      "options": ["Fake", "Real", "False", "Artificial"],
+      "correct": 1,
+      "explanation": "'Genuine' means truly what it is said to be. 'Real' has the same meaning."
+    },
+    {
+      "id": 15,
+      "section": "Verbal Reasoning",
+      "question": "Choose the word that best completes: <strong>Happy : Sad :: Rich : ?</strong>",
+      "options": ["Wealthy", "Poor", "Money", "Gold"],
+      "correct": 1,
+      "explanation": "Happy and Sad are opposites. Rich and Poor are also opposites."
+    },
+    {
+      "id": 16,
+      "section": "Non-Verbal Reasoning",
+      "question": "Which shape comes next: ● ○ ● ○ ?",
+      "options": ["●", "○", "■", "□"],
+      "correct": 0,
+      "explanation": "The pattern alternates: filled circle, empty circle. Next is filled (●)."
+    },
+    {
+      "id": 17,
+      "section": "Non-Verbal Reasoning",
+      "question": "If a clock shows 3:00, what angle is formed by the hour and minute hands?",
+      "options": ["60°", "90°", "120°", "180°"],
+      "correct": 1,
+      "explanation": "At 3:00, the hour hand points at 3 and minute hand at 12, forming a 90° angle (quarter turn)."
+    },
+    {
+      "id": 18,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many sides does a hexagon have?",
+      "options": ["5", "6", "7", "8"],
+      "correct": 1,
+      "explanation": "A hexagon is a 6-sided polygon."
+    },
+    {
+      "id": 19,
+      "section": "Non-Verbal Reasoning",
+      "question": "Mirror image of 'd' is:",
+      "options": ["b", "p", "q", "d"],
+      "correct": 0,
+      "explanation": "The mirror image (left-right flip) of 'd' is 'b'."
+    },
+    {
+      "id": 20,
+      "section": "Non-Verbal Reasoning",
+      "question": "Which 2D shape has the most sides among these: Triangle, Square, Pentagon, Hexagon?",
+      "options": ["Triangle", "Square", "Pentagon", "Hexagon"],
+      "correct": 3,
+      "explanation": "Triangle=3, Square=4, Pentagon=5, Hexagon=6. Hexagon has the most sides."
+    },
+    {
+      "id": 21,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many vertices does a triangle have?",
+      "options": ["2", "3", "4", "5"],
+      "correct": 1,
+      "explanation": "A triangle has 3 vertices (corners)."
+    },
+    {
+      "id": 22,
+      "section": "Non-Verbal Reasoning",
+      "question": "If you cut a circle in half, you get:",
+      "options": ["Two semicircles", "Two rectangles", "Two squares", "Two triangles"],
+      "correct": 0,
+      "explanation": "Cutting a circle in half produces two semicircles (half-circles)."
+    },
+    {
+      "id": 23,
+      "section": "Non-Verbal Reasoning",
+      "question": "Which shape has only one curved side?",
+      "options": ["Circle", "Semicircle", "Triangle", "Rectangle"],
+      "correct": 1,
+      "explanation": "A semicircle has one curved side and one straight side. Circle has one curved side but no straight side."
+    },
+    {
+      "id": 24,
+      "section": "Non-Verbal Reasoning",
+      "question": "Water image of 'T' is:",
+      "options": ["T", "⊥", "┴", "⊤"],
+      "correct": 0,
+      "explanation": "Water image (vertical flip) of 'T' remains 'T' because it's vertically symmetrical."
+    },
+    {
+      "id": 25,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many lines of symmetry does an equilateral triangle have?",
+      "options": ["1", "2", "3", "4"],
+      "correct": 2,
+      "explanation": "An equilateral triangle has 3 lines of symmetry (one through each vertex to the opposite side)."
+    },
+    {
+      "id": 26,
+      "section": "Non-Verbal Reasoning",
+      "question": "If a pattern is: ▲▼▲▼, what comes next?",
+      "options": ["▲", "▼", "◀", "▶"],
+      "correct": 0,
+      "explanation": "The pattern alternates: upward triangle, downward triangle. Next is upward (▲)."
+    },
+    {
+      "id": 27,
+      "section": "Non-Verbal Reasoning",
+      "question": "Which 3D shape has 1 circular base and 1 point?",
+      "options": ["Cube", "Cone", "Cylinder", "Sphere"],
+      "correct": 1,
+      "explanation": "A cone has one circular base and tapers to a point at the top."
+    },
+    {
+      "id": 28,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many faces does a pyramid (square base) have?",
+      "options": ["4", "5", "6", "8"],
+      "correct": 1,
+      "explanation": "A square pyramid has 5 faces: 1 square base + 4 triangular sides."
+    },
+    {
+      "id": 29,
+      "section": "Non-Verbal Reasoning",
+      "question": "If you rotate 'N' 90° clockwise, it looks like:",
+      "options": ["N", "Z", "Ǝ", "∩"],
+      "correct": 1,
+      "explanation": "Rotating 'N' 90° clockwise makes it look similar to 'Z'."
+    },
+    {
+      "id": 30,
+      "section": "Non-Verbal Reasoning",
+      "question": "Which figure completes the pattern: ◆ ◇ ◆ ◇ ?",
+      "options": ["◆", "◇", "●", "○"],
+      "correct": 0,
+      "explanation": "The pattern alternates: filled diamond, empty diamond. Next is filled (◆)."
+    },
+    {
+      "id": 31,
+      "section": "Numerical Ability",
+      "question": "What is 25% of 400?",
+      "options": ["80", "90", "100", "110"],
+      "correct": 2,
+      "explanation": "25% of 400 = (25/100) × 400 = 100."
+    },
+    {
+      "id": 32,
+      "section": "Numerical Ability",
+      "question": "If 9x = 72, what is x?",
+      "options": ["6", "7", "8", "9"],
+      "correct": 2,
+      "explanation": "9x = 72, so x = 72 ÷ 9 = 8."
+    },
+    {
+      "id": 33,
+      "section": "Numerical Ability",
+      "question": "What is the next number: 5, 10, 20, 40, ?",
+      "options": ["60", "70", "80", "90"],
+      "correct": 2,
+      "explanation": "Each number doubles: 5×2=10, 10×2=20, 20×2=40, 40×2=80."
+    },
+    {
+      "id": 34,
+      "section": "Numerical Ability",
+      "question": "What is 20 × 6?",
+      "options": ["100", "110", "120", "130"],
+      "correct": 2,
+      "explanation": "20 × 6 = 120."
+    },
+    {
+      "id": 35,
+      "section": "Numerical Ability",
+      "question": "If a toy costs ₹250 and is discounted 20%, what is the final price?",
+      "options": ["₹200", "₹210", "₹220", "₹230"],
+      "correct": 0,
+      "explanation": "20% of 250 = 50. Final price = 250 - 50 = ₹200."
+    },
+    {
+      "id": 36,
+      "section": "Numerical Ability",
+      "question": "What is the square root of 144?",
+      "options": ["10", "11", "12", "13"],
+      "correct": 2,
+      "explanation": "√144 = 12 because 12 × 12 = 144."
+    },
+    {
+      "id": 37,
+      "section": "Numerical Ability",
+      "question": "If 4x + 3 = 23, what is x?",
+      "options": ["3", "4", "5", "6"],
+      "correct": 2,
+      "explanation": "4x + 3 = 23, so 4x = 20, x = 5."
+    },
+    {
+      "id": 38,
+      "section": "Numerical Ability",
+      "question": "What is 50% of 180?",
+      "options": ["70", "80", "90", "100"],
+      "correct": 2,
+      "explanation": "50% of 180 = (50/100) × 180 = 90."
+    },
+    {
+      "id": 39,
+      "section": "Numerical Ability",
+      "question": "What comes next: 7, 14, 21, 28, ?",
+      "options": ["32", "34", "35", "36"],
+      "correct": 2,
+      "explanation": "The sequence increases by 7 each time: 7, 14, 21, 28, 35."
+    },
+    {
+      "id": 40,
+      "section": "Numerical Ability",
+      "question": "If a bus travels 120 km in 3 hours, what is its speed?",
+      "options": ["30 km/h", "35 km/h", "40 km/h", "45 km/h"],
+      "correct": 2,
+      "explanation": "Speed = Distance ÷ Time = 120 ÷ 3 = 40 km/h."
+    },
+    {
+      "id": 41,
+      "section": "Coding-Decoding",
+      "question": "If DOG = 4157, then CAT = ?",
+      "options": ["3120", "3119", "4120", "3121"],
+      "correct": 0,
+      "explanation": "D=4, O=15, G=7. Similarly, C=3, A=1, T=20 → CAT = 3120 (concatenated)."
+    },
+    {
+      "id": 42,
+      "section": "Coding-Decoding",
+      "question": "In a code, RAIN is written as SBJO. How is SNOW written?",
+      "options": ["TOPX", "TNPX", "TOPW", "TNOW"],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: R→S, A→B, I→J, N→O. So S→T, N→O, O→P, W→X = TOPX."
+    },
+    {
+      "id": 43,
+      "section": "Coding-Decoding",
+      "question": "If WIND = 23-9-14-4, then STORM = ?",
+      "options": ["19-20-15-18-13", "18-19-14-17-12", "20-21-16-19-14", "19-21-15-18-13"],
+      "correct": 0,
+      "explanation": "S=19, T=20, O=15, R=18, M=13. So STORM = 19-20-15-18-13."
+    },
+    {
+      "id": 44,
+      "section": "Coding-Decoding",
+      "question": "If BLACK is coded as CMBDL, then WHITE is coded as:",
+      "options": ["XIJUF", "XIJUE", "WIJUF", "YIJUF"],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: B→C, L→M, A→B, C→D, K→L. So W→X, H→I, I→J, T→U, E→F = XIJUF."
+    },
+    {
+      "id": 45,
+      "section": "Coding-Decoding",
+      "question": "In a code, 234 means 'dog is animal', 567 means 'cat is pet'. What is the code for 'is'?",
+      "options": ["2", "3", "4", "None of these"],
+      "correct": 3,
+      "explanation": "'is' appears in both phrases but the codes 234 and 567 have no common digit, so no direct match (trick question)."
+    },
+    {
+      "id": 46,
+      "section": "Coding-Decoding",
+      "question": "If A=1, B=2, C=3..., what is the sum of letters in 'ACE'?",
+      "options": ["8", "9", "10", "11"],
+      "correct": 1,
+      "explanation": "A=1, C=3, E=5. Sum = 1 + 3 + 5 = 9."
+    },
+    {
+      "id": 47,
+      "section": "Coding-Decoding",
+      "question": "If GOAT is written as 7-15-1-20, then LAMB is written as:",
+      "options": ["12-1-13-2", "11-1-12-2", "13-2-14-3", "12-2-13-3"],
+      "correct": 0,
+      "explanation": "L=12, A=1, M=13, B=2. So LAMB = 12-1-13-2."
+    },
+    {
+      "id": 48,
+      "section": "Coding-Decoding",
+      "question": "In a code, FISH = GJTI. What is BIRD?",
+      "options": ["CJSE", "CJSF", "BJRD", "CISE"],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: F→G, I→J, S→T, H→I. So B→C, I→J, R→S, D→E = CJSE."
+    },
+    {
+      "id": 49,
+      "section": "Coding-Decoding",
+      "question": "If 1=A, 26=Z, what letter is 15?",
+      "options": ["M", "N", "O", "P"],
+      "correct": 2,
+      "explanation": "The 15th letter of the alphabet is O."
+    },
+    {
+      "id": 50,
+      "section": "Coding-Decoding",
+      "question": "If GOLD is coded as 7-15-12-4, then SILVER is coded as:",
+      "options": ["19-9-12-22-5-18", "18-8-11-21-4-17", "20-10-13-23-6-19", "19-9-13-22-5-18"],
+      "correct": 0,
+      "explanation": "S=19, I=9, L=12, V=22, E=5, R=18. So SILVER = 19-9-12-22-5-18."
+    }
+  ]
+}

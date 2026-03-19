@@ -1,0 +1,415 @@
+{
+  "testId": 3,
+  "title": "OIR Mock Test 3",
+  "difficulty": "Medium",
+  "totalQuestions": 50,
+  "timeLimit": 1800,
+  "sections": [
+    { "name": "Verbal Reasoning", "questionsCount": 15 },
+    { "name": "Non-Verbal Reasoning", "questionsCount": 15 },
+    { "name": "Numerical Ability", "questionsCount": 10 },
+    { "name": "Coding-Decoding", "questionsCount": 10 }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>METICULOUS</strong>:",
+      "options": ["Careless", "Careful", "Rough", "Hasty"],
+      "correct": 1,
+      "explanation": "'Meticulous' means showing great attention to detail. 'Careful' is the closest synonym."
+    },
+    {
+      "id": 2,
+      "section": "Verbal Reasoning",
+      "question": "Antonym of <strong>EXPAND</strong>:",
+      "options": ["Grow", "Contract", "Increase", "Enlarge"],
+      "correct": 1,
+      "explanation": "'Expand' means to make larger. 'Contract' means to make smaller (opposite)."
+    },
+    {
+      "id": 3,
+      "section": "Verbal Reasoning",
+      "question": "Complete the analogy: <strong>Pen : Write :: Knife : ?</strong>",
+      "options": ["Sharp", "Cut", "Metal", "Handle"],
+      "correct": 1,
+      "explanation": "A pen is used to write. A knife is used to cut."
+    },
+    {
+      "id": 4,
+      "section": "Verbal Reasoning",
+      "question": "Find the odd one out:",
+      "options": ["Mercury", "Venus", "Earth", "Sun"],
+      "correct": 3,
+      "explanation": "Mercury, Venus, and Earth are planets. Sun is a star (odd one)."
+    },
+    {
+      "id": 5,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>SWIFT</strong>:",
+      "options": ["Slow", "Fast", "Heavy", "Light"],
+      "correct": 1,
+      "explanation": "'Swift' means moving or capable of moving with great speed. 'Fast' has the same meaning."
+    },
+    {
+      "id": 6,
+      "section": "Verbal Reasoning",
+      "question": "If MOTHER is coded as LNSGDQ, then FATHER is coded as:",
+      "options": ["EZSGDQ", "EZSIDS", "EZSGDS", "EZSHDS"],
+      "correct": 0,
+      "explanation": "Each letter is replaced by the previous letter. F→E, A→Z (wraps), T→S, H→G, E→D, R→Q = EZSGDQ. Wait, let me recalculate: M→L(-1), O→N(-1), T→S(-1), H→G(-1), E→D(-1), R→Q(-1). So F→E, A→Z, T→S, H→G, E→D, R→Q = EZSGDQ."
+    },
+    {
+      "id": 7,
+      "section": "Verbal Reasoning",
+      "question": "Choose the correctly spelt word:",
+      "options": ["Occassion", "Occasion", "Ocasion", "Occation"],
+      "correct": 1,
+      "explanation": "The correct spelling is 'Occasion' with double 'c' and single 's'."
+    },
+    {
+      "id": 8,
+      "section": "Verbal Reasoning",
+      "question": "Antonym of <strong>ANCIENT</strong>:",
+      "options": ["Old", "Modern", "Historic", "Classic"],
+      "correct": 1,
+      "explanation": "'Ancient' means very old. 'Modern' means relating to the present (opposite)."
+    },
+    {
+      "id": 9,
+      "section": "Verbal Reasoning",
+      "question": "Complete: <strong>Flock : Birds :: Herd : ?</strong>",
+      "options": ["Fish", "Cattle", "Bees", "Ants"],
+      "correct": 1,
+      "explanation": "A group of birds is called a 'flock'. A group of cattle is called a 'herd'."
+    },
+    {
+      "id": 10,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>JOVIAL</strong>:",
+      "options": ["Sad", "Cheerful", "Angry", "Quiet"],
+      "correct": 1,
+      "explanation": "'Jovial' means cheerful and friendly. 'Cheerful' is a direct synonym."
+    },
+    {
+      "id": 11,
+      "section": "Verbal Reasoning",
+      "question": "Find the odd one out:",
+      "options": ["Carrot", "Potato", "Tomato", "Apple"],
+      "correct": 3,
+      "explanation": "Carrot, Potato, and Tomato are vegetables. Apple is a fruit (odd one)."
+    },
+    {
+      "id": 12,
+      "section": "Verbal Reasoning",
+      "question": "Antonym of <strong>ROUGH</strong>:",
+      "options": ["Hard", "Smooth", "Coarse", "Bumpy"],
+      "correct": 1,
+      "explanation": "'Rough' means uneven surface. 'Smooth' means even surface (opposite)."
+    },
+    {
+      "id": 13,
+      "section": "Verbal Reasoning",
+      "question": "Complete the analogy: <strong>Fish : Water :: Bird : ?</strong>",
+      "options": ["Tree", "Sky", "Nest", "Feather"],
+      "correct": 1,
+      "explanation": "Fish live in water. Birds live in (fly in) the sky."
+    },
+    {
+      "id": 14,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>CALM</strong>:",
+      "options": ["Peaceful", "Agitated", "Noisy", "Angry"],
+      "correct": 0,
+      "explanation": "'Calm' means not showing or feeling nervousness. 'Peaceful' has the same meaning."
+    },
+    {
+      "id": 15,
+      "section": "Verbal Reasoning",
+      "question": "Choose the word that best completes: <strong>Big : Small :: Tall : ?</strong>",
+      "options": ["High", "Short", "Thin", "Wide"],
+      "correct": 1,
+      "explanation": "Big and Small are opposites. Tall and Short are also opposites."
+    },
+    {
+      "id": 16,
+      "section": "Non-Verbal Reasoning",
+      "question": "Which shape comes next: ■ □ ■ □ ?",
+      "options": ["■", "□", "●", "○"],
+      "correct": 0,
+      "explanation": "The pattern alternates: filled square, empty square, filled square, empty square... Next is filled (■)."
+    },
+    {
+      "id": 17,
+      "section": "Non-Verbal Reasoning",
+      "question": "If a figure is flipped horizontally, left becomes:",
+      "options": ["Left", "Right", "Up", "Down"],
+      "correct": 1,
+      "explanation": "Horizontal flip (mirror image) means left and right are swapped. Left becomes right."
+    },
+    {
+      "id": 18,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many corners does a pentagon have?",
+      "options": ["4", "5", "6", "7"],
+      "correct": 1,
+      "explanation": "A pentagon is a 5-sided polygon, so it has 5 corners (vertices)."
+    },
+    {
+      "id": 19,
+      "section": "Non-Verbal Reasoning",
+      "question": "Mirror image of 'p' is:",
+      "options": ["q", "b", "d", "p"],
+      "correct": 0,
+      "explanation": "The mirror image (left-right flip) of 'p' is 'q'."
+    },
+    {
+      "id": 20,
+      "section": "Non-Verbal Reasoning",
+      "question": "Which figure has all sides equal: Rectangle, Square, Triangle, or Trapezium?",
+      "options": ["Rectangle", "Square", "Triangle", "Trapezium"],
+      "correct": 1,
+      "explanation": "A square has all four sides equal in length. Others don't necessarily have all sides equal."
+    },
+    {
+      "id": 21,
+      "section": "Non-Verbal Reasoning",
+      "question": "A rectangle has how many diagonals?",
+      "options": ["1", "2", "3", "4"],
+      "correct": 1,
+      "explanation": "A rectangle has 2 diagonals connecting opposite corners."
+    },
+    {
+      "id": 22,
+      "section": "Non-Verbal Reasoning",
+      "question": "If you fold a square paper once diagonally and cut off a corner, how many pieces?",
+      "options": ["2", "3", "4", "5"],
+      "correct": 1,
+      "explanation": "Folding once creates 2 layers. Cutting a corner creates 3 pieces (2 small corners + 1 large piece)."
+    },
+    {
+      "id": 23,
+      "section": "Non-Verbal Reasoning",
+      "question": "Which shape has no straight lines?",
+      "options": ["Square", "Triangle", "Circle", "Rectangle"],
+      "correct": 2,
+      "explanation": "A circle is perfectly curved with no straight edges. All others have straight lines."
+    },
+    {
+      "id": 24,
+      "section": "Non-Verbal Reasoning",
+      "question": "Water image of 'M' is:",
+      "options": ["M", "W", "E", "3"],
+      "correct": 1,
+      "explanation": "Water image (vertical flip) of 'M' is 'W' (upside down M)."
+    },
+    {
+      "id": 25,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many lines of symmetry does a square have?",
+      "options": ["2", "4", "6", "8"],
+      "correct": 1,
+      "explanation": "A square has 4 lines of symmetry: 2 diagonals and 2 through midpoints of opposite sides."
+    },
+    {
+      "id": 26,
+      "section": "Non-Verbal Reasoning",
+      "question": "If a pattern is: ★☆★☆, what comes next?",
+      "options": ["★", "☆", "●", "○"],
+      "correct": 0,
+      "explanation": "The pattern alternates: filled star, empty star. Next is filled star (★)."
+    },
+    {
+      "id": 27,
+      "section": "Non-Verbal Reasoning",
+      "question": "Which 3D shape can roll?",
+      "options": ["Cube", "Cylinder", "Pyramid", "Rectangular box"],
+      "correct": 1,
+      "explanation": "A cylinder has curved surfaces and can roll. Cube, pyramid, and box have flat surfaces (can't roll smoothly)."
+    },
+    {
+      "id": 28,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many triangles are in a star (5-pointed)?",
+      "options": ["5", "10", "15", "20"],
+      "correct": 1,
+      "explanation": "A 5-pointed star contains 10 triangles (5 small pointing outward + 5 inside)."
+    },
+    {
+      "id": 29,
+      "section": "Non-Verbal Reasoning",
+      "question": "If you rotate '6' 180°, it looks like:",
+      "options": ["6", "9", "8", "0"],
+      "correct": 1,
+      "explanation": "Rotating '6' 180° (upside down) looks like '9'."
+    },
+    {
+      "id": 30,
+      "section": "Non-Verbal Reasoning",
+      "question": "Which figure completes the pattern: ◁ ▷ ◁ ▷ ?",
+      "options": ["◁", "▷", "△", "▽"],
+      "correct": 0,
+      "explanation": "The pattern alternates: left-pointing triangle, right-pointing triangle. Next is left-pointing (◁)."
+    },
+    {
+      "id": 31,
+      "section": "Numerical Ability",
+      "question": "What is 20% of 150?",
+      "options": ["20", "25", "30", "35"],
+      "correct": 2,
+      "explanation": "20% of 150 = (20/100) × 150 = 30."
+    },
+    {
+      "id": 32,
+      "section": "Numerical Ability",
+      "question": "If 7x = 42, what is x?",
+      "options": ["5", "6", "7", "8"],
+      "correct": 1,
+      "explanation": "7x = 42, so x = 42 ÷ 7 = 6."
+    },
+    {
+      "id": 33,
+      "section": "Numerical Ability",
+      "question": "What is the next number: 3, 6, 12, 24, ?",
+      "options": ["36", "40", "48", "50"],
+      "correct": 2,
+      "explanation": "Each number doubles: 3×2=6, 6×2=12, 12×2=24, 24×2=48."
+    },
+    {
+      "id": 34,
+      "section": "Numerical Ability",
+      "question": "What is 15 × 8?",
+      "options": ["110", "115", "120", "125"],
+      "correct": 2,
+      "explanation": "15 × 8 = 120."
+    },
+    {
+      "id": 35,
+      "section": "Numerical Ability",
+      "question": "If a book costs ₹300 and is discounted 10%, what is the final price?",
+      "options": ["₹250", "₹270", "₹280", "₹290"],
+      "correct": 1,
+      "explanation": "10% of 300 = 30. Final price = 300 - 30 = ₹270."
+    },
+    {
+      "id": 36,
+      "section": "Numerical Ability",
+      "question": "What is the square root of 64?",
+      "options": ["6", "7", "8", "9"],
+      "correct": 2,
+      "explanation": "√64 = 8 because 8 × 8 = 64."
+    },
+    {
+      "id": 37,
+      "section": "Numerical Ability",
+      "question": "If 2x + 7 = 19, what is x?",
+      "options": ["4", "5", "6", "7"],
+      "correct": 2,
+      "explanation": "2x + 7 = 19, so 2x = 12, x = 6."
+    },
+    {
+      "id": 38,
+      "section": "Numerical Ability",
+      "question": "What is 30% of 200?",
+      "options": ["50", "60", "70", "80"],
+      "correct": 1,
+      "explanation": "30% of 200 = (30/100) × 200 = 60."
+    },
+    {
+      "id": 39,
+      "section": "Numerical Ability",
+      "question": "What comes next: 10, 20, 30, 40, ?",
+      "options": ["45", "48", "50", "55"],
+      "correct": 2,
+      "explanation": "The sequence increases by 10 each time: 10, 20, 30, 40, 50."
+    },
+    {
+      "id": 40,
+      "section": "Numerical Ability",
+      "question": "If a car travels 80 km in 2 hours, what is its speed?",
+      "options": ["30 km/h", "35 km/h", "40 km/h", "45 km/h"],
+      "correct": 2,
+      "explanation": "Speed = Distance ÷ Time = 80 ÷ 2 = 40 km/h."
+    },
+    {
+      "id": 41,
+      "section": "Coding-Decoding",
+      "question": "If BAT = 2120, then RAT = ?",
+      "options": ["18120", "18220", "19120", "19220"],
+      "correct": 0,
+      "explanation": "B=2, A=1, T=20. Similarly, R=18, A=1, T=20 → RAT = 18120 (concatenated)."
+    },
+    {
+      "id": 42,
+      "section": "Coding-Decoding",
+      "question": "In a code, BOOK is written as CPPL. How is PAGE written?",
+      "options": ["QBHF", "QBGF", "QCHF", "PBHF"],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: B→C, O→P, O→P, K→L. So P→Q, A→B, G→H, E→F = QBHF."
+    },
+    {
+      "id": 43,
+      "section": "Coding-Decoding",
+      "question": "If TABLE = 20-1-2-12-5, then CHAIR = ?",
+      "options": ["3-8-1-9-18", "3-8-1-10-18", "4-8-1-9-18", "3-9-1-9-18"],
+      "correct": 0,
+      "explanation": "C=3, H=8, A=1, I=9, R=18. So CHAIR = 3-8-1-9-18."
+    },
+    {
+      "id": 44,
+      "section": "Coding-Decoding",
+      "question": "If RED is coded as SFE, then GREEN is coded as:",
+      "options": ["HSFFO", "HSFEO", "HSFEP", "GSFEO"],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: R→S, E→F, D→E. So G→H, R→S, E→F, E→F, N→O = HSFFO."
+    },
+    {
+      "id": 45,
+      "section": "Coding-Decoding",
+      "question": "In a code, 142 means 'sun is hot', 386 means 'water is cold'. What is the code for 'is'?",
+      "options": ["1", "2", "4", "None"],
+      "correct": 3,
+      "explanation": "'is' appears in both phrases but no digit is common (142 and 386 have no overlap). This is a trick question - no common code exists, so 'None'."
+    },
+    {
+      "id": 46,
+      "section": "Coding-Decoding",
+      "question": "If A=1, B=2, C=3..., what is the sum of letters in 'BAD'?",
+      "options": ["5", "6", "7", "8"],
+      "correct": 2,
+      "explanation": "B=2, A=1, D=4. Sum = 2 + 1 + 4 = 7."
+    },
+    {
+      "id": 47,
+      "section": "Coding-Decoding",
+      "question": "If BEAR is written as 2-5-1-18, then DEER is written as:",
+      "options": ["4-5-5-18", "3-4-4-17", "5-6-6-19", "4-6-6-19"],
+      "correct": 0,
+      "explanation": "D=4, E=5, E=5, R=18. So DEER = 4-5-5-18."
+    },
+    {
+      "id": 48,
+      "section": "Coding-Decoding",
+      "question": "In a code, MILK = NJML. What is CURD?",
+      "options": ["DVSE", "DUSE", "CVRD", "DVRE"],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: M→N, I→J, L→M, K→L. So C→D, U→V, R→S, D→E = DVSE."
+    },
+    {
+      "id": 49,
+      "section": "Coding-Decoding",
+      "question": "If 1=A, 26=Z, what letter is 12?",
+      "options": ["J", "K", "L", "M"],
+      "correct": 2,
+      "explanation": "The 12th letter of the alphabet is L."
+    },
+    {
+      "id": 50,
+      "section": "Coding-Decoding",
+      "question": "If STAR is coded as 19-20-1-18, then MOON is coded as:",
+      "options": ["13-15-15-14", "12-14-14-13", "14-16-16-15", "13-16-16-14"],
+      "correct": 0,
+      "explanation": "M=13, O=15, O=15, N=14. So MOON = 13-15-15-14."
+    }
+  ]
+}

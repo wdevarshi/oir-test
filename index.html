@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OIR Practice Platform - AFSB Preparation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 OIR PRACTICE PLATFORM</h1>
+            <p>Air Force Selection Board Preparation</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">For Bhavisha | Target: May 4, 2026</p>
+        </div>
+
+        <div class="stats-section">
+            <h2>📊 Your Progress</h2>
+            <div id="overallStats" class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Tests Taken</div>
+                    <div class="stat-value" id="testsTaken">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Average Score</div>
+                    <div class="stat-value" id="avgScore">-</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Best Score</div>
+                    <div class="stat-value" id="bestScore">-</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tests-section">
+            <h2>📝 Available Tests</h2>
+            <div id="testsGrid" class="tests-grid">
+                <!-- Test cards will be injected here -->
+            </div>
+        </div>
+
+        <div class="actions-section">
+            <button class="action-btn" onclick="location.href='dashboard.html'">
+                📈 View Full Dashboard
+            </button>
+            <button class="action-btn secondary" onclick="startRandomTest()">
+                🎲 Random Test
+            </button>
+        </div>
+
+        <div class="footer">
+            <p>Created with 🧈 by Tofu | For AFSB Preparation | May 4, 2026</p>
+        </div>
+    </div>
+
+    <script src="storage.js"></script>
+    <script>
+        // Load test status and stats on page load
+        window.addEventListener('DOMContentLoaded', function() {
+            loadStats();
+            loadTests();
+        });
+
+        function loadStats() {
+            const stats = getOverallStats();
+            
+            if (stats) {
+                document.getElementById('testsTaken').textContent = stats.testsTaken;
+                document.getElementById('avgScore').textContent = stats.avgScore + '%';
+                document.getElementById('bestScore').textContent = stats.bestScore + '/50';
+            }
+        }
+
+        function loadTests() {
+            const testsGrid = document.getElementById('testsGrid');
+            const testResults = getTestResults();
+            
+            // Define available tests
+            const tests = [
+                { id: 1, title: 'OIR Mock Test 1', difficulty: 'Medium' },
+                { id: 2, title: 'OIR Mock Test 2', difficulty: 'Medium' },
+                { id: 3, title: 'OIR Mock Test 3', difficulty: 'Medium' },
+                { id: 4, title: 'OIR Mock Test 4', difficulty: 'Medium' },
+                { id: 5, title: 'OIR Mock Test 5', difficulty: 'Medium' }
+            ];
+
+            testsGrid.innerHTML = '';
+
+            tests.forEach(test => {
+                const results = testResults.filter(r => r.testId === test.id);
+                const bestScore = results.length > 0 ? Math.max(...results.map(r => r.score)) : null;
+                const bestPercentage = results.length > 0 ? Math.max(...results.map(r => r.percentage)) : null;
+                const attemptCount = results.length;
+
+                const card = document.createElement('div');
+                card.className = 'test-card';
+                
+                if (attemptCount > 0) {
+                    card.classList.add('completed');
+                }
+
+                card.innerHTML = `
+                    <div class="test-header">
+                        <h3>${test.title}</h3>
+                        <span class="difficulty-badge">${test.difficulty}</span>
+                    </div>
+                    <div class="test-body">
+                        <p class="test-details">50 Questions | 30 Minutes</p>
+                        ${attemptCount > 0 ? `
+                            <div class="test-status completed">
+                                <span class="status-icon">✅</span>
+                                <span class="status-text">Completed</span>
+                            </div>
+                            <div class="test-score">
+                                <div class="score-label">Best Score:</div>
+                                <div class="score-value">${bestScore}/50 (${bestPercentage}%)</div>
+                            </div>
+                            ${attemptCount > 1 ? `<p class="attempt-count">Attempted ${attemptCount} times</p>` : ''}
+                        ` : `
+                            <div class="test-status not-taken">
+                                <span class="status-icon">🆕</span>
+                                <span class="status-text">Not Taken</span>
+                            </div>
+                        `}
+                    </div>
+                    <div class="test-actions">
+                        <button class="btn-primary" onclick="startTest(${test.id})">
+                            ${attemptCount > 0 ? '🔄 Retake Test' : '🚀 Start Test'}
+                        </button>
+                        ${attemptCount > 0 ? `
+                            <button class="btn-secondary" onclick="viewResults(${test.id})">
+                                📊 View Results
+                            </button>
+                        ` : ''}
+                    </div>
+                `;
+
+                testsGrid.appendChild(card);
+            });
+        }
+
+        function startTest(testId) {
+            window.location.href = `test.html?testId=${testId}`;
+        }
+
+        function startRandomTest() {
+            const testResults = getTestResults();
+            const allTests = [1, 2, 3, 4, 5];
+            
+            // Try to find an untaken test first
+            const takenTests = new Set(testResults.map(r => r.testId));
+            const untakenTests = allTests.filter(id => !takenTests.has(id));
+            
+            let randomTestId;
+            if (untakenTests.length > 0) {
+                randomTestId = untakenTests[Math.floor(Math.random() * untakenTests.length)];
+            } else {
+                // All tests taken, pick any random test
+                randomTestId = allTests[Math.floor(Math.random() * allTests.length)];
+            }
+            
+            startTest(randomTestId);
+        }
+
+        function viewResults(testId) {
+            window.location.href = `dashboard.html?testId=${testId}`;
+        }
+    </script>
+</body>
+</html>

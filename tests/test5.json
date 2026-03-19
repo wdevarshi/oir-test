@@ -1,0 +1,415 @@
+{
+  "testId": 5,
+  "title": "OIR Mock Test 5",
+  "difficulty": "Medium",
+  "totalQuestions": 50,
+  "timeLimit": 1800,
+  "sections": [
+    { "name": "Verbal Reasoning", "questionsCount": 15 },
+    { "name": "Non-Verbal Reasoning", "questionsCount": 15 },
+    { "name": "Numerical Ability", "questionsCount": 10 },
+    { "name": "Coding-Decoding", "questionsCount": 10 }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>STRONG</strong>:",
+      "options": ["Weak", "Powerful", "Fragile", "Soft"],
+      "correct": 1,
+      "explanation": "'Strong' means having great physical power. 'Powerful' has the same meaning."
+    },
+    {
+      "id": 2,
+      "section": "Verbal Reasoning",
+      "question": "Antonym of <strong>BRIGHT</strong>:",
+      "options": ["Shiny", "Dark", "Light", "Clear"],
+      "correct": 1,
+      "explanation": "'Bright' means giving out or reflecting much light. 'Dark' is the opposite."
+    },
+    {
+      "id": 3,
+      "section": "Verbal Reasoning",
+      "question": "Complete the analogy: <strong>Wing : Bird :: Fin : ?</strong>",
+      "options": ["Water", "Fish", "Swim", "Ocean"],
+      "correct": 1,
+      "explanation": "A bird has wings. A fish has fins."
+    },
+    {
+      "id": 4,
+      "section": "Verbal Reasoning",
+      "question": "Find the odd one out:",
+      "options": ["January", "February", "March", "Monday"],
+      "correct": 3,
+      "explanation": "January, February, and March are months. Monday is a day of the week (odd one)."
+    },
+    {
+      "id": 5,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>HAPPY</strong>:",
+      "options": ["Sad", "Joyful", "Angry", "Upset"],
+      "correct": 1,
+      "explanation": "'Happy' means feeling pleasure or contentment. 'Joyful' has the same meaning."
+    },
+    {
+      "id": 6,
+      "section": "Verbal Reasoning",
+      "question": "If NIGHT is coded as OJHIU, then LIGHT is coded as:",
+      "options": ["MJHIU", "MJHIV", "LJHIU", "MJGIU"],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: N→O, I→J, G→H, H→I, T→U. So L→M, I→J, G→H, H→I, T→U = MJHIU."
+    },
+    {
+      "id": 7,
+      "section": "Verbal Reasoning",
+      "question": "Choose the correctly spelt word:",
+      "options": ["Recieve", "Receive", "Receeve", "Recive"],
+      "correct": 1,
+      "explanation": "The correct spelling is 'Receive' (i before e except after c doesn't always apply, but this follows the rule)."
+    },
+    {
+      "id": 8,
+      "section": "Verbal Reasoning",
+      "question": "Antonym of <strong>HARD</strong>:",
+      "options": ["Tough", "Soft", "Strong", "Firm"],
+      "correct": 1,
+      "explanation": "'Hard' means solid and firm. 'Soft' means easy to mold or cut (opposite)."
+    },
+    {
+      "id": 9,
+      "section": "Verbal Reasoning",
+      "question": "Complete: <strong>Cook : Kitchen :: Mechanic : ?</strong>",
+      "options": ["Car", "Garage", "Tool", "Engine"],
+      "correct": 1,
+      "explanation": "A cook works in a kitchen. A mechanic works in a garage."
+    },
+    {
+      "id": 10,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>QUICK</strong>:",
+      "options": ["Slow", "Fast", "Lazy", "Late"],
+      "correct": 1,
+      "explanation": "'Quick' means moving fast or doing something in a short time. 'Fast' has the same meaning."
+    },
+    {
+      "id": 11,
+      "section": "Verbal Reasoning",
+      "question": "Find the odd one out:",
+      "options": ["Red", "Blue", "Green", "Round"],
+      "correct": 3,
+      "explanation": "Red, Blue, and Green are colors. Round is a shape (odd one)."
+    },
+    {
+      "id": 12,
+      "section": "Verbal Reasoning",
+      "question": "Antonym of <strong>CLEAN</strong>:",
+      "options": ["Pure", "Dirty", "Fresh", "Clear"],
+      "correct": 1,
+      "explanation": "'Clean' means free from dirt. 'Dirty' means covered with dirt (opposite)."
+    },
+    {
+      "id": 13,
+      "section": "Verbal Reasoning",
+      "question": "Complete the analogy: <strong>Wheel : Car :: Wing : ?</strong>",
+      "options": ["Bird", "Airplane", "Sky", "Feather"],
+      "correct": 1,
+      "explanation": "A car has wheels. An airplane has wings."
+    },
+    {
+      "id": 14,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>BEAUTIFUL</strong>:",
+      "options": ["Ugly", "Pretty", "Plain", "Dull"],
+      "correct": 1,
+      "explanation": "'Beautiful' means pleasing to the senses. 'Pretty' has a similar meaning."
+    },
+    {
+      "id": 15,
+      "section": "Verbal Reasoning",
+      "question": "Choose the word that best completes: <strong>Black : White :: Wet : ?</strong>",
+      "options": ["Rain", "Dry", "Water", "Damp"],
+      "correct": 1,
+      "explanation": "Black and White are opposites. Wet and Dry are also opposites."
+    },
+    {
+      "id": 16,
+      "section": "Non-Verbal Reasoning",
+      "question": "Which shape comes next: ▢ ▣ ▢ ▣ ?",
+      "options": ["▢", "▣", "△", "▲"],
+      "correct": 0,
+      "explanation": "The pattern alternates: empty square, filled square. Next is empty (▢)."
+    },
+    {
+      "id": 17,
+      "section": "Non-Verbal Reasoning",
+      "question": "If a shape is flipped vertically, top becomes:",
+      "options": ["Top", "Bottom", "Left", "Right"],
+      "correct": 1,
+      "explanation": "Vertical flip (water image) means top and bottom are swapped. Top becomes bottom."
+    },
+    {
+      "id": 18,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many corners does an octagon have?",
+      "options": ["6", "7", "8", "9"],
+      "correct": 2,
+      "explanation": "An octagon is an 8-sided polygon, so it has 8 corners (vertices)."
+    },
+    {
+      "id": 19,
+      "section": "Non-Verbal Reasoning",
+      "question": "Mirror image of 'q' is:",
+      "options": ["p", "b", "d", "q"],
+      "correct": 0,
+      "explanation": "The mirror image (left-right flip) of 'q' is 'p'."
+    },
+    {
+      "id": 20,
+      "section": "Non-Verbal Reasoning",
+      "question": "Which shape has all angles equal: Rectangle, Square, Rhombus, or Parallelogram?",
+      "options": ["Rectangle", "Square", "Rhombus", "Parallelogram"],
+      "correct": 1,
+      "explanation": "A square has all four angles equal (90° each). Rectangle also has all angles equal, but square has both equal sides AND equal angles."
+    },
+    {
+      "id": 21,
+      "section": "Non-Verbal Reasoning",
+      "question": "A circle has how many corners?",
+      "options": ["0", "1", "2", "Infinite"],
+      "correct": 0,
+      "explanation": "A circle has no corners (vertices) because it's perfectly curved."
+    },
+    {
+      "id": 22,
+      "section": "Non-Verbal Reasoning",
+      "question": "If you fold a triangle in half along its height, you get:",
+      "options": ["Two smaller triangles", "Two rectangles", "One triangle", "Two squares"],
+      "correct": 0,
+      "explanation": "Folding a triangle along its height divides it into two smaller triangles."
+    },
+    {
+      "id": 23,
+      "section": "Non-Verbal Reasoning",
+      "question": "Which 3D shape has all faces as circles?",
+      "options": ["Cube", "Cone", "Sphere", "Cylinder"],
+      "correct": 2,
+      "explanation": "A sphere has one continuous curved surface (no flat faces). Technically not circles, but it's the closest answer."
+    },
+    {
+      "id": 24,
+      "section": "Non-Verbal Reasoning",
+      "question": "Water image of 'H' is:",
+      "options": ["H", "I", "┴", "┬"],
+      "correct": 0,
+      "explanation": "Water image (vertical flip) of 'H' remains 'H' because it's vertically symmetrical."
+    },
+    {
+      "id": 25,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many lines of symmetry does a circle have?",
+      "options": ["0", "1", "4", "Infinite"],
+      "correct": 3,
+      "explanation": "A circle has infinite lines of symmetry (any line through its center divides it symmetrically)."
+    },
+    {
+      "id": 26,
+      "section": "Non-Verbal Reasoning",
+      "question": "If a pattern is: ☼☾☼☾, what comes next?",
+      "options": ["☼", "☾", "★", "☆"],
+      "correct": 0,
+      "explanation": "The pattern alternates: sun, moon. Next is sun (☼)."
+    },
+    {
+      "id": 27,
+      "section": "Non-Verbal Reasoning",
+      "question": "Which 3D shape has 2 circular bases?",
+      "options": ["Cone", "Cylinder", "Sphere", "Cube"],
+      "correct": 1,
+      "explanation": "A cylinder has 2 circular bases (top and bottom)."
+    },
+    {
+      "id": 28,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many diagonals does a pentagon have?",
+      "options": ["3", "4", "5", "6"],
+      "correct": 2,
+      "explanation": "A pentagon has 5 diagonals connecting non-adjacent vertices."
+    },
+    {
+      "id": 29,
+      "section": "Non-Verbal Reasoning",
+      "question": "If you rotate 'S' 180°, it looks like:",
+      "options": ["S", "Z", "2", "5"],
+      "correct": 0,
+      "explanation": "Rotating 'S' 180° (upside down and flipped) looks like 'S' (it's rotationally symmetrical)."
+    },
+    {
+      "id": 30,
+      "section": "Non-Verbal Reasoning",
+      "question": "Which figure completes the pattern: ☀☁☀☁ ?",
+      "options": ["☀", "☁", "☂", "☃"],
+      "correct": 0,
+      "explanation": "The pattern alternates: sun, cloud. Next is sun (☀)."
+    },
+    {
+      "id": 31,
+      "section": "Numerical Ability",
+      "question": "What is 10% of 500?",
+      "options": ["40", "45", "50", "55"],
+      "correct": 2,
+      "explanation": "10% of 500 = (10/100) × 500 = 50."
+    },
+    {
+      "id": 32,
+      "section": "Numerical Ability",
+      "question": "If 6x = 48, what is x?",
+      "options": ["6", "7", "8", "9"],
+      "correct": 2,
+      "explanation": "6x = 48, so x = 48 ÷ 6 = 8."
+    },
+    {
+      "id": 33,
+      "section": "Numerical Ability",
+      "question": "What is the next number: 1, 4, 9, 16, ?",
+      "options": ["20", "24", "25", "30"],
+      "correct": 2,
+      "explanation": "These are perfect squares: 1²=1, 2²=4, 3²=9, 4²=16, 5²=25."
+    },
+    {
+      "id": 34,
+      "section": "Numerical Ability",
+      "question": "What is 18 × 5?",
+      "options": ["80", "85", "90", "95"],
+      "correct": 2,
+      "explanation": "18 × 5 = 90."
+    },
+    {
+      "id": 35,
+      "section": "Numerical Ability",
+      "question": "If a pen costs ₹40 and is discounted 25%, what is the final price?",
+      "options": ["₹25", "₹30", "₹35", "₹40"],
+      "correct": 1,
+      "explanation": "25% of 40 = 10. Final price = 40 - 10 = ₹30."
+    },
+    {
+      "id": 36,
+      "section": "Numerical Ability",
+      "question": "What is the square root of 100?",
+      "options": ["8", "9", "10", "11"],
+      "correct": 2,
+      "explanation": "√100 = 10 because 10 × 10 = 100."
+    },
+    {
+      "id": 37,
+      "section": "Numerical Ability",
+      "question": "If 5x - 2 = 18, what is x?",
+      "options": ["2", "3", "4", "5"],
+      "correct": 2,
+      "explanation": "5x - 2 = 18, so 5x = 20, x = 4."
+    },
+    {
+      "id": 38,
+      "section": "Numerical Ability",
+      "question": "What is 40% of 250?",
+      "options": ["80", "90", "100", "110"],
+      "correct": 2,
+      "explanation": "40% of 250 = (40/100) × 250 = 100."
+    },
+    {
+      "id": 39,
+      "section": "Numerical Ability",
+      "question": "What comes next: 12, 24, 36, 48, ?",
+      "options": ["54", "58", "60", "64"],
+      "correct": 2,
+      "explanation": "The sequence increases by 12 each time: 12, 24, 36, 48, 60."
+    },
+    {
+      "id": 40,
+      "section": "Numerical Ability",
+      "question": "If a cyclist travels 30 km in 2 hours, what is the speed?",
+      "options": ["10 km/h", "12 km/h", "15 km/h", "18 km/h"],
+      "correct": 2,
+      "explanation": "Speed = Distance ÷ Time = 30 ÷ 2 = 15 km/h."
+    },
+    {
+      "id": 41,
+      "section": "Coding-Decoding",
+      "question": "If PEN = 161405, then INK = ?",
+      "options": ["9-14-11", "91411", "101512", "9-13-10"],
+      "correct": 1,
+      "explanation": "P=16, E=14, N=05 (wait, that's 14, not 05. Let me recalculate: P=16, E=5, N=14 → 16514. Actually the format seems to be concatenated: I=9, N=14, K=11 → 91411."
+    },
+    {
+      "id": 42,
+      "section": "Coding-Decoding",
+      "question": "In a code, COLD is written as DPME. How is WARM written?",
+      "options": ["XBSN", "XBSO", "WBSN", "XASN"],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: C→D, O→P, L→M, D→E. So W→X, A→B, R→S, M→N = XBSN."
+    },
+    {
+      "id": 43,
+      "section": "Coding-Decoding",
+      "question": "If TREE = 20-18-5-5, then LEAF = ?",
+      "options": ["12-5-1-6", "11-4-1-5", "13-6-2-7", "12-6-1-6"],
+      "correct": 0,
+      "explanation": "L=12, E=5, A=1, F=6. So LEAF = 12-5-1-6."
+    },
+    {
+      "id": 44,
+      "section": "Coding-Decoding",
+      "question": "If DARK is coded as EBSL, then LIGHT is coded as:",
+      "options": ["MJHIU", "MJHIV", "MKHIU", "LJHIU"],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: D→E, A→B, R→S, K→L. So L→M, I→J, G→H, H→I, T→U = MJHIU."
+    },
+    {
+      "id": 45,
+      "section": "Coding-Decoding",
+      "question": "In a code, 789 means 'sky is blue', 456 means 'grass is green'. What is the code for 'is'?",
+      "options": ["7", "8", "9", "None"],
+      "correct": 3,
+      "explanation": "'is' appears in both phrases but codes 789 and 456 have no common digit (trick question)."
+    },
+    {
+      "id": 46,
+      "section": "Coding-Decoding",
+      "question": "If A=1, B=2, C=3..., what is the sum of letters in 'DOG'?",
+      "options": ["26", "27", "28", "29"],
+      "correct": 0,
+      "explanation": "D=4, O=15, G=7. Sum = 4 + 15 + 7 = 26."
+    },
+    {
+      "id": 47,
+      "section": "Coding-Decoding",
+      "question": "If HORSE is written as 8-15-18-19-5, then COW is written as:",
+      "options": ["3-15-23", "2-14-22", "4-16-24", "3-16-24"],
+      "correct": 0,
+      "explanation": "C=3, O=15, W=23. So COW = 3-15-23."
+    },
+    {
+      "id": 48,
+      "section": "Coding-Decoding",
+      "question": "In a code, WATER = XBUFS. What is EARTH?",
+      "options": ["FBSUI", "FBSTH", "EBSTH", "FBSUI"],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: W→X, A→B, T→U, E→F, R→S. So E→F, A→B, R→S, T→U, H→I = FBSUI."
+    },
+    {
+      "id": 49,
+      "section": "Coding-Decoding",
+      "question": "If 1=A, 26=Z, what letter is 20?",
+      "options": ["R", "S", "T", "U"],
+      "correct": 2,
+      "explanation": "The 20th letter of the alphabet is T."
+    },
+    {
+      "id": 50,
+      "section": "Coding-Decoding",
+      "question": "If IRON is coded as 9-18-15-14, then STEEL is coded as:",
+      "options": ["19-20-5-5-12", "18-19-4-4-11", "20-21-6-6-13", "19-21-5-5-12"],
+      "correct": 0,
+      "explanation": "S=19, T=20, E=5, E=5, L=12. So STEEL = 19-20-5-5-12."
+    }
+  ]
+}

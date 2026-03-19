@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OIR Test - AFSB Preparation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="testTitle">🎯 Loading Test...</h1>
+            <p>Air Force Selection Board Preparation</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">50 Questions | 30 Minutes | For Bhavisha</p>
+        </div>
+
+        <div id="introSection">
+            <div class="instructions">
+                <h3>📋 Instructions:</h3>
+                <ul>
+                    <li>This test contains <strong>50 multiple-choice questions</strong></li>
+                    <li>Time limit: <strong>30 minutes (1800 seconds)</strong></li>
+                    <li>Each question carries <strong>1 mark</strong></li>
+                    <li>Select ONE option for each question</li>
+                    <li>Attempt ALL questions (no negative marking)</li>
+                    <li>Click "Start Test" to begin the timer</li>
+                    <li><strong>Be honest about the timer - don't cheat yourself!</strong></li>
+                </ul>
+            </div>
+            
+            <div class="start-btn-container">
+                <button class="start-btn" onclick="startTest()">🚀 Start Test</button>
+            </div>
+        </div>
+
+        <div id="timerSection" class="timer-section" style="display: none;">
+            ⏱️ Time Remaining: <span id="timer">30:00</span>
+        </div>
+
+        <div id="testSection" class="test-content">
+            <!-- Questions will be injected here -->
+        </div>
+
+        <div id="resultsSection" class="results">
+            <!-- Results will be shown here -->
+        </div>
+
+        <div class="footer">
+            <p>Created with 🧈 by Tofu | For AFSB Preparation | May 4, 2026</p>
+        </div>
+    </div>
+
+    <script src="storage.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
