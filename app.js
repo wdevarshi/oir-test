@@ -7,7 +7,8 @@ var testEndTime;
 var currentTest = null;
 var warningShown = false;
 var testSubmitted = false;
-var listenersAttached = false;
+var visibilityHandler = null;
+var beforeUnloadHandler = null;
 
 // Escape plain-text values for safe innerHTML insertion
 function escapeHTML(str) {
@@ -137,7 +138,9 @@ function startTimer() {
         // Warning at 5 minutes (use flag since wall-clock may skip exact 300)
         if (timeLeft <= 300 && !warningShown) {
             warningShown = true;
-            document.getElementById('timerSection').classList.add('warning');
+            var timerSection = document.getElementById('timerSection');
+            timerSection.classList.add('warning');
+            timerSection.setAttribute('aria-live', 'assertive');
             alert('\u26A0\uFE0F 5 minutes remaining! Speed up!');
         }
 
@@ -151,7 +154,7 @@ function startTimer() {
 }
 
 // When user returns to tab, immediately sync timer (catches background throttle)
-document.addEventListener('visibilitychange', function () {
+visibilityHandler = function () {
     if (!document.hidden && timerInterval && !testSubmitted) {
         var now = Date.now();
         timeLeft = Math.max(0, Math.ceil((testEndTime - now) / 1000));
@@ -162,7 +165,8 @@ document.addEventListener('visibilitychange', function () {
             autoSubmit();
         }
     }
-});
+};
+document.addEventListener('visibilitychange', visibilityHandler);
 
 function updateTimerDisplay() {
     var minutes = Math.floor(timeLeft / 60);
@@ -186,7 +190,7 @@ function loadQuestions() {
             currentSection = q.section;
             var firstInSection = currentTest.questions.findIndex(function (ques) { return ques.section === currentSection; });
             var sectionLetter = getSectionLetter(firstInSection);
-            html += '<div class="section-header" role="heading" aria-level="2">Section ' + sectionLetter + ': ' + escapeHTML(currentSection) + '</div>';
+            html += '<h2 class="section-header">Section ' + sectionLetter + ': ' + escapeHTML(currentSection) + '</h2>';
         }
 
         html += '<div class="question" role="group" aria-labelledby="q' + qId + '_label">';
@@ -228,6 +232,9 @@ function saveAnswer(questionId, answerIndex) {
 function submitTest() {
     if (testSubmitted) return;
 
+    // Set flag FIRST to prevent race with autoSubmit during confirm() dialog
+    testSubmitted = true;
+
     var answered = Object.keys(userAnswers).length;
     var unanswered = currentTest.questions.length - answered;
 
@@ -235,12 +242,14 @@ function submitTest() {
         var proceed = window.confirm(
             '\u26A0\uFE0F You have ' + unanswered + ' unanswered questions!\n\nAre you sure you want to submit?'
         );
-        if (!proceed) return;
+        if (!proceed) {
+            testSubmitted = false;
+            return;
+        }
     }
 
     clearInterval(timerInterval);
     timerInterval = null;
-    testSubmitted = true;
     calculateResults();
 }
 
@@ -303,6 +312,16 @@ function calculateResults() {
 
     saveTestResult(result);
     displayResults(totalScore, sectionScores, wrongAnswers, percentage, timeTaken);
+
+    // Clean up event listeners after test is complete
+    if (visibilityHandler) {
+        document.removeEventListener('visibilitychange', visibilityHandler);
+        visibilityHandler = null;
+    }
+    if (beforeUnloadHandler) {
+        window.removeEventListener('beforeunload', beforeUnloadHandler);
+        beforeUnloadHandler = null;
+    }
 }
 
 function displayResults(totalScore, sectionScores, wrongAnswers, percentage, timeTaken) {
@@ -346,7 +365,7 @@ function displayResults(totalScore, sectionScores, wrongAnswers, percentage, tim
             '<h3>\u274C Questions to Review (' + wrongAnswers.length + ')</h3>';
         wrongAnswers.forEach(function (wa) {
             html += '<div class="wrong-answer-item">' +
-                '<p><strong>Q' + wa.id + ':</strong> ' + sanitizeHTML(wa.question) + '</p>' +
+                '<p><strong>Q' + escapeHTML(wa.id) + ':</strong> ' + sanitizeHTML(wa.question) + '</p>' +
                 '<p><strong>Your Answer:</strong> ' + sanitizeHTML(wa.userAnswer) + '</p>' +
                 '<p><strong>Correct Answer:</strong> ' + sanitizeHTML(wa.correctAnswer) + '</p>' +
                 '<div class="explanation"><strong>\uD83D\uDCA1 Explanation:</strong> ' + sanitizeHTML(wa.explanation) + '</div>' +
@@ -385,10 +404,11 @@ function getPerformanceMessage(percentage) {
 }
 
 // Prevent accidental page close during active test
-window.addEventListener('beforeunload', function (e) {
+beforeUnloadHandler = function (e) {
     if (timerInterval && !testSubmitted) {
         e.preventDefault();
         e.returnValue = '';
         return '';
     }
-});
+};
+window.addEventListener('beforeunload', beforeUnloadHandler);
