@@ -63,28 +63,30 @@
     <script>
         // Progress bar — tracks answered questions
         (function() {
-            const orig = window.saveAnswer;
+            var orig = window.saveAnswer;
             if (!orig) return;
             window.saveAnswer = function(questionId, answerIndex) {
                 orig(questionId, answerIndex);
                 updateProgress();
             };
             function updateProgress() {
-                const answered = Object.keys(window.userAnswers || {}).length;
-                const total = 50;
-                const pct = Math.round((answered / total) * 100);
-                const fill = document.getElementById('progressFill');
-                const text = document.getElementById('progressText');
+                // userAnswers is declared with let in app.js, but saveAnswer writes to it
+                // Count by checking the radio buttons that are checked
+                var answered = document.querySelectorAll('#testSection input[type="radio"]:checked').length;
+                var total = (window.currentTest && window.currentTest.questions) ? window.currentTest.questions.length : 50;
+                var pct = Math.round((answered / total) * 100);
+                var fill = document.getElementById('progressFill');
+                var text = document.getElementById('progressText');
                 if (fill) fill.style.width = pct + '%';
                 if (text) text.textContent = answered + '/' + total;
             }
         })();
 
         // Show progress bar when test starts
-        const origStart = window.startTest;
+        var origStart = window.startTest;
         window.startTest = function() {
             origStart();
-            const pb = document.getElementById('progressBar');
+            var pb = document.getElementById('progressBar');
             if (pb) pb.style.display = 'flex';
         };
     </script>

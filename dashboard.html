@@ -75,7 +75,7 @@
                 <button class="btn-secondary" onclick="exportToCSV()">
                     Export CSV
                 </button>
-                <button class="btn-danger" onclick="resetAllProgress()">
+                <button class="btn-danger" onclick="if(resetAllProgress()) location.reload();">
                     Reset Data
                 </button>
             </section>
@@ -90,6 +90,18 @@
     <script>
         window.addEventListener('DOMContentLoaded', function() {
             loadDashboard();
+
+            // Highlight results for a specific test if ?testId= is in URL
+            var params = new URLSearchParams(window.location.search);
+            var focusTestId = params.get('testId');
+            if (focusTestId) {
+                var target = document.querySelector('[data-test-id="' + focusTestId + '"]');
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    target.style.outline = '2px solid #2563eb';
+                    target.style.outlineOffset = '4px';
+                }
+            }
         });
 
         function loadDashboard() {
@@ -146,6 +158,7 @@
                 
                 const historyItem = document.createElement('div');
                 historyItem.className = 'history-item';
+                historyItem.setAttribute('data-test-id', result.testId);
                 historyItem.innerHTML = `
                     <div class="history-header">
                         <h3>${result.testTitle}</h3>

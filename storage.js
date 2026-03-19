@@ -4,15 +4,28 @@ const OIR_STORAGE_KEY = 'oirTestResults';
 
 // Save a test result
 function saveTestResult(result) {
-    const results = getTestResults();
+    var results = getTestResults();
     results.push(result);
-    localStorage.setItem(OIR_STORAGE_KEY, JSON.stringify(results));
+    try {
+        localStorage.setItem(OIR_STORAGE_KEY, JSON.stringify(results));
+    } catch (e) {
+        console.error('OIR: localStorage quota exceeded or unavailable.', e);
+        alert('Could not save results — your browser storage is full. Try clearing old data from the Dashboard.');
+    }
 }
 
 // Get all test results
 function getTestResults() {
-    const data = localStorage.getItem(OIR_STORAGE_KEY);
-    return data ? JSON.parse(data) : [];
+    try {
+        const data = localStorage.getItem(OIR_STORAGE_KEY);
+        if (!data) return [];
+        var parsed = JSON.parse(data);
+        return Array.isArray(parsed) ? parsed : [];
+    } catch (e) {
+        console.warn('OIR: Corrupted data in localStorage, resetting.', e);
+        localStorage.removeItem(OIR_STORAGE_KEY);
+        return [];
+    }
 }
 
 // Get results for a specific test

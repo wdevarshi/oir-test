@@ -1,8 +1,8 @@
-let timeLeft = 1800; // 30 minutes in seconds
-let timerInterval;
-let userAnswers = {};
-let testStartTime;
-let currentTest = null;
+var timeLeft = 1800; // 30 minutes in seconds
+var timerInterval;
+var userAnswers = {};
+var testStartTime;
+var currentTest = null;
 
 // Get test ID from URL parameter
 function getTestId() {
@@ -125,11 +125,14 @@ function loadQuestions() {
 }
 
 function getSectionLetter(index) {
-    const sectionStarts = [0, 15, 30, 40]; // Adjust based on your test structure
-    if (index < 15) return 'A';
-    if (index < 30) return 'B';
-    if (index < 40) return 'C';
-    return 'D';
+    // Dynamically determine section letter based on the test's section definitions
+    var sections = currentTest.sections;
+    var cumulative = 0;
+    for (var i = 0; i < sections.length; i++) {
+        cumulative += sections[i].questionsCount;
+        if (index < cumulative) return String.fromCharCode(65 + i); // A, B, C, D...
+    }
+    return String.fromCharCode(65 + sections.length - 1);
 }
 
 function saveAnswer(questionId, answerIndex) {
@@ -141,10 +144,10 @@ function submitTest() {
     const unanswered = currentTest.questions.length - answered;
     
     if (unanswered > 0) {
-        const confirm = window.confirm(
-            `⚠️ You have ${unanswered} unanswered questions!\n\nAre you sure you want to submit?`
+        var proceed = window.confirm(
+            '⚠️ You have ' + unanswered + ' unanswered questions!\n\nAre you sure you want to submit?'
         );
-        if (!confirm) return;
+        if (!proceed) return;
     }
     
     clearInterval(timerInterval);
@@ -189,7 +192,7 @@ function calculateResults() {
     const timeTaken = Math.floor((Date.now() - testStartTime) / 1000);
     const percentage = ((totalScore / currentTest.questions.length) * 100).toFixed(1);
     
-    // Save result to LocalStorage
+    // Save result to LocalStorage (omit wrongAnswers to save space)
     const result = {
         testId: currentTest.testId,
         testTitle: currentTest.title,
@@ -198,8 +201,7 @@ function calculateResults() {
         totalQuestions: currentTest.questions.length,
         percentage: parseFloat(percentage),
         timeTaken: timeTaken,
-        sectionScores: sectionScores,
-        wrongAnswers: wrongAnswers
+        sectionScores: sectionScores
     };
     
     saveTestResult(result);
@@ -212,6 +214,8 @@ function displayResults(totalScore, sectionScores, wrongAnswers, percentage, tim
     // Hide test, show results
     document.getElementById('timerSection').style.display = 'none';
     document.getElementById('testSection').style.display = 'none';
+    var progressBar = document.getElementById('progressBar');
+    if (progressBar) progressBar.style.display = 'none';
     document.getElementById('resultsSection').style.display = 'block';
     
     const minutesTaken = Math.floor(timeTaken / 60);
@@ -220,7 +224,7 @@ function displayResults(totalScore, sectionScores, wrongAnswers, percentage, tim
     let resultHTML = `
         <div class="score-card">
             <h2>🎯 Your Score</h2>
-            <div class="score">${totalScore}/50</div>
+            <div class="score">${totalScore}/${currentTest.questions.length}</div>
             <p style="font-size: 1.5em; margin-top: 10px;">${percentage}%</p>
             <p style="margin-top: 10px;">Time Taken: ${minutesTaken}m ${secondsTaken}s</p>
         </div>
@@ -263,7 +267,7 @@ function displayResults(totalScore, sectionScores, wrongAnswers, percentage, tim
         resultHTML += `
             <div style="background: #4caf50; color: white; padding: 30px; border-radius: 10px; text-align: center;">
                 <h2>🏆 PERFECT SCORE!</h2>
-                <p style="font-size: 1.3em;">You got all 50 questions correct! Outstanding! 🔥</p>
+                <p style="font-size: 1.3em;">You got all ${currentTest.questions.length} questions correct! Outstanding! 🔥</p>
             </div>
         `;
     }
