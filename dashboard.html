@@ -5,94 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard — OIR Practice</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Dashboard-specific refinements */
-        .dashboard-hero {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0.75rem;
-            margin-bottom: 1.25rem;
-        }
-        .hero-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 1.25rem 1rem;
-            text-align: center;
-        }
-        .hero-card.primary {
-            background: var(--text);
-            color: var(--bg);
-            border-color: var(--text);
-            position: relative;
-            overflow: hidden;
-        }
-        .hero-card.primary::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(ellipse at 65% 25%, rgba(196,93,62,0.18) 0%, transparent 55%);
-            pointer-events: none;
-        }
-        .hero-card-label {
-            font-size: 0.5625rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            opacity: 0.5;
-            margin-bottom: 0.25rem;
-            font-weight: 500;
-            position: relative;
-        }
-        .hero-card-value {
-            font-family: var(--font-mono);
-            font-size: 1.75rem;
-            font-weight: 700;
-            font-variant-numeric: tabular-nums;
-            position: relative;
-            line-height: 1.2;
-        }
-        .hero-card-sub {
-            font-size: 0.6875rem;
-            opacity: 0.45;
-            margin-top: 0.25rem;
-            position: relative;
-        }
-        .weak-callout {
-            background: var(--warning-bg);
-            border: 1px solid var(--warning-border);
-            border-radius: var(--radius);
-            padding: 0.875rem 1rem;
-            margin-bottom: 1.25rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-        .weak-callout-icon {
-            font-size: 1.25rem;
-            flex-shrink: 0;
-        }
-        .weak-callout-text {
-            font-size: 0.8125rem;
-            color: var(--warning-text);
-            line-height: 1.5;
-        }
-        .weak-callout-text strong {
-            font-weight: 600;
-        }
-
-        @media (max-width: 480px) {
-            .dashboard-hero {
-                grid-template-columns: 1fr 1fr;
-                gap: 0.5rem;
-            }
-            .hero-card {
-                padding: 1rem 0.75rem;
-            }
-            .hero-card-value {
-                font-size: 1.375rem;
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="container">
@@ -157,11 +69,11 @@
 
             <!-- Actions -->
             <section class="dashboard-actions">
-                <button class="btn-primary" onclick="exportToCSV()">
-                    Export CSV
-                </button>
-                <button class="btn-secondary" onclick="location.href='index.html'">
+                <button class="btn-primary" onclick="location.href='index.html'">
                     Home
+                </button>
+                <button class="btn-secondary" onclick="exportToCSV()">
+                    Export CSV
                 </button>
                 <button class="btn-danger" onclick="resetAllProgress()">
                     Reset Data
@@ -190,6 +102,9 @@
                         <p><a href="index.html">Start your first test →</a></p>
                     </div>
                 `;
+                // Hide sections that need data
+                const sectionPerf = document.getElementById('sectionPerformance');
+                if (sectionPerf) sectionPerf.closest('.dashboard-section').style.display = 'none';
                 return;
             }
 

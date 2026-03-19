@@ -5,36 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OIR Test — AFSB Preparation</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Test page — progress bar and question counter */
-        .test-progress {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            margin-bottom: 1.5rem;
-        }
-        .test-progress-bar {
-            flex: 1;
-            height: 3px;
-            background: var(--border-light);
-            border-radius: 2px;
-            overflow: hidden;
-        }
-        .test-progress-fill {
-            height: 100%;
-            background: var(--accent);
-            border-radius: 2px;
-            transition: width 0.3s ease;
-            width: 0%;
-        }
-        .test-progress-text {
-            font-family: var(--font-mono);
-            font-size: 0.6875rem;
-            color: var(--text-muted);
-            white-space: nowrap;
-            font-variant-numeric: tabular-nums;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
@@ -64,7 +34,8 @@
         </div>
 
         <div id="timerSection" class="timer-section" style="display: none;">
-            Time Remaining: <span id="timer">30:00</span>
+            <span class="timer-label">Time Remaining</span>
+            <span id="timer">30:00</span>
         </div>
 
         <div id="progressBar" class="test-progress" style="display: none;">
