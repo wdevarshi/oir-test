@@ -11,7 +11,13 @@
         <div class="header">
             <h1>OIR Practice</h1>
             <p>Air Force Selection Board Preparation</p>
-            <p class="personal">For Bhavisha · Target: May 4, 2026 <span class="countdown" id="countdown"></span></p>
+            <p class="personal">For Bhavisha · Target: May 4, 2026</p>
+        </div>
+
+        <!-- Countdown Hero -->
+        <div class="countdown-hero">
+            <div class="countdown-days" id="countdown">—</div>
+            <div class="countdown-label">days until AFSB</div>
         </div>
 
         <div class="stats-section">
@@ -68,10 +74,11 @@
             const el = document.getElementById('countdown');
             if (!el) return;
             if (diff <= 0) {
-                el.textContent = 'AFSB time!';
+                el.textContent = '0';
+                document.querySelector('.countdown-label').textContent = 'AFSB time — go get it!';
             } else {
                 const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
-                el.textContent = days + 'd left';
+                el.innerHTML = days + '<span class="countdown-unit">d</span>';
             }
         }
 
@@ -115,82 +122,102 @@
 
             // Group tests by difficulty
             const groups = [
-                { key: 'medium', label: 'Medium', tests: tests.filter(t => t.difficulty === 'Medium') },
-                { key: 'medium-hard', label: 'Medium-Hard', tests: tests.filter(t => t.difficulty === 'Medium-Hard') },
-                { key: 'hard', label: 'Hard', tests: tests.filter(t => t.difficulty === 'Hard') }
+                { key: 'medium', label: 'Medium', emoji: '◆', tests: tests.filter(t => t.difficulty === 'Medium') },
+                { key: 'medium-hard', label: 'Medium-Hard', emoji: '◆◆', tests: tests.filter(t => t.difficulty === 'Medium-Hard') },
+                { key: 'hard', label: 'Hard', emoji: '◆◆◆', tests: tests.filter(t => t.difficulty === 'Hard') }
             ];
 
             testsContainer.innerHTML = '';
 
-            groups.forEach(group => {
+            groups.forEach((group, groupIdx) => {
                 const completedInGroup = group.tests.filter(t => testResults.some(r => r.testId === t.id)).length;
+                const progressPct = group.tests.length > 0 ? Math.round((completedInGroup / group.tests.length) * 100) : 0;
 
                 const groupDiv = document.createElement('div');
                 groupDiv.className = 'difficulty-group';
                 
-                const labelDiv = document.createElement('div');
-                labelDiv.className = 'difficulty-group-label';
-                labelDiv.innerHTML = `${group.label} <span class="group-progress">${completedInGroup}/${group.tests.length}</span>`;
-                groupDiv.appendChild(labelDiv);
+                // Collapsible header
+                const headerDiv = document.createElement('div');
+                headerDiv.className = 'difficulty-group-header';
+                headerDiv.innerHTML = `
+                    <span class="group-chevron" id="chevron-${group.key}">›</span>
+                    <span class="difficulty-group-label">${group.label}</span>
+                    <span class="group-progress">${completedInGroup}/${group.tests.length}</span>
+                    <div class="group-progress-bar">
+                        <div class="group-progress-fill" style="width: ${progressPct}%"></div>
+                    </div>
+                `;
+                
+                headerDiv.addEventListener('click', function() {
+                    const body = groupDiv.querySelector('.difficulty-group-body');
+                    const chevron = document.getElementById('chevron-' + group.key);
+                    body.classList.toggle('collapsed');
+                    chevron.classList.toggle('open');
+                });
+                
+                groupDiv.appendChild(headerDiv);
+
+                // Collapsible body — start collapsed by default
+                const bodyDiv = document.createElement('div');
+                bodyDiv.className = 'difficulty-group-body collapsed';
 
                 const grid = document.createElement('div');
-                grid.className = 'tests-grid';
+                grid.className = 'tests-compact-grid';
 
                 group.tests.forEach(test => {
                     const results = testResults.filter(r => r.testId === test.id);
                     const bestScore = results.length > 0 ? Math.max(...results.map(r => r.score)) : null;
                     const bestPercentage = results.length > 0 ? Math.max(...results.map(r => r.percentage)) : null;
                     const attemptCount = results.length;
+                    const testNum = test.id;
 
                     const card = document.createElement('div');
                     card.className = 'test-card';
+                    if (attemptCount > 0) card.classList.add('completed');
                     
-                    if (attemptCount > 0) {
-                        card.classList.add('completed');
-                    }
-
                     card.innerHTML = `
-                        <div class="test-header">
-                            <h3>${test.title}</h3>
-                            <span class="difficulty-badge" data-level="${group.key}">${test.difficulty}</span>
+                        <div class="card-top">
+                            <span class="test-num">${testNum}</span>
+                            ${attemptCount > 0 
+                                ? '<span class="card-check">✓</span>' 
+                                : '<span class="card-new">NEW</span>'}
                         </div>
-                        <div class="test-body">
-                            <p class="test-details">50 Questions | 30 Minutes</p>
-                            ${attemptCount > 0 ? `
-                                <div class="test-status completed">
-                                    <span class="status-icon">✅</span>
-                                    <span class="status-text">Completed</span>
-                                </div>
-                                <div class="test-score">
-                                    <div class="score-label">Best:</div>
-                                    <div class="score-value">${bestScore}/50 (${bestPercentage}%)</div>
-                                </div>
-                                ${attemptCount > 1 ? `<p class="attempt-count">${attemptCount} attempts</p>` : ''}
-                            ` : `
-                                <div class="test-status not-taken">
-                                    <span class="status-icon">🆕</span>
-                                    <span class="status-text">Not Taken</span>
-                                </div>
-                            `}
-                        </div>
-                        <div class="test-actions">
-                            <button class="btn-primary" onclick="startTest(${test.id})">
-                                ${attemptCount > 0 ? 'Retake' : 'Start'}
-                            </button>
-                            ${attemptCount > 0 ? `
-                                <button class="btn-secondary" onclick="viewResults(${test.id})">
-                                    Results
-                                </button>
-                            ` : ''}
+                        ${attemptCount > 0 
+                            ? `<div class="card-score">${bestScore}/50 · ${bestPercentage}%</div>` 
+                            : ''}
+                        <div class="card-bottom">
+                            <span class="card-action">${attemptCount > 0 ? 'Retake →' : 'Start →'}</span>
+                            ${attemptCount > 0 
+                                ? `<a href="javascript:void(0)" class="results-link" onclick="event.stopPropagation(); viewResults(${test.id})">results</a>` 
+                                : ''}
                         </div>
                     `;
+                    
+                    card.addEventListener('click', function() {
+                        startTest(test.id);
+                    });
 
                     grid.appendChild(card);
                 });
 
-                groupDiv.appendChild(grid);
+                bodyDiv.appendChild(grid);
+                groupDiv.appendChild(bodyDiv);
                 testsContainer.appendChild(groupDiv);
             });
+
+            // Auto-expand the first group that has incomplete tests, or the first group
+            const firstIncomplete = groups.findIndex(g => {
+                const completedInGroup = g.tests.filter(t => testResults.some(r => r.testId === t.id)).length;
+                return completedInGroup < g.tests.length;
+            });
+            const expandIdx = firstIncomplete >= 0 ? firstIncomplete : 0;
+            const allGroups = testsContainer.querySelectorAll('.difficulty-group');
+            if (allGroups[expandIdx]) {
+                const body = allGroups[expandIdx].querySelector('.difficulty-group-body');
+                const chevron = allGroups[expandIdx].querySelector('.group-chevron');
+                if (body) body.classList.remove('collapsed');
+                if (chevron) chevron.classList.add('open');
+            }
         }
 
         function startTest(testId) {

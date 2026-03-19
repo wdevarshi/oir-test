@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OIR Test — AFSB Preparation</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Test page — progress bar and question counter */
+        .test-progress {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+        .test-progress-bar {
+            flex: 1;
+            height: 3px;
+            background: var(--border-light);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+        .test-progress-fill {
+            height: 100%;
+            background: var(--accent);
+            border-radius: 2px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+        .test-progress-text {
+            font-family: var(--font-mono);
+            font-size: 0.6875rem;
+            color: var(--text-muted);
+            white-space: nowrap;
+            font-variant-numeric: tabular-nums;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -16,7 +46,7 @@
 
         <div id="introSection">
             <div class="instructions">
-                <h3>Instructions</h3>
+                <h3>Before you begin</h3>
                 <ul>
                     <li>This test contains <strong>50 multiple-choice questions</strong></li>
                     <li>Time limit: <strong>30 minutes</strong></li>
@@ -37,6 +67,13 @@
             Time Remaining: <span id="timer">30:00</span>
         </div>
 
+        <div id="progressBar" class="test-progress" style="display: none;">
+            <div class="test-progress-bar">
+                <div class="test-progress-fill" id="progressFill"></div>
+            </div>
+            <span class="test-progress-text" id="progressText">0/50</span>
+        </div>
+
         <div id="testSection" class="test-content">
             <!-- Questions will be injected here -->
         </div>
@@ -52,5 +89,33 @@
 
     <script src="storage.js"></script>
     <script src="app.js"></script>
+    <script>
+        // Progress bar — tracks answered questions
+        (function() {
+            const orig = window.saveAnswer;
+            if (!orig) return;
+            window.saveAnswer = function(questionId, answerIndex) {
+                orig(questionId, answerIndex);
+                updateProgress();
+            };
+            function updateProgress() {
+                const answered = Object.keys(window.userAnswers || {}).length;
+                const total = 50;
+                const pct = Math.round((answered / total) * 100);
+                const fill = document.getElementById('progressFill');
+                const text = document.getElementById('progressText');
+                if (fill) fill.style.width = pct + '%';
+                if (text) text.textContent = answered + '/' + total;
+            }
+        })();
+
+        // Show progress bar when test starts
+        const origStart = window.startTest;
+        window.startTest = function() {
+            origStart();
+            const pb = document.getElementById('progressBar');
+            if (pb) pb.style.display = 'flex';
+        };
+    </script>
 </body>
 </html>

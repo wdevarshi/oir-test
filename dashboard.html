@@ -5,6 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard — OIR Practice</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Dashboard-specific refinements */
+        .dashboard-hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin-bottom: 1.25rem;
+        }
+        .hero-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.25rem 1rem;
+            text-align: center;
+        }
+        .hero-card.primary {
+            background: var(--text);
+            color: var(--bg);
+            border-color: var(--text);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-card.primary::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 65% 25%, rgba(196,93,62,0.18) 0%, transparent 55%);
+            pointer-events: none;
+        }
+        .hero-card-label {
+            font-size: 0.5625rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            opacity: 0.5;
+            margin-bottom: 0.25rem;
+            font-weight: 500;
+            position: relative;
+        }
+        .hero-card-value {
+            font-family: var(--font-mono);
+            font-size: 1.75rem;
+            font-weight: 700;
+            font-variant-numeric: tabular-nums;
+            position: relative;
+            line-height: 1.2;
+        }
+        .hero-card-sub {
+            font-size: 0.6875rem;
+            opacity: 0.45;
+            margin-top: 0.25rem;
+            position: relative;
+        }
+        .weak-callout {
+            background: var(--warning-bg);
+            border: 1px solid var(--warning-border);
+            border-radius: var(--radius);
+            padding: 0.875rem 1rem;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .weak-callout-icon {
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+        .weak-callout-text {
+            font-size: 0.8125rem;
+            color: var(--warning-text);
+            line-height: 1.5;
+        }
+        .weak-callout-text strong {
+            font-weight: 600;
+        }
+
+        @media (max-width: 480px) {
+            .dashboard-hero {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.5rem;
+            }
+            .hero-card {
+                padding: 1rem 0.75rem;
+            }
+            .hero-card-value {
+                font-size: 1.375rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -15,28 +103,41 @@
         </div>
 
         <div class="dashboard-content">
-            <!-- Overall Stats -->
-            <section class="dashboard-section">
-                <h2>Overall</h2>
-                <div id="overallStats" class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-label">Tests</div>
-                        <div class="stat-value" id="testsTaken">0</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-label">Unique</div>
-                        <div class="stat-value" id="uniqueTests">0</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-label">Average</div>
-                        <div class="stat-value" id="avgScore">–</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-label">Best</div>
-                        <div class="stat-value" id="bestScore">–</div>
-                    </div>
+            <!-- Hero Stats -->
+            <div class="dashboard-hero" id="dashboardHero" style="display: none;">
+                <div class="hero-card primary">
+                    <div class="hero-card-label">Average Score</div>
+                    <div class="hero-card-value" id="heroAvg">–</div>
                 </div>
-            </section>
+                <div class="hero-card primary">
+                    <div class="hero-card-label">Best Score</div>
+                    <div class="hero-card-value" id="heroBest">–</div>
+                    <div class="hero-card-sub" id="heroBestTest"></div>
+                </div>
+                <div class="hero-card">
+                    <div class="hero-card-label">Tests Taken</div>
+                    <div class="hero-card-value" id="testsTaken">0</div>
+                </div>
+                <div class="hero-card">
+                    <div class="hero-card-label">Unique Tests</div>
+                    <div class="hero-card-value" id="uniqueTests">0</div>
+                    <div class="hero-card-sub" id="heroRemaining"></div>
+                </div>
+            </div>
+
+            <!-- Weakness Callout -->
+            <div class="weak-callout" id="weakCallout" style="display: none;">
+                <span class="weak-callout-icon">⚡</span>
+                <div class="weak-callout-text">
+                    Focus area: <strong id="weakSection">–</strong> — <span id="weakPct">–</span>
+                </div>
+            </div>
+
+            <!-- Overall Stats (hidden, kept for JS compatibility) -->
+            <div id="overallStats" style="display: none;">
+                <div id="avgScore"></div>
+                <div id="bestScore"></div>
+            </div>
 
             <!-- Test History -->
             <section class="dashboard-section">
@@ -92,10 +193,27 @@
                 return;
             }
 
-            // Load overall stats
+            // Load hero stats
             const stats = getOverallStats();
+            const heroEl = document.getElementById('dashboardHero');
+            heroEl.style.display = 'grid';
+
+            document.getElementById('heroAvg').textContent = stats.avgScore + '%';
+            document.getElementById('heroBest').textContent = stats.bestScore + '/50';
+            document.getElementById('heroBestTest').textContent = stats.bestTest || '';
             document.getElementById('testsTaken').textContent = stats.testsTaken;
             document.getElementById('uniqueTests').textContent = stats.uniqueTests;
+            document.getElementById('heroRemaining').textContent = (20 - stats.uniqueTests) + ' remaining';
+
+            // Weakness callout
+            if (stats.weakestSection) {
+                const weakEl = document.getElementById('weakCallout');
+                weakEl.style.display = 'flex';
+                document.getElementById('weakSection').textContent = stats.weakestSection;
+                document.getElementById('weakPct').textContent = stats.weakestPct + '% accuracy';
+            }
+
+            // Hidden fields for compatibility
             document.getElementById('avgScore').textContent = stats.avgScore + '%';
             document.getElementById('bestScore').textContent = stats.bestScore + '/50';
 
