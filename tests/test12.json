@@ -5,61 +5,673 @@
   "totalQuestions": 50,
   "timeLimit": 1800,
   "sections": [
-    { "name": "Verbal Reasoning", "questionsCount": 15 },
-    { "name": "Non-Verbal Reasoning", "questionsCount": 15 },
-    { "name": "Numerical Ability", "questionsCount": 10 },
-    { "name": "Coding-Decoding", "questionsCount": 10 }
+    {
+      "name": "Verbal Reasoning",
+      "questionsCount": 15
+    },
+    {
+      "name": "Non-Verbal Reasoning",
+      "questionsCount": 15
+    },
+    {
+      "name": "Numerical Ability",
+      "questionsCount": 10
+    },
+    {
+      "name": "Coding-Decoding",
+      "questionsCount": 10
+    }
   ],
   "questions": [
-    {"id": 1, "section": "Verbal Reasoning", "question": "Synonym of <strong>VAGUE</strong>:", "options": ["Clear", "Unclear", "Precise", "Exact"], "correct": 1, "explanation": "'Vague' means not clearly expressed. 'Unclear' has the same meaning."},
-    {"id": 2, "section": "Verbal Reasoning", "question": "Antonym of <strong>CAPTIVE</strong>:", "options": ["Prisoner", "Free", "Trapped", "Confined"], "correct": 1, "explanation": "'Captive' means imprisoned. 'Free' means not confined (opposite)."},
-    {"id": 3, "section": "Verbal Reasoning", "question": "Complete the analogy: <strong>Telescope : Stars :: Microscope : ?</strong>", "options": ["Sky", "Cells", "Glass", "Light"], "correct": 1, "explanation": "A telescope is used to observe stars. A microscope is used to observe cells."},
-    {"id": 4, "section": "Verbal Reasoning", "question": "Find the odd one out:", "options": ["Kilometer", "Meter", "Liter", "Centimeter"], "correct": 2, "explanation": "Kilometer, Meter, and Centimeter measure length. Liter measures volume (odd one)."},
-    {"id": 5, "section": "Verbal Reasoning", "question": "Synonym of <strong>ADEQUATE</strong>:", "options": ["Insufficient", "Sufficient", "Lacking", "Short"], "correct": 1, "explanation": "'Adequate' means enough or satisfactory. 'Sufficient' has the same meaning."},
-    {"id": 6, "section": "Verbal Reasoning", "question": "If SILVER is coded as TJMWFS, then GOLDEN is coded as:", "options": ["HPMEFS", "HPMEFN", "GPMEFS", "HPMDFS"], "correct": 0, "explanation": "Each letter shifts +1: S→T, I→J, L→M, V→W, E→F, R→S. So G→H, O→P, L→M, D→E, E→F, N→S... wait, N→O. So GOLDEN → HPMEF O = HPMEFO. Let me recalculate: G→H, O→P, L→M, D→E, E→F, N→O = HPMEFO. Hmm, the option says HPMEFS. Let me go with the closest match."},
-    {"id": 7, "section": "Verbal Reasoning", "question": "Choose the correctly spelt word:", "options": ["Occurence", "Occurrence", "Ocurrence", "Occurrance"], "correct": 1, "explanation": "The correct spelling is 'Occurrence' with double 'c' and double 'r'."},
-    {"id": 8, "section": "Verbal Reasoning", "question": "Antonym of <strong>SYNTHETIC</strong>:", "options": ["Artificial", "Natural", "Fake", "Man-made"], "correct": 1, "explanation": "'Synthetic' means made artificially. 'Natural' means occurring in nature (opposite)."},
-    {"id": 9, "section": "Verbal Reasoning", "question": "Complete: <strong>Horse : Stable :: Ship : ?</strong>", "options": ["Sea", "Dock", "Sail", "Captain"], "correct": 1, "explanation": "A horse is kept in a stable. A ship is kept at a dock."},
-    {"id": 10, "section": "Verbal Reasoning", "question": "Synonym of <strong>PRECISE</strong>:", "options": ["Vague", "Exact", "Rough", "Loose"], "correct": 1, "explanation": "'Precise' means exact and accurate. 'Exact' has the same meaning."},
-    {"id": 11, "section": "Verbal Reasoning", "question": "Find the odd one out:", "options": ["Copper", "Gold", "Iron", "Diamond"], "correct": 3, "explanation": "Copper, Gold, and Iron are metals. Diamond is a gemstone (odd one)."},
-    {"id": 12, "section": "Verbal Reasoning", "question": "Antonym of <strong>BORROW</strong>:", "options": ["Take", "Lend", "Receive", "Get"], "correct": 1, "explanation": "'Borrow' means to take temporarily. 'Lend' means to give temporarily (opposite)."},
-    {"id": 13, "section": "Verbal Reasoning", "question": "Complete the analogy: <strong>Thermometer : Temperature :: Barometer : ?</strong>", "options": ["Wind", "Pressure", "Rain", "Humidity"], "correct": 1, "explanation": "A thermometer measures temperature. A barometer measures pressure."},
-    {"id": 14, "section": "Verbal Reasoning", "question": "Synonym of <strong>HOSTILE</strong>:", "options": ["Friendly", "Unfriendly", "Kind", "Warm"], "correct": 1, "explanation": "'Hostile' means unfriendly and aggressive. 'Unfriendly' has a similar meaning."},
-    {"id": 15, "section": "Verbal Reasoning", "question": "Choose the word that best completes: <strong>Laugh : Cry :: Joy : ?</strong>", "options": ["Happy", "Sorrow", "Smile", "Fun"], "correct": 1, "explanation": "Laugh and Cry are opposites. Joy and Sorrow are also opposites."},
-    {"id": 16, "section": "Non-Verbal Reasoning", "question": "If a hexagon is divided by all its diagonals, how many triangles are formed?", "options": ["6", "12", "18", "24"], "correct": 3, "explanation": "A hexagon divided by all diagonals creates 24 triangles."},
-    {"id": 17, "section": "Non-Verbal Reasoning", "question": "How many faces does a triangular prism have?", "options": ["3", "4", "5", "6"], "correct": 2, "explanation": "A triangular prism has 5 faces (2 triangular bases + 3 rectangular sides)."},
-    {"id": 18, "section": "Non-Verbal Reasoning", "question": "Mirror image of 'S' is:", "options": ["S", "Ƨ", "Z", "2"], "correct": 1, "explanation": "The mirror image (left-right flip) of 'S' is 'Ƨ' (reversed S)."},
-    {"id": 19, "section": "Non-Verbal Reasoning", "question": "What is the sum of interior angles of a pentagon?", "options": ["360°", "480°", "540°", "720°"], "correct": 2, "explanation": "Sum = (n-2) × 180 = (5-2) × 180 = 3 × 180 = 540°."},
-    {"id": 20, "section": "Non-Verbal Reasoning", "question": "How many vertices does a pentagonal prism have?", "options": ["8", "10", "12", "14"], "correct": 1, "explanation": "A pentagonal prism has 10 vertices (5 on each pentagonal face)."},
-    {"id": 21, "section": "Non-Verbal Reasoning", "question": "What comes next: O, T, T, F, F, S, S, ?", "options": ["E", "N", "T", "O"], "correct": 0, "explanation": "These are first letters of numbers: One, Two, Three, Four, Five, Six, Seven, Eight → E."},
-    {"id": 22, "section": "Non-Verbal Reasoning", "question": "How many edges does a pentagonal prism have?", "options": ["10", "12", "15", "18"], "correct": 2, "explanation": "A pentagonal prism has 15 edges (5 top + 5 bottom + 5 connecting)."},
-    {"id": 23, "section": "Non-Verbal Reasoning", "question": "Water image of 'L' is:", "options": ["L", "⌐", "Γ", "J"], "correct": 2, "explanation": "Water image (vertical flip) of 'L' is 'Γ' (upside down L, resembling reverse-L at top)."},
-    {"id": 24, "section": "Non-Verbal Reasoning", "question": "Which 3D shape has 8 triangular faces?", "options": ["Cube", "Tetrahedron", "Octahedron", "Dodecahedron"], "correct": 2, "explanation": "An octahedron has 8 triangular faces."},
-    {"id": 25, "section": "Non-Verbal Reasoning", "question": "How many diagonals does a decagon have?", "options": ["30", "35", "40", "45"], "correct": 1, "explanation": "Diagonals = n(n-3)/2 = 10(10-3)/2 = 10×7/2 = 35."},
-    {"id": 26, "section": "Non-Verbal Reasoning", "question": "If you rotate 'N' 180°, it looks like:", "options": ["N", "Z", "И", "U"], "correct": 0, "explanation": "'N' rotated 180° still looks like 'N' (rotationally symmetrical)."},
-    {"id": 27, "section": "Non-Verbal Reasoning", "question": "What is the interior angle of a regular pentagon?", "options": ["100°", "108°", "112°", "120°"], "correct": 1, "explanation": "Interior angle = (n-2)×180/n = (5-2)×180/5 = 540/5 = 108°."},
-    {"id": 28, "section": "Non-Verbal Reasoning", "question": "How many edges does a hexagonal prism have?", "options": ["12", "15", "18", "21"], "correct": 2, "explanation": "A hexagonal prism has 18 edges (6 top + 6 bottom + 6 connecting)."},
-    {"id": 29, "section": "Non-Verbal Reasoning", "question": "Mirror image of 'B' is:", "options": ["B", "d", "Ↄ", "Reversed B"], "correct": 3, "explanation": "The mirror image (left-right flip) of 'B' is a reversed B."},
-    {"id": 30, "section": "Non-Verbal Reasoning", "question": "Which pattern comes next: ABC, BCD, CDE, ?", "options": ["DEF", "EFG", "FGH", "DEE"], "correct": 0, "explanation": "Each group shifts one letter forward: ABC→BCD→CDE→DEF."},
-    {"id": 31, "section": "Numerical Ability", "question": "What is 42% of 750?", "options": ["305", "310", "315", "320"], "correct": 2, "explanation": "42% of 750 = (42/100) × 750 = 315."},
-    {"id": 32, "section": "Numerical Ability", "question": "If x² = 289, what is x?", "options": ["15", "16", "17", "18"], "correct": 2, "explanation": "x² = 289, so x = √289 = 17."},
-    {"id": 33, "section": "Numerical Ability", "question": "What is the next: 3, 7, 15, 31, ?", "options": ["47", "55", "63", "72"], "correct": 2, "explanation": "Each term = previous×2 + 1: 3×2+1=7, 7×2+1=15, 15×2+1=31, 31×2+1=63."},
-    {"id": 34, "section": "Numerical Ability", "question": "What is 27 × 7?", "options": ["179", "184", "189", "194"], "correct": 2, "explanation": "27 × 7 = 189."},
-    {"id": 35, "section": "Numerical Ability", "question": "A man buys at ₹400 and sells at ₹500. Profit percentage is:", "options": ["20%", "25%", "30%", "35%"], "correct": 1, "explanation": "Profit = 500-400 = 100. Profit% = (100/400)×100 = 25%."},
-    {"id": 36, "section": "Numerical Ability", "question": "What is the cube root of 343?", "options": ["5", "6", "7", "8"], "correct": 2, "explanation": "∛343 = 7 because 7 × 7 × 7 = 343."},
-    {"id": 37, "section": "Numerical Ability", "question": "If 2(3x - 1) = 16, what is x?", "options": ["2", "3", "4", "5"], "correct": 1, "explanation": "2(3x-1)=16, so 3x-1=8, 3x=9, x=3."},
-    {"id": 38, "section": "Numerical Ability", "question": "What is 66⅔% of 900?", "options": ["500", "550", "600", "650"], "correct": 2, "explanation": "66⅔% = 2/3. Two-thirds of 900 = 600."},
-    {"id": 39, "section": "Numerical Ability", "question": "What comes next: 2, 3, 5, 7, 11, 13, ?", "options": ["15", "17", "19", "21"], "correct": 1, "explanation": "These are prime numbers. Next prime after 13 is 17."},
-    {"id": 40, "section": "Numerical Ability", "question": "A pipe fills a tank in 12 hours. Another empties it in 18 hours. How long to fill when both open?", "options": ["24 hours", "30 hours", "36 hours", "42 hours"], "correct": 2, "explanation": "Fill rate: 1/12. Empty rate: 1/18. Net: 1/12-1/18 = (3-2)/36 = 1/36. So 36 hours."},
-    {"id": 41, "section": "Coding-Decoding", "question": "If EARTH = 5-1-18-20-8, then MARS = ?", "options": ["13-1-18-19", "12-1-17-18", "14-2-19-20", "13-2-18-19"], "correct": 0, "explanation": "M=13, A=1, R=18, S=19. So MARS = 13-1-18-19."},
-    {"id": 42, "section": "Coding-Decoding", "question": "In a code, CHAIR is written as DIBJS. How is TABLE written?", "options": ["UBCMF", "UBCLF", "TBCMF", "UBBMF"], "correct": 0, "explanation": "Each letter shifts +1: C→D, H→I, A→B, I→J, R→S. So T→U, A→B, B→C, L→M, E→F = UBCMF."},
-    {"id": 43, "section": "Coding-Decoding", "question": "If QUEEN = 17-21-5-5-14, then JOKER = ?", "options": ["10-15-11-5-18", "9-14-10-4-17", "11-16-12-6-19", "10-16-11-5-18"], "correct": 0, "explanation": "J=10, O=15, K=11, E=5, R=18. So JOKER = 10-15-11-5-18."},
-    {"id": 44, "section": "Coding-Decoding", "question": "If FAST is coded as GBTU, then SLOW is coded as:", "options": ["TMPX", "TMPW", "SLPX", "TNPX"], "correct": 0, "explanation": "Each letter shifts +1: F→G, A→B, S→T, T→U. So S→T, L→M, O→P, W→X = TMPX."},
-    {"id": 45, "section": "Coding-Decoding", "question": "In a code, 'red blue' = 12, 'blue green' = 23, 'green red' = 31. What is the code for 'blue'?", "options": ["1", "2", "3", "Cannot determine"], "correct": 1, "explanation": "'red blue'=12, 'blue green'=23. Blue appears with 2 in both. So blue=2."},
-    {"id": 46, "section": "Coding-Decoding", "question": "If A=1, B=2..., what is the product of letters in 'ACE'?", "options": ["10", "12", "15", "18"], "correct": 2, "explanation": "A=1, C=3, E=5. Product = 1 × 3 × 5 = 15."},
-    {"id": 47, "section": "Coding-Decoding", "question": "If ORBIT is written as 15-18-2-9-20, then SPACE is written as:", "options": ["19-16-1-3-5", "18-15-1-2-4", "20-17-2-4-6", "19-17-1-3-5"], "correct": 0, "explanation": "S=19, P=16, A=1, C=3, E=5. So SPACE = 19-16-1-3-5."},
-    {"id": 48, "section": "Coding-Decoding", "question": "In a code, JUST = KVTU. What is FAIR?", "options": ["GBJS", "GBIS", "FBIS", "GCJS"], "correct": 0, "explanation": "Each letter shifts +1: J→K, U→V, S→T, T→U. So F→G, A→B, I→J, R→S = GBJS."},
-    {"id": 49, "section": "Coding-Decoding", "question": "If 1=A, 26=Z, what letter is 19?", "options": ["Q", "R", "S", "T"], "correct": 2, "explanation": "The 19th letter of the alphabet is S."},
-    {"id": 50, "section": "Coding-Decoding", "question": "If DIAMOND is coded as 4-9-1-13-15-14-4, then EMERALD is coded as:", "options": ["5-13-5-18-1-12-4", "4-12-4-17-1-11-3", "6-14-6-19-2-13-5", "5-14-5-18-1-12-4"], "correct": 0, "explanation": "E=5, M=13, E=5, R=18, A=1, L=12, D=4. So EMERALD = 5-13-5-18-1-12-4."}
+    {
+      "id": 1,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>VAGUE</strong>:",
+      "options": [
+        "Clear",
+        "Unclear",
+        "Precise",
+        "Exact"
+      ],
+      "correct": 1,
+      "explanation": "'Vague' means not clearly expressed. 'Unclear' has the same meaning."
+    },
+    {
+      "id": 2,
+      "section": "Verbal Reasoning",
+      "question": "Antonym of <strong>CAPTIVE</strong>:",
+      "options": [
+        "Prisoner",
+        "Free",
+        "Trapped",
+        "Confined"
+      ],
+      "correct": 1,
+      "explanation": "'Captive' means imprisoned. 'Free' means not confined (opposite)."
+    },
+    {
+      "id": 3,
+      "section": "Verbal Reasoning",
+      "question": "Complete the analogy: <strong>Telescope : Stars :: Microscope : ?</strong>",
+      "options": [
+        "Sky",
+        "Cells",
+        "Glass",
+        "Light"
+      ],
+      "correct": 1,
+      "explanation": "A telescope is used to observe stars. A microscope is used to observe cells."
+    },
+    {
+      "id": 4,
+      "section": "Verbal Reasoning",
+      "question": "Find the odd one out:",
+      "options": [
+        "Kilometer",
+        "Meter",
+        "Liter",
+        "Centimeter"
+      ],
+      "correct": 2,
+      "explanation": "Kilometer, Meter, and Centimeter measure length. Liter measures volume (odd one)."
+    },
+    {
+      "id": 5,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>ADEQUATE</strong>:",
+      "options": [
+        "Insufficient",
+        "Sufficient",
+        "Lacking",
+        "Short"
+      ],
+      "correct": 1,
+      "explanation": "'Adequate' means enough or satisfactory. 'Sufficient' has the same meaning."
+    },
+    {
+      "id": 6,
+      "section": "Verbal Reasoning",
+      "question": "If SILVER is coded as TJMWFS, then GOLDEN is coded as:",
+      "options": [
+        "HPMEFO",
+        "HPMEFN",
+        "GPMEFS",
+        "HPMDFS"
+      ],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: S→T, I→J, L→M, V→W, E→F, R→S. So G→H, O→P, L→M, D→E, E→F, N→O = HPMEFO."
+    },
+    {
+      "id": 7,
+      "section": "Verbal Reasoning",
+      "question": "Choose the correctly spelt word:",
+      "options": [
+        "Occurence",
+        "Occurrence",
+        "Ocurrence",
+        "Occurrance"
+      ],
+      "correct": 1,
+      "explanation": "The correct spelling is 'Occurrence' with double 'c' and double 'r'."
+    },
+    {
+      "id": 8,
+      "section": "Verbal Reasoning",
+      "question": "Antonym of <strong>SYNTHETIC</strong>:",
+      "options": [
+        "Artificial",
+        "Natural",
+        "Fake",
+        "Man-made"
+      ],
+      "correct": 1,
+      "explanation": "'Synthetic' means made artificially. 'Natural' means occurring in nature (opposite)."
+    },
+    {
+      "id": 9,
+      "section": "Verbal Reasoning",
+      "question": "Complete: <strong>Horse : Stable :: Ship : ?</strong>",
+      "options": [
+        "Sea",
+        "Dock",
+        "Sail",
+        "Captain"
+      ],
+      "correct": 1,
+      "explanation": "A horse is kept in a stable. A ship is kept at a dock."
+    },
+    {
+      "id": 10,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>PRECISE</strong>:",
+      "options": [
+        "Vague",
+        "Exact",
+        "Rough",
+        "Loose"
+      ],
+      "correct": 1,
+      "explanation": "'Precise' means exact and accurate. 'Exact' has the same meaning."
+    },
+    {
+      "id": 11,
+      "section": "Verbal Reasoning",
+      "question": "Find the odd one out:",
+      "options": [
+        "Copper",
+        "Gold",
+        "Iron",
+        "Diamond"
+      ],
+      "correct": 3,
+      "explanation": "Copper, Gold, and Iron are metals. Diamond is a gemstone (odd one)."
+    },
+    {
+      "id": 12,
+      "section": "Verbal Reasoning",
+      "question": "Antonym of <strong>BORROW</strong>:",
+      "options": [
+        "Take",
+        "Lend",
+        "Receive",
+        "Get"
+      ],
+      "correct": 1,
+      "explanation": "'Borrow' means to take temporarily. 'Lend' means to give temporarily (opposite)."
+    },
+    {
+      "id": 13,
+      "section": "Verbal Reasoning",
+      "question": "Complete the analogy: <strong>Thermometer : Temperature :: Barometer : ?</strong>",
+      "options": [
+        "Wind",
+        "Pressure",
+        "Rain",
+        "Humidity"
+      ],
+      "correct": 1,
+      "explanation": "A thermometer measures temperature. A barometer measures pressure."
+    },
+    {
+      "id": 14,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>HOSTILE</strong>:",
+      "options": [
+        "Friendly",
+        "Unfriendly",
+        "Kind",
+        "Warm"
+      ],
+      "correct": 1,
+      "explanation": "'Hostile' means unfriendly and aggressive. 'Unfriendly' has a similar meaning."
+    },
+    {
+      "id": 15,
+      "section": "Verbal Reasoning",
+      "question": "Choose the word that best completes: <strong>Laugh : Cry :: Joy : ?</strong>",
+      "options": [
+        "Happy",
+        "Sorrow",
+        "Smile",
+        "Fun"
+      ],
+      "correct": 1,
+      "explanation": "Laugh and Cry are opposites. Joy and Sorrow are also opposites."
+    },
+    {
+      "id": 16,
+      "section": "Non-Verbal Reasoning",
+      "question": "If a hexagon is divided by all its diagonals, how many triangles are formed?",
+      "options": [
+        "6",
+        "12",
+        "18",
+        "24"
+      ],
+      "correct": 3,
+      "explanation": "A hexagon divided by all diagonals creates 24 triangles."
+    },
+    {
+      "id": 17,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many faces does a triangular prism have?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 2,
+      "explanation": "A triangular prism has 5 faces (2 triangular bases + 3 rectangular sides)."
+    },
+    {
+      "id": 18,
+      "section": "Non-Verbal Reasoning",
+      "question": "Mirror image of 'S' is:",
+      "options": [
+        "S",
+        "Ƨ",
+        "Z",
+        "2"
+      ],
+      "correct": 1,
+      "explanation": "The mirror image (left-right flip) of 'S' is 'Ƨ' (reversed S)."
+    },
+    {
+      "id": 19,
+      "section": "Non-Verbal Reasoning",
+      "question": "What is the sum of interior angles of a pentagon?",
+      "options": [
+        "360°",
+        "480°",
+        "540°",
+        "720°"
+      ],
+      "correct": 2,
+      "explanation": "Sum = (n-2) × 180 = (5-2) × 180 = 3 × 180 = 540°."
+    },
+    {
+      "id": 20,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many vertices does a pentagonal prism have?",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "correct": 1,
+      "explanation": "A pentagonal prism has 10 vertices (5 on each pentagonal face)."
+    },
+    {
+      "id": 21,
+      "section": "Non-Verbal Reasoning",
+      "question": "What comes next: O, T, T, F, F, S, S, ?",
+      "options": [
+        "E",
+        "N",
+        "T",
+        "O"
+      ],
+      "correct": 0,
+      "explanation": "These are first letters of numbers: One, Two, Three, Four, Five, Six, Seven, Eight → E."
+    },
+    {
+      "id": 22,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many edges does a pentagonal prism have?",
+      "options": [
+        "10",
+        "12",
+        "15",
+        "18"
+      ],
+      "correct": 2,
+      "explanation": "A pentagonal prism has 15 edges (5 top + 5 bottom + 5 connecting)."
+    },
+    {
+      "id": 23,
+      "section": "Non-Verbal Reasoning",
+      "question": "Water image of 'L' is:",
+      "options": [
+        "L",
+        "⌐",
+        "Γ",
+        "J"
+      ],
+      "correct": 2,
+      "explanation": "Water image (vertical flip) of 'L' is 'Γ' (upside down L, resembling reverse-L at top)."
+    },
+    {
+      "id": 24,
+      "section": "Non-Verbal Reasoning",
+      "question": "Which 3D shape has 8 triangular faces?",
+      "options": [
+        "Cube",
+        "Tetrahedron",
+        "Octahedron",
+        "Dodecahedron"
+      ],
+      "correct": 2,
+      "explanation": "An octahedron has 8 triangular faces."
+    },
+    {
+      "id": 25,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many diagonals does a decagon have?",
+      "options": [
+        "30",
+        "35",
+        "40",
+        "45"
+      ],
+      "correct": 1,
+      "explanation": "Diagonals = n(n-3)/2 = 10(10-3)/2 = 10×7/2 = 35."
+    },
+    {
+      "id": 26,
+      "section": "Non-Verbal Reasoning",
+      "question": "If you rotate 'N' 180°, it looks like:",
+      "options": [
+        "N",
+        "Z",
+        "И",
+        "U"
+      ],
+      "correct": 0,
+      "explanation": "'N' rotated 180° still looks like 'N' (rotationally symmetrical)."
+    },
+    {
+      "id": 27,
+      "section": "Non-Verbal Reasoning",
+      "question": "What is the interior angle of a regular pentagon?",
+      "options": [
+        "100°",
+        "108°",
+        "112°",
+        "120°"
+      ],
+      "correct": 1,
+      "explanation": "Interior angle = (n-2)×180/n = (5-2)×180/5 = 540/5 = 108°."
+    },
+    {
+      "id": 28,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many edges does a hexagonal prism have?",
+      "options": [
+        "12",
+        "15",
+        "18",
+        "21"
+      ],
+      "correct": 2,
+      "explanation": "A hexagonal prism has 18 edges (6 top + 6 bottom + 6 connecting)."
+    },
+    {
+      "id": 29,
+      "section": "Non-Verbal Reasoning",
+      "question": "Mirror image of 'B' is:",
+      "options": [
+        "B",
+        "d",
+        "Ↄ",
+        "Reversed B"
+      ],
+      "correct": 3,
+      "explanation": "The mirror image (left-right flip) of 'B' is a reversed B."
+    },
+    {
+      "id": 30,
+      "section": "Non-Verbal Reasoning",
+      "question": "Which pattern comes next: ABC, BCD, CDE, ?",
+      "options": [
+        "DEF",
+        "EFG",
+        "FGH",
+        "DEE"
+      ],
+      "correct": 0,
+      "explanation": "Each group shifts one letter forward: ABC→BCD→CDE→DEF."
+    },
+    {
+      "id": 31,
+      "section": "Numerical Ability",
+      "question": "What is 42% of 750?",
+      "options": [
+        "305",
+        "310",
+        "315",
+        "320"
+      ],
+      "correct": 2,
+      "explanation": "42% of 750 = (42/100) × 750 = 315."
+    },
+    {
+      "id": 32,
+      "section": "Numerical Ability",
+      "question": "If x² = 289, what is x?",
+      "options": [
+        "15",
+        "16",
+        "17",
+        "18"
+      ],
+      "correct": 2,
+      "explanation": "x² = 289, so x = √289 = 17."
+    },
+    {
+      "id": 33,
+      "section": "Numerical Ability",
+      "question": "What is the next: 3, 7, 15, 31, ?",
+      "options": [
+        "47",
+        "55",
+        "63",
+        "72"
+      ],
+      "correct": 2,
+      "explanation": "Each term = previous×2 + 1: 3×2+1=7, 7×2+1=15, 15×2+1=31, 31×2+1=63."
+    },
+    {
+      "id": 34,
+      "section": "Numerical Ability",
+      "question": "What is 27 × 7?",
+      "options": [
+        "179",
+        "184",
+        "189",
+        "194"
+      ],
+      "correct": 2,
+      "explanation": "27 × 7 = 189."
+    },
+    {
+      "id": 35,
+      "section": "Numerical Ability",
+      "question": "A man buys at ₹400 and sells at ₹500. Profit percentage is:",
+      "options": [
+        "20%",
+        "25%",
+        "30%",
+        "35%"
+      ],
+      "correct": 1,
+      "explanation": "Profit = 500-400 = 100. Profit% = (100/400)×100 = 25%."
+    },
+    {
+      "id": 36,
+      "section": "Numerical Ability",
+      "question": "What is the cube root of 343?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": 2,
+      "explanation": "∛343 = 7 because 7 × 7 × 7 = 343."
+    },
+    {
+      "id": 37,
+      "section": "Numerical Ability",
+      "question": "If 2(3x - 1) = 16, what is x?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct": 1,
+      "explanation": "2(3x-1)=16, so 3x-1=8, 3x=9, x=3."
+    },
+    {
+      "id": 38,
+      "section": "Numerical Ability",
+      "question": "What is 66⅔% of 900?",
+      "options": [
+        "500",
+        "550",
+        "600",
+        "650"
+      ],
+      "correct": 2,
+      "explanation": "66⅔% = 2/3. Two-thirds of 900 = 600."
+    },
+    {
+      "id": 39,
+      "section": "Numerical Ability",
+      "question": "What comes next: 2, 3, 5, 7, 11, 13, ?",
+      "options": [
+        "15",
+        "17",
+        "19",
+        "21"
+      ],
+      "correct": 1,
+      "explanation": "These are prime numbers. Next prime after 13 is 17."
+    },
+    {
+      "id": 40,
+      "section": "Numerical Ability",
+      "question": "A pipe fills a tank in 12 hours. Another empties it in 18 hours. How long to fill when both open?",
+      "options": [
+        "24 hours",
+        "30 hours",
+        "36 hours",
+        "42 hours"
+      ],
+      "correct": 2,
+      "explanation": "Fill rate: 1/12. Empty rate: 1/18. Net: 1/12-1/18 = (3-2)/36 = 1/36. So 36 hours."
+    },
+    {
+      "id": 41,
+      "section": "Coding-Decoding",
+      "question": "If EARTH = 5-1-18-20-8, then MARS = ?",
+      "options": [
+        "13-1-18-19",
+        "12-1-17-18",
+        "14-2-19-20",
+        "13-2-18-19"
+      ],
+      "correct": 0,
+      "explanation": "M=13, A=1, R=18, S=19. So MARS = 13-1-18-19."
+    },
+    {
+      "id": 42,
+      "section": "Coding-Decoding",
+      "question": "In a code, CHAIR is written as DIBJS. How is TABLE written?",
+      "options": [
+        "UBCMF",
+        "UBCLF",
+        "TBCMF",
+        "UBBMF"
+      ],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: C→D, H→I, A→B, I→J, R→S. So T→U, A→B, B→C, L→M, E→F = UBCMF."
+    },
+    {
+      "id": 43,
+      "section": "Coding-Decoding",
+      "question": "If QUEEN = 17-21-5-5-14, then JOKER = ?",
+      "options": [
+        "10-15-11-5-18",
+        "9-14-10-4-17",
+        "11-16-12-6-19",
+        "10-16-11-5-18"
+      ],
+      "correct": 0,
+      "explanation": "J=10, O=15, K=11, E=5, R=18. So JOKER = 10-15-11-5-18."
+    },
+    {
+      "id": 44,
+      "section": "Coding-Decoding",
+      "question": "If FAST is coded as GBTU, then SLOW is coded as:",
+      "options": [
+        "TMPX",
+        "TMPW",
+        "SLPX",
+        "TNPX"
+      ],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: F→G, A→B, S→T, T→U. So S→T, L→M, O→P, W→X = TMPX."
+    },
+    {
+      "id": 45,
+      "section": "Coding-Decoding",
+      "question": "In a code, 'red blue' = 12, 'blue green' = 23, 'green red' = 31. What is the code for 'blue'?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "Cannot determine"
+      ],
+      "correct": 1,
+      "explanation": "'red blue'=12, 'blue green'=23. Blue appears with 2 in both. So blue=2."
+    },
+    {
+      "id": 46,
+      "section": "Coding-Decoding",
+      "question": "If A=1, B=2..., what is the product of letters in 'ACE'?",
+      "options": [
+        "10",
+        "12",
+        "15",
+        "18"
+      ],
+      "correct": 2,
+      "explanation": "A=1, C=3, E=5. Product = 1 × 3 × 5 = 15."
+    },
+    {
+      "id": 47,
+      "section": "Coding-Decoding",
+      "question": "If ORBIT is written as 15-18-2-9-20, then SPACE is written as:",
+      "options": [
+        "19-16-1-3-5",
+        "18-15-1-2-4",
+        "20-17-2-4-6",
+        "19-17-1-3-5"
+      ],
+      "correct": 0,
+      "explanation": "S=19, P=16, A=1, C=3, E=5. So SPACE = 19-16-1-3-5."
+    },
+    {
+      "id": 48,
+      "section": "Coding-Decoding",
+      "question": "In a code, JUST = KVTU. What is FAIR?",
+      "options": [
+        "GBJS",
+        "GBIS",
+        "FBIS",
+        "GCJS"
+      ],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: J→K, U→V, S→T, T→U. So F→G, A→B, I→J, R→S = GBJS."
+    },
+    {
+      "id": 49,
+      "section": "Coding-Decoding",
+      "question": "If 1=A, 26=Z, what letter is 19?",
+      "options": [
+        "Q",
+        "R",
+        "S",
+        "T"
+      ],
+      "correct": 2,
+      "explanation": "The 19th letter of the alphabet is S."
+    },
+    {
+      "id": 50,
+      "section": "Coding-Decoding",
+      "question": "If DIAMOND is coded as 4-9-1-13-15-14-4, then EMERALD is coded as:",
+      "options": [
+        "5-13-5-18-1-12-4",
+        "4-12-4-17-1-11-3",
+        "6-14-6-19-2-13-5",
+        "5-14-5-18-1-12-4"
+      ],
+      "correct": 0,
+      "explanation": "E=5, M=13, E=5, R=18, A=1, L=12, D=4. So EMERALD = 5-13-5-18-1-12-4."
+    }
   ]
 }

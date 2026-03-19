@@ -5,17 +5,34 @@
   "totalQuestions": 50,
   "timeLimit": 1800,
   "sections": [
-    { "name": "Verbal Reasoning", "questionsCount": 15 },
-    { "name": "Non-Verbal Reasoning", "questionsCount": 15 },
-    { "name": "Numerical Ability", "questionsCount": 10 },
-    { "name": "Coding-Decoding", "questionsCount": 10 }
+    {
+      "name": "Verbal Reasoning",
+      "questionsCount": 15
+    },
+    {
+      "name": "Non-Verbal Reasoning",
+      "questionsCount": 15
+    },
+    {
+      "name": "Numerical Ability",
+      "questionsCount": 10
+    },
+    {
+      "name": "Coding-Decoding",
+      "questionsCount": 10
+    }
   ],
   "questions": [
     {
       "id": 1,
       "section": "Verbal Reasoning",
       "question": "Synonym of <strong>LOYAL</strong>:",
-      "options": ["Unfaithful", "Faithful", "Disloyal", "Traitor"],
+      "options": [
+        "Unfaithful",
+        "Faithful",
+        "Disloyal",
+        "Traitor"
+      ],
       "correct": 1,
       "explanation": "'Loyal' means showing firm support or allegiance. 'Faithful' has the same meaning."
     },
@@ -23,7 +40,12 @@
       "id": 2,
       "section": "Verbal Reasoning",
       "question": "Antonym of <strong>SUCCEED</strong>:",
-      "options": ["Win", "Fail", "Achieve", "Accomplish"],
+      "options": [
+        "Win",
+        "Fail",
+        "Achieve",
+        "Accomplish"
+      ],
       "correct": 1,
       "explanation": "'Succeed' means to achieve a goal. 'Fail' means not to achieve (opposite)."
     },
@@ -31,7 +53,12 @@
       "id": 3,
       "section": "Verbal Reasoning",
       "question": "Complete the analogy: <strong>Shoe : Foot :: Glove : ?</strong>",
-      "options": ["Finger", "Hand", "Arm", "Wrist"],
+      "options": [
+        "Finger",
+        "Hand",
+        "Arm",
+        "Wrist"
+      ],
       "correct": 1,
       "explanation": "A shoe is worn on the foot. A glove is worn on the hand."
     },
@@ -39,7 +66,12 @@
       "id": 4,
       "section": "Verbal Reasoning",
       "question": "Find the odd one out:",
-      "options": ["Tiger", "Lion", "Elephant", "Leopard"],
+      "options": [
+        "Tiger",
+        "Lion",
+        "Elephant",
+        "Leopard"
+      ],
       "correct": 2,
       "explanation": "Tiger, Lion, and Leopard are carnivores (meat-eaters). Elephant is an herbivore (odd one)."
     },
@@ -47,7 +79,12 @@
       "id": 5,
       "section": "Verbal Reasoning",
       "question": "Synonym of <strong>IDLE</strong>:",
-      "options": ["Active", "Lazy", "Busy", "Working"],
+      "options": [
+        "Active",
+        "Lazy",
+        "Busy",
+        "Working"
+      ],
       "correct": 1,
       "explanation": "'Idle' means not active or not working. 'Lazy' has a similar meaning."
     },
@@ -55,7 +92,12 @@
       "id": 6,
       "section": "Verbal Reasoning",
       "question": "If JUMP is coded as KVNQ, then SKIP is coded as:",
-      "options": ["TLJQ", "TKIQ", "TLJR", "TKJQ"],
+      "options": [
+        "TLJQ",
+        "TKIQ",
+        "TLJR",
+        "TKJQ"
+      ],
       "correct": 0,
       "explanation": "Each letter shifts +1: J→K, U→V, M→N, P→Q. So S→T, K→L, I→J, P→Q = TLJQ."
     },
@@ -63,7 +105,12 @@
       "id": 7,
       "section": "Verbal Reasoning",
       "question": "Choose the correctly spelt word:",
-      "options": ["Definately", "Definitely", "Definitly", "Definatly"],
+      "options": [
+        "Definately",
+        "Definitely",
+        "Definitly",
+        "Definatly"
+      ],
       "correct": 1,
       "explanation": "The correct spelling is 'Definitely' with 'i' before 'te'."
     },
@@ -71,7 +118,12 @@
       "id": 8,
       "section": "Verbal Reasoning",
       "question": "Antonym of <strong>PUBLIC</strong>:",
-      "options": ["Open", "Private", "Common", "General"],
+      "options": [
+        "Open",
+        "Private",
+        "Common",
+        "General"
+      ],
       "correct": 1,
       "explanation": "'Public' means accessible to everyone. 'Private' means not for public access (opposite)."
     },
@@ -79,7 +131,12 @@
       "id": 9,
       "section": "Verbal Reasoning",
       "question": "Complete: <strong>Bread : Baker :: Clothes : ?</strong>",
-      "options": ["Tailor", "Farmer", "Cook", "Builder"],
+      "options": [
+        "Tailor",
+        "Farmer",
+        "Cook",
+        "Builder"
+      ],
       "correct": 0,
       "explanation": "A baker makes bread. A tailor makes clothes."
     },
@@ -87,7 +144,12 @@
       "id": 10,
       "section": "Verbal Reasoning",
       "question": "Synonym of <strong>CURIOUS</strong>:",
-      "options": ["Bored", "Inquisitive", "Uninterested", "Indifferent"],
+      "options": [
+        "Bored",
+        "Inquisitive",
+        "Uninterested",
+        "Indifferent"
+      ],
       "correct": 1,
       "explanation": "'Curious' means eager to know or learn. 'Inquisitive' has the same meaning."
     },
@@ -95,7 +157,12 @@
       "id": 11,
       "section": "Verbal Reasoning",
       "question": "Find the odd one out:",
-      "options": ["North", "South", "East", "Left"],
+      "options": [
+        "North",
+        "South",
+        "East",
+        "Left"
+      ],
       "correct": 3,
       "explanation": "North, South, and East are cardinal directions. Left is a relative direction (odd one)."
     },
@@ -103,7 +170,12 @@
       "id": 12,
       "section": "Verbal Reasoning",
       "question": "Antonym of <strong>IMPORT</strong>:",
-      "options": ["Bring", "Export", "Buy", "Purchase"],
+      "options": [
+        "Bring",
+        "Export",
+        "Buy",
+        "Purchase"
+      ],
       "correct": 1,
       "explanation": "'Import' means to bring goods into a country. 'Export' means to send goods out (opposite)."
     },
@@ -111,7 +183,12 @@
       "id": 13,
       "section": "Verbal Reasoning",
       "question": "Complete the analogy: <strong>Judge : Court :: Teacher : ?</strong>",
-      "options": ["Book", "Classroom", "Student", "School"],
+      "options": [
+        "Book",
+        "Classroom",
+        "Student",
+        "School"
+      ],
       "correct": 3,
       "explanation": "A judge works in a court. A teacher works in a school."
     },
@@ -119,7 +196,12 @@
       "id": 14,
       "section": "Verbal Reasoning",
       "question": "Synonym of <strong>FORBID</strong>:",
-      "options": ["Allow", "Prohibit", "Permit", "Enable"],
+      "options": [
+        "Allow",
+        "Prohibit",
+        "Permit",
+        "Enable"
+      ],
       "correct": 1,
       "explanation": "'Forbid' means to refuse to allow. 'Prohibit' has the same meaning."
     },
@@ -127,7 +209,12 @@
       "id": 15,
       "section": "Verbal Reasoning",
       "question": "Choose the word that best completes: <strong>Love : Hate :: Friend : ?</strong>",
-      "options": ["Ally", "Enemy", "Partner", "Companion"],
+      "options": [
+        "Ally",
+        "Enemy",
+        "Partner",
+        "Companion"
+      ],
       "correct": 1,
       "explanation": "Love and Hate are opposites. Friend and Enemy are also opposites."
     },
@@ -135,7 +222,12 @@
       "id": 16,
       "section": "Non-Verbal Reasoning",
       "question": "Which shape comes next: ☆★☆★ ?",
-      "options": ["☆", "★", "○", "●"],
+      "options": [
+        "☆",
+        "★",
+        "○",
+        "●"
+      ],
       "correct": 0,
       "explanation": "The pattern alternates: empty star, filled star. Next is empty (☆)."
     },
@@ -143,7 +235,12 @@
       "id": 17,
       "section": "Non-Verbal Reasoning",
       "question": "How many edges does a triangle have?",
-      "options": ["2", "3", "4", "5"],
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
       "correct": 1,
       "explanation": "A triangle has 3 edges (sides)."
     },
@@ -151,7 +248,12 @@
       "id": 18,
       "section": "Non-Verbal Reasoning",
       "question": "Mirror image of '5' is:",
-      "options": ["5", "2", "S", "Reversed 5"],
+      "options": [
+        "5",
+        "2",
+        "S",
+        "Reversed 5"
+      ],
       "correct": 3,
       "explanation": "The mirror image (left-right flip) of '5' looks like a backwards 5."
     },
@@ -159,7 +261,12 @@
       "id": 19,
       "section": "Non-Verbal Reasoning",
       "question": "Which 3D shape has no edges?",
-      "options": ["Cube", "Sphere", "Pyramid", "Cylinder"],
+      "options": [
+        "Cube",
+        "Sphere",
+        "Pyramid",
+        "Cylinder"
+      ],
       "correct": 1,
       "explanation": "A sphere is perfectly smooth with no edges or vertices."
     },
@@ -167,7 +274,12 @@
       "id": 20,
       "section": "Non-Verbal Reasoning",
       "question": "How many vertices does a cube have?",
-      "options": ["6", "8", "10", "12"],
+      "options": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
       "correct": 1,
       "explanation": "A cube has 8 vertices (corners)."
     },
@@ -175,7 +287,12 @@
       "id": 21,
       "section": "Non-Verbal Reasoning",
       "question": "If a pattern is: ▲▼▲▼, what comes next?",
-      "options": ["▲", "▼", "■", "□"],
+      "options": [
+        "▲",
+        "▼",
+        "■",
+        "□"
+      ],
       "correct": 0,
       "explanation": "The pattern alternates: upward triangle, downward triangle. Next is upward (▲)."
     },
@@ -183,7 +300,12 @@
       "id": 22,
       "section": "Non-Verbal Reasoning",
       "question": "How many sides does a heptagon have?",
-      "options": ["5", "6", "7", "8"],
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
       "correct": 2,
       "explanation": "A heptagon is a 7-sided polygon."
     },
@@ -191,7 +313,12 @@
       "id": 23,
       "section": "Non-Verbal Reasoning",
       "question": "Water image of 'W' is:",
-      "options": ["W", "M", "∩", "∪"],
+      "options": [
+        "W",
+        "M",
+        "∩",
+        "∪"
+      ],
       "correct": 1,
       "explanation": "Water image (vertical flip) of 'W' is 'M' (upside down W)."
     },
@@ -199,7 +326,12 @@
       "id": 24,
       "section": "Non-Verbal Reasoning",
       "question": "Which shape has exactly 4 sides?",
-      "options": ["Triangle", "Quadrilateral", "Pentagon", "Hexagon"],
+      "options": [
+        "Triangle",
+        "Quadrilateral",
+        "Pentagon",
+        "Hexagon"
+      ],
       "correct": 1,
       "explanation": "A quadrilateral is any shape with exactly 4 sides."
     },
@@ -207,7 +339,12 @@
       "id": 25,
       "section": "Non-Verbal Reasoning",
       "question": "How many lines of symmetry does an equilateral triangle have?",
-      "options": ["1", "2", "3", "4"],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
       "correct": 2,
       "explanation": "An equilateral triangle has 3 lines of symmetry (one through each vertex to opposite side)."
     },
@@ -215,7 +352,12 @@
       "id": 26,
       "section": "Non-Verbal Reasoning",
       "question": "If you rotate 'X' 90°, it looks like:",
-      "options": ["X", "+", "×", "÷"],
+      "options": [
+        "X",
+        "+",
+        "×",
+        "÷"
+      ],
       "correct": 0,
       "explanation": "'X' looks the same after 90° rotation (rotationally symmetrical every 90°)."
     },
@@ -223,7 +365,12 @@
       "id": 27,
       "section": "Non-Verbal Reasoning",
       "question": "Which shape can tile a floor with no gaps?",
-      "options": ["Circle", "Square", "Oval", "Star"],
+      "options": [
+        "Circle",
+        "Square",
+        "Oval",
+        "Star"
+      ],
       "correct": 1,
       "explanation": "Squares can tile perfectly with no gaps (tessellation). Circles leave gaps."
     },
@@ -231,7 +378,12 @@
       "id": 28,
       "section": "Non-Verbal Reasoning",
       "question": "How many faces does a tetrahedron have?",
-      "options": ["3", "4", "5", "6"],
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
       "correct": 1,
       "explanation": "A tetrahedron (triangular pyramid) has 4 triangular faces."
     },
@@ -239,7 +391,12 @@
       "id": 29,
       "section": "Non-Verbal Reasoning",
       "question": "Mirror image of 'J' is:",
-      "options": ["J", "⅃", "L", "Ⴑ"],
+      "options": [
+        "J",
+        "⅃",
+        "L",
+        "Ⴑ"
+      ],
       "correct": 1,
       "explanation": "The mirror image (left-right flip) of 'J' is '⅃' (reversed J)."
     },
@@ -247,7 +404,12 @@
       "id": 30,
       "section": "Non-Verbal Reasoning",
       "question": "Which figure completes the pattern: ◐◑◐◑ ?",
-      "options": ["◐", "◑", "○", "●"],
+      "options": [
+        "◐",
+        "◑",
+        "○",
+        "●"
+      ],
       "correct": 0,
       "explanation": "The pattern alternates: left-filled, right-filled. Next is left-filled (◐)."
     },
@@ -255,7 +417,12 @@
       "id": 31,
       "section": "Numerical Ability",
       "question": "What is 45% of 300?",
-      "options": ["125", "130", "135", "140"],
+      "options": [
+        "125",
+        "130",
+        "135",
+        "140"
+      ],
       "correct": 2,
       "explanation": "45% of 300 = (45/100) × 300 = 135."
     },
@@ -263,7 +430,12 @@
       "id": 32,
       "section": "Numerical Ability",
       "question": "If 11x = 121, what is x?",
-      "options": ["9", "10", "11", "12"],
+      "options": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
       "correct": 2,
       "explanation": "11x = 121, so x = 121 ÷ 11 = 11."
     },
@@ -271,7 +443,12 @@
       "id": 33,
       "section": "Numerical Ability",
       "question": "What is the next number: 100, 50, 25, 12.5, ?",
-      "options": ["6", "6.25", "7", "7.5"],
+      "options": [
+        "6",
+        "6.25",
+        "7",
+        "7.5"
+      ],
       "correct": 1,
       "explanation": "Each number is divided by 2: 100/2=50, 50/2=25, 25/2=12.5, 12.5/2=6.25."
     },
@@ -279,7 +456,12 @@
       "id": 34,
       "section": "Numerical Ability",
       "question": "What is 13 × 7?",
-      "options": ["81", "86", "91", "96"],
+      "options": [
+        "81",
+        "86",
+        "91",
+        "96"
+      ],
       "correct": 2,
       "explanation": "13 × 7 = 91."
     },
@@ -287,7 +469,12 @@
       "id": 35,
       "section": "Numerical Ability",
       "question": "If a phone costs ₹800 and is discounted 12.5%, what is the final price?",
-      "options": ["₹680", "₹690", "₹700", "₹710"],
+      "options": [
+        "₹680",
+        "₹690",
+        "₹700",
+        "₹710"
+      ],
       "correct": 2,
       "explanation": "12.5% of 800 = 100. Final price = 800 - 100 = ₹700."
     },
@@ -295,7 +482,12 @@
       "id": 36,
       "section": "Numerical Ability",
       "question": "What is the cube root of 27?",
-      "options": ["2", "3", "4", "5"],
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
       "correct": 1,
       "explanation": "∛27 = 3 because 3 × 3 × 3 = 27."
     },
@@ -303,7 +495,12 @@
       "id": 37,
       "section": "Numerical Ability",
       "question": "If 7x + 3 = 31, what is x?",
-      "options": ["2", "3", "4", "5"],
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
       "correct": 2,
       "explanation": "7x + 3 = 31, so 7x = 28, x = 4."
     },
@@ -311,7 +508,12 @@
       "id": 38,
       "section": "Numerical Ability",
       "question": "What is 75% of 400?",
-      "options": ["280", "290", "300", "310"],
+      "options": [
+        "280",
+        "290",
+        "300",
+        "310"
+      ],
       "correct": 2,
       "explanation": "75% of 400 = (75/100) × 400 = 300."
     },
@@ -319,7 +521,12 @@
       "id": 39,
       "section": "Numerical Ability",
       "question": "What comes next: 2, 6, 18, 54, ?",
-      "options": ["108", "126", "162", "180"],
+      "options": [
+        "108",
+        "126",
+        "162",
+        "180"
+      ],
       "correct": 2,
       "explanation": "Each number is multiplied by 3: 2×3=6, 6×3=18, 18×3=54, 54×3=162."
     },
@@ -327,7 +534,12 @@
       "id": 40,
       "section": "Numerical Ability",
       "question": "If a runner completes 5 km in 20 minutes, what is the speed in km/h?",
-      "options": ["12 km/h", "15 km/h", "18 km/h", "20 km/h"],
+      "options": [
+        "12 km/h",
+        "15 km/h",
+        "18 km/h",
+        "20 km/h"
+      ],
       "correct": 1,
       "explanation": "20 min = 1/3 hour. Speed = 5 ÷ (1/3) = 5 × 3 = 15 km/h."
     },
@@ -335,7 +547,12 @@
       "id": 41,
       "section": "Coding-Decoding",
       "question": "If DESK = 4519, then CHAIR = ?",
-      "options": ["381918", "38199", "381198", "38195"],
+      "options": [
+        "381918",
+        "38199",
+        "381198",
+        "38195"
+      ],
       "correct": 0,
       "explanation": "D=4, E=5, S=19, K=... wait, that doesn't match. Let me recalculate. Actually D=4, E=5, S=19 makes DESK=4519 (concatenated). C=3, H=8, A=1, I=9, R=18 → 381918."
     },
@@ -343,7 +560,12 @@
       "id": 42,
       "section": "Coding-Decoding",
       "question": "In a code, GOAL is written as HPBM. How is TEAM written?",
-      "options": ["UFBN", "UFBM", "TEBO", "UFAN"],
+      "options": [
+        "UFBN",
+        "UFBM",
+        "TEBO",
+        "UFAN"
+      ],
       "correct": 0,
       "explanation": "Each letter shifts +1: G→H, O→P, A→B, L→M. So T→U, E→F, A→B, M→N = UFBN."
     },
@@ -351,7 +573,12 @@
       "id": 43,
       "section": "Coding-Decoding",
       "question": "If RING = 18-9-14-7, then BELL = ?",
-      "options": ["2-5-12-12", "1-4-11-11", "3-6-13-13", "2-6-12-12"],
+      "options": [
+        "2-5-12-12",
+        "1-4-11-11",
+        "3-6-13-13",
+        "2-6-12-12"
+      ],
       "correct": 0,
       "explanation": "B=2, E=5, L=12, L=12. So BELL = 2-5-12-12."
     },
@@ -359,7 +586,12 @@
       "id": 44,
       "section": "Coding-Decoding",
       "question": "If UP is coded as VQ, then DOWN is coded as:",
-      "options": ["EPXO", "EPWO", "DPWO", "EQXO"],
+      "options": [
+        "EPXO",
+        "EPWO",
+        "DPWO",
+        "EQXO"
+      ],
       "correct": 0,
       "explanation": "Each letter shifts +1: U→V, P→Q. So D→E, O→P, W→X, N→O = EPXO."
     },
@@ -367,7 +599,12 @@
       "id": 45,
       "section": "Coding-Decoding",
       "question": "In a code, 321 means 'sky is clear', 654 means 'day is bright'. What is the code for 'is'?",
-      "options": ["2", "1", "Both have no common digit", "Cannot determine"],
+      "options": [
+        "2",
+        "1",
+        "Both have no common digit",
+        "Cannot determine"
+      ],
       "correct": 2,
       "explanation": "'is' appears in both but 321 and 654 have no common digits. Cannot determine from this alone."
     },
@@ -375,15 +612,25 @@
       "id": 46,
       "section": "Coding-Decoding",
       "question": "If A=1, B=2, C=3..., what is the sum of letters in 'RED'?",
-      "options": ["26", "27", "28", "29"],
-      "correct": 0,
-      "explanation": "R=18, E=5, D=4. Sum = 18 + 5 + 4 = 27. Wait, let me recalculate: 18+5=23, 23+4=27. That's option 1 which says 26. Let me check again: R=18, E=5, D=4 → 18+5+4=27. So the correct answer is 27, not 26. I'll use option 1 as 27."
+      "options": [
+        "26",
+        "27",
+        "28",
+        "29"
+      ],
+      "correct": 1,
+      "explanation": "R=18, E=5, D=4. Sum = 18 + 5 + 4 = 27."
     },
     {
       "id": 47,
       "section": "Coding-Decoding",
       "question": "If BIRD is written as 2-9-18-4, then FISH is written as:",
-      "options": ["6-9-19-8", "5-8-18-7", "7-10-20-9", "6-10-19-8"],
+      "options": [
+        "6-9-19-8",
+        "5-8-18-7",
+        "7-10-20-9",
+        "6-10-19-8"
+      ],
       "correct": 0,
       "explanation": "F=6, I=9, S=19, H=8. So FISH = 6-9-19-8."
     },
@@ -391,7 +638,12 @@
       "id": 48,
       "section": "Coding-Decoding",
       "question": "In a code, WIND = XJOE. What is BLOW?",
-      "options": ["CMPX", "CMPW", "BMPX", "CNPX"],
+      "options": [
+        "CMPX",
+        "CMPW",
+        "BMPX",
+        "CNPX"
+      ],
       "correct": 0,
       "explanation": "Each letter shifts +1: W→X, I→J, N→O, D→E. So B→C, L→M, O→P, W→X = CMPX."
     },
@@ -399,7 +651,12 @@
       "id": 49,
       "section": "Coding-Decoding",
       "question": "If 1=A, 26=Z, what letter is 10?",
-      "options": ["H", "I", "J", "K"],
+      "options": [
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
       "correct": 2,
       "explanation": "The 10th letter of the alphabet is J."
     },
@@ -407,7 +664,12 @@
       "id": 50,
       "section": "Coding-Decoding",
       "question": "If ROCK is coded as 18-15-3-11, then SAND is coded as:",
-      "options": ["19-1-14-4", "18-1-13-3", "20-2-15-5", "19-2-14-4"],
+      "options": [
+        "19-1-14-4",
+        "18-1-13-3",
+        "20-2-15-5",
+        "19-2-14-4"
+      ],
       "correct": 0,
       "explanation": "S=19, A=1, N=14, D=4. So SAND = 19-1-14-4."
     }

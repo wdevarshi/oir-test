@@ -5,61 +5,673 @@
   "totalQuestions": 50,
   "timeLimit": 1800,
   "sections": [
-    { "name": "Verbal Reasoning", "questionsCount": 15 },
-    { "name": "Non-Verbal Reasoning", "questionsCount": 15 },
-    { "name": "Numerical Ability", "questionsCount": 10 },
-    { "name": "Coding-Decoding", "questionsCount": 10 }
+    {
+      "name": "Verbal Reasoning",
+      "questionsCount": 15
+    },
+    {
+      "name": "Non-Verbal Reasoning",
+      "questionsCount": 15
+    },
+    {
+      "name": "Numerical Ability",
+      "questionsCount": 10
+    },
+    {
+      "name": "Coding-Decoding",
+      "questionsCount": 10
+    }
   ],
   "questions": [
-    {"id": 1, "section": "Verbal Reasoning", "question": "Synonym of <strong>EPHEMERAL</strong>:", "options": ["Permanent", "Temporary", "Eternal", "Lasting"], "correct": 1, "explanation": "'Ephemeral' means lasting for a very short time. 'Temporary' has a similar meaning."},
-    {"id": 2, "section": "Verbal Reasoning", "question": "Antonym of <strong>BENEVOLENT</strong>:", "options": ["Kind", "Malevolent", "Generous", "Charitable"], "correct": 1, "explanation": "'Benevolent' means kind and generous. 'Malevolent' means wishing harm (opposite)."},
-    {"id": 3, "section": "Verbal Reasoning", "question": "Complete the analogy: <strong>Numismatics : Coins :: Philately : ?</strong>", "options": ["Books", "Stamps", "Paintings", "Antiques"], "correct": 1, "explanation": "Numismatics is collecting coins. Philately is collecting stamps."},
-    {"id": 4, "section": "Verbal Reasoning", "question": "Find the odd one out:", "options": ["Sonata", "Symphony", "Concerto", "Sculpture"], "correct": 3, "explanation": "Sonata, Symphony, and Concerto are musical compositions. Sculpture is visual art (odd one)."},
-    {"id": 5, "section": "Verbal Reasoning", "question": "Synonym of <strong>CLANDESTINE</strong>:", "options": ["Open", "Secret", "Public", "Obvious"], "correct": 1, "explanation": "'Clandestine' means done in secret. 'Secret' has the same meaning."},
-    {"id": 6, "section": "Verbal Reasoning", "question": "If CHAMPION is coded as DIBNQJPO, then WARRIOR is coded as:", "options": ["XBSSJPS", "XBSSJOR", "WBSSJPS", "XCTTKPS"], "correct": 0, "explanation": "Each letter shifts +1: C→D, H→I, A→B, M→N, P→Q, I→J, O→P, N→O. So W→X, A→B, R→S, R→S, I→J, O→P, R→S = XBSSJPS."},
-    {"id": 7, "section": "Verbal Reasoning", "question": "Choose the correctly spelt word:", "options": ["Conscientious", "Consciencious", "Conscientous", "Conciencious"], "correct": 0, "explanation": "The correct spelling is 'Conscientious'."},
-    {"id": 8, "section": "Verbal Reasoning", "question": "Antonym of <strong>EXONERATE</strong>:", "options": ["Acquit", "Convict", "Release", "Pardon"], "correct": 1, "explanation": "'Exonerate' means to clear of blame. 'Convict' means to declare guilty (opposite)."},
-    {"id": 9, "section": "Verbal Reasoning", "question": "Complete: <strong>Herpetology : Reptiles :: Ichthyology : ?</strong>", "options": ["Birds", "Fish", "Mammals", "Amphibians"], "correct": 1, "explanation": "Herpetology is the study of reptiles. Ichthyology is the study of fish."},
-    {"id": 10, "section": "Verbal Reasoning", "question": "Synonym of <strong>VORACIOUS</strong>:", "options": ["Modest", "Greedy", "Satisfied", "Content"], "correct": 1, "explanation": "'Voracious' means wanting large quantities. 'Greedy' has a similar meaning."},
-    {"id": 11, "section": "Verbal Reasoning", "question": "Find the odd one out:", "options": ["Neutron", "Proton", "Electron", "Photon"], "correct": 3, "explanation": "Neutron, Proton, and Electron are subatomic particles of an atom. Photon is a particle of light (odd one)."},
-    {"id": 12, "section": "Verbal Reasoning", "question": "Antonym of <strong>PROLIFIC</strong>:", "options": ["Productive", "Unproductive", "Fruitful", "Creative"], "correct": 1, "explanation": "'Prolific' means producing much. 'Unproductive' means not producing (opposite)."},
-    {"id": 13, "section": "Verbal Reasoning", "question": "Complete the analogy: <strong>Numismatist : Coins :: Philatelist : ?</strong>", "options": ["Books", "Stamps", "Art", "Jewels"], "correct": 1, "explanation": "A numismatist collects coins. A philatelist collects stamps."},
-    {"id": 14, "section": "Verbal Reasoning", "question": "Synonym of <strong>IMPECCABLE</strong>:", "options": ["Flawed", "Flawless", "Average", "Mediocre"], "correct": 1, "explanation": "'Impeccable' means without fault. 'Flawless' has the same meaning."},
-    {"id": 15, "section": "Verbal Reasoning", "question": "Choose the word that best completes: <strong>Optimist : Hope :: Pessimist : ?</strong>", "options": ["Joy", "Despair", "Happiness", "Success"], "correct": 1, "explanation": "An optimist is characterized by hope. A pessimist is characterized by despair."},
-    {"id": 16, "section": "Non-Verbal Reasoning", "question": "How many squares on a 7×7 grid?", "options": ["120", "130", "140", "150"], "correct": 2, "explanation": "1×1:49, 2×2:36, 3×3:25, 4×4:16, 5×5:9, 6×6:4, 7×7:1. Total=49+36+25+16+9+4+1=140."},
-    {"id": 17, "section": "Non-Verbal Reasoning", "question": "How many triangles from 15 points (no 3 collinear)?", "options": ["435", "455", "465", "485"], "correct": 1, "explanation": "C(15,3) = 15×14×13/(3×2×1) = 455."},
-    {"id": 18, "section": "Non-Verbal Reasoning", "question": "The angle between clock hands at 8:20 is:", "options": ["125°", "130°", "135°", "140°"], "correct": 1, "explanation": "Hour at 8:20 = (8×30)+(20×0.5) = 250°. Minute at 20×6 = 120°. Difference = 250-120 = 130°."},
-    {"id": 19, "section": "Non-Verbal Reasoning", "question": "A painted cube (10×10×10) cut into 1000 cubes. How many have 0 painted faces?", "options": ["343", "480", "512", "600"], "correct": 2, "explanation": "Interior = (10-2)³ = 8³ = 512."},
-    {"id": 20, "section": "Non-Verbal Reasoning", "question": "How many vertices on a soccer ball (truncated icosahedron)?", "options": ["48", "56", "60", "64"], "correct": 2, "explanation": "A truncated icosahedron has 60 vertices."},
-    {"id": 21, "section": "Non-Verbal Reasoning", "question": "What comes next: A, C, F, J, O, ?", "options": ["T", "U", "V", "W"], "correct": 1, "explanation": "Gaps increase: +2, +3, +4, +5, +6. O(15)+6 = U(21)."},
-    {"id": 22, "section": "Non-Verbal Reasoning", "question": "How many rectangles on a 6×6 grid?", "options": ["400", "441", "484", "529"], "correct": 1, "explanation": "C(7,2)×C(7,2) = 21×21 = 441."},
-    {"id": 23, "section": "Non-Verbal Reasoning", "question": "A painted cube (10×10×10): how many have exactly 1 face painted?", "options": ["364", "384", "400", "416"], "correct": 1, "explanation": "Face-center cubes: (10-2)²=64 per face. 6×64 = 384."},
-    {"id": 24, "section": "Non-Verbal Reasoning", "question": "Which regular polygon has interior angle 156°?", "options": ["12-sided", "15-sided", "18-sided", "20-sided"], "correct": 1, "explanation": "156 = (n-2)×180/n. 156n = 180n-360. 24n=360. n=15."},
-    {"id": 25, "section": "Non-Verbal Reasoning", "question": "How many diagonals in a 25-sided polygon?", "options": ["265", "270", "275", "280"], "correct": 2, "explanation": "Diagonals = n(n-3)/2 = 25×22/2 = 275."},
-    {"id": 26, "section": "Non-Verbal Reasoning", "question": "The angle at 1:40 between clock hands is:", "options": ["175°", "180°", "185°", "190°"], "correct": 2, "explanation": "Hour at 1:40 = (1×30)+(40×0.5) = 50°. Minute at 40×6 = 240°. Difference = 240-50 = 190°. Smaller = 360-190=170°. Hmm, let me recalculate: difference = 190°. Smaller angle = 170°. None match exactly; closest is 185°."},
-    {"id": 27, "section": "Non-Verbal Reasoning", "question": "How many cubes visible from outside in a 6×6×6?", "options": ["152", "168", "176", "184"], "correct": 2, "explanation": "Total - interior = 216 - (6-2)³ = 216 - 64 = 152. Wait, let me recheck. Actually that's 152, which is option 0."},
-    {"id": 28, "section": "Non-Verbal Reasoning", "question": "Lines through 10 points (no 3 collinear)?", "options": ["40", "42", "45", "48"], "correct": 2, "explanation": "C(10,2) = 10×9/2 = 45 lines."},
-    {"id": 29, "section": "Non-Verbal Reasoning", "question": "How many regions are created by 5 lines (no 2 parallel, no 3 concurrent)?", "options": ["14", "15", "16", "17"], "correct": 2, "explanation": "Regions = 1 + n + n(n-1)/2 = 1 + 5 + 10 = 16."},
-    {"id": 30, "section": "Non-Verbal Reasoning", "question": "Pattern: 4, 12, 36, 108, ?", "options": ["216", "288", "324", "432"], "correct": 2, "explanation": "Each ×3: 4×3=12, 12×3=36, 36×3=108, 108×3=324."},
-    {"id": 31, "section": "Numerical Ability", "question": "What is 73% of 2200?", "options": ["1596", "1601", "1606", "1611"], "correct": 2, "explanation": "73% of 2200 = (73/100) × 2200 = 1606."},
-    {"id": 32, "section": "Numerical Ability", "question": "If 5^x = 3125, what is x?", "options": ["3", "4", "5", "6"], "correct": 2, "explanation": "5^5 = 3125. So x = 5."},
-    {"id": 33, "section": "Numerical Ability", "question": "What is the next: 1, 3, 7, 15, 31, 63, ?", "options": ["95", "111", "127", "135"], "correct": 2, "explanation": "Each = previous×2 + 1: 1×2+1=3, 3×2+1=7, 7×2+1=15, 15×2+1=31, 31×2+1=63, 63×2+1=127."},
-    {"id": 34, "section": "Numerical Ability", "question": "What is 156 × 8?", "options": ["1238", "1243", "1248", "1253"], "correct": 2, "explanation": "156 × 8 = 1248."},
-    {"id": 35, "section": "Numerical Ability", "question": "A sum triples in 12 years at SI. Rate?", "options": ["12.5%", "15%", "16⅔%", "20%"], "correct": 2, "explanation": "If triples, interest=2P. 2P=P×R×12/100. R=200/12=16⅔%."},
-    {"id": 36, "section": "Numerical Ability", "question": "What is √(1089)?", "options": ["31", "32", "33", "34"], "correct": 2, "explanation": "√1089 = 33 because 33×33 = 1089."},
-    {"id": 37, "section": "Numerical Ability", "question": "If x² - 11x + 30 = 0, the values of x are:", "options": ["3, 10", "5, 6", "2, 15", "4, 7"], "correct": 1, "explanation": "(x-5)(x-6)=0. So x=5 or x=6."},
-    {"id": 38, "section": "Numerical Ability", "question": "HCF of 252, 360, and 504?", "options": ["24", "30", "36", "42"], "correct": 2, "explanation": "252=2²×3²×7, 360=2³×3²×5, 504=2³×3²×7. HCF = 2²×3² = 36."},
-    {"id": 39, "section": "Numerical Ability", "question": "Sum of squares of first 10 natural numbers?", "options": ["355", "375", "385", "395"], "correct": 2, "explanation": "Sum = n(n+1)(2n+1)/6 = 10×11×21/6 = 2310/6 = 385."},
-    {"id": 40, "section": "Numerical Ability", "question": "Two pipes fill a tank in 15 and 20 hours. A drain empties in 30 hours. Time to fill when all open?", "options": ["10 hr", "12 hr", "15 hr", "18 hr"], "correct": 1, "explanation": "Rate = 1/15+1/20-1/30 = (4+3-2)/60 = 5/60 = 1/12. Time = 12 hours."},
-    {"id": 41, "section": "Coding-Decoding", "question": "If EDUCATION = 5-4-21-3-1-20-9-15-14, then KNOWLEDGE = ?", "options": ["11-14-15-23-12-5-4-7-5", "10-13-14-22-11-4-3-6-4", "12-15-16-24-13-6-5-8-6", "11-15-15-23-12-5-4-7-5"], "correct": 0, "explanation": "K=11, N=14, O=15, W=23, L=12, E=5, D=4, G=7, E=5. So KNOWLEDGE = 11-14-15-23-12-5-4-7-5."},
-    {"id": 42, "section": "Coding-Decoding", "question": "In a code, MISSION is written as NJTTJPO. How is VISION written?", "options": ["WJTJPO", "WJTJOP", "VJTJPO", "WKUKPO"], "correct": 0, "explanation": "Each shifts +1: M→N, I→J, S→T, S→T, I→J, O→P, N→O. So V→W, I→J, S→T, I→J, O→P, N→O = WJTJPO."},
-    {"id": 43, "section": "Coding-Decoding", "question": "If MARATHON = 13-1-18-1-20-8-15-14, then OLYMPICS = ?", "options": ["15-12-25-13-16-9-3-19", "14-11-24-12-15-8-2-18", "16-13-26-14-17-10-4-20", "15-13-25-13-16-9-3-19"], "correct": 0, "explanation": "O=15, L=12, Y=25, M=13, P=16, I=9, C=3, S=19. So OLYMPICS = 15-12-25-13-16-9-3-19."},
-    {"id": 44, "section": "Coding-Decoding", "question": "If ALPHA is coded as BMQIB, then OMEGA is coded as:", "options": ["PNFHB", "PNGHB", "OMFHB", "POGIB"], "correct": 0, "explanation": "Each shifts +1: A→B, L→M, P→Q, H→I, A→B. So O→P, M→N, E→F, G→H, A→B = PNFHB."},
-    {"id": 45, "section": "Coding-Decoding", "question": "Complex code: odd positions +1, even positions +2. BEST = ?", "options": ["CGTU", "CGUU", "CFTU", "CHTU"], "correct": 0, "explanation": "B(pos1, +1)=C, E(pos2, +2)=G, S(pos3, +1)=T, T(pos4, +2)=V. Hmm, that gives CGTV. Let me re-examine: CGTU is the first option. Close enough with possible variation."},
-    {"id": 46, "section": "Coding-Decoding", "question": "If A=1, B=2..., sum of letters in 'FORCE'?", "options": ["38", "40", "42", "44"], "correct": 2, "explanation": "F=6, O=15, R=18, C=3, E=5. Sum = 6+15+18+3+5 = 47. Hmm, none match. Let me recheck: 6+15=21, 21+18=39, 39+3=42, 42+5=47. Actually wait: 42+5=47, not 42. Going with 42 as the closest before adding E."},
-    {"id": 47, "section": "Coding-Decoding", "question": "If SATELLITE = 19-1-20-5-12-12-9-20-5, then UNIVERSE = ?", "options": ["21-14-9-22-5-18-19-5", "20-13-8-21-4-17-18-4", "22-15-10-23-6-19-20-6", "21-15-9-22-5-18-19-5"], "correct": 0, "explanation": "U=21, N=14, I=9, V=22, E=5, R=18, S=19, E=5. So UNIVERSE = 21-14-9-22-5-18-19-5."},
-    {"id": 48, "section": "Coding-Decoding", "question": "In a code, FUTURE = GVUVSF. What is PAST?", "options": ["QBTU", "QBST", "PAST", "QCTU"], "correct": 0, "explanation": "Each shifts +1: F→G, U→V, T→U, U→V, R→S, E→F. So P→Q, A→B, S→T, T→U = QBTU."},
-    {"id": 49, "section": "Coding-Decoding", "question": "If 1=A, 26=Z, what letter is 24?", "options": ["V", "W", "X", "Y"], "correct": 2, "explanation": "The 24th letter of the alphabet is X."},
-    {"id": 50, "section": "Coding-Decoding", "question": "If EXTRAORDINARY = 5-24-20-18-1-15-18-4-9-14-1-18-25, then MAGNIFICENT = ?", "options": ["13-1-7-14-9-6-9-3-5-14-20", "12-1-6-13-8-5-8-2-4-13-19", "14-2-8-15-10-7-10-4-6-15-21", "13-2-7-14-9-6-9-3-5-14-20"], "correct": 0, "explanation": "M=13, A=1, G=7, N=14, I=9, F=6, I=9, C=3, E=5, N=14, T=20. So MAGNIFICENT = 13-1-7-14-9-6-9-3-5-14-20."}
+    {
+      "id": 1,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>EPHEMERAL</strong>:",
+      "options": [
+        "Permanent",
+        "Temporary",
+        "Eternal",
+        "Lasting"
+      ],
+      "correct": 1,
+      "explanation": "'Ephemeral' means lasting for a very short time. 'Temporary' has a similar meaning."
+    },
+    {
+      "id": 2,
+      "section": "Verbal Reasoning",
+      "question": "Antonym of <strong>BENEVOLENT</strong>:",
+      "options": [
+        "Kind",
+        "Malevolent",
+        "Generous",
+        "Charitable"
+      ],
+      "correct": 1,
+      "explanation": "'Benevolent' means kind and generous. 'Malevolent' means wishing harm (opposite)."
+    },
+    {
+      "id": 3,
+      "section": "Verbal Reasoning",
+      "question": "Complete the analogy: <strong>Numismatics : Coins :: Philately : ?</strong>",
+      "options": [
+        "Books",
+        "Stamps",
+        "Paintings",
+        "Antiques"
+      ],
+      "correct": 1,
+      "explanation": "Numismatics is collecting coins. Philately is collecting stamps."
+    },
+    {
+      "id": 4,
+      "section": "Verbal Reasoning",
+      "question": "Find the odd one out:",
+      "options": [
+        "Sonata",
+        "Symphony",
+        "Concerto",
+        "Sculpture"
+      ],
+      "correct": 3,
+      "explanation": "Sonata, Symphony, and Concerto are musical compositions. Sculpture is visual art (odd one)."
+    },
+    {
+      "id": 5,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>CLANDESTINE</strong>:",
+      "options": [
+        "Open",
+        "Secret",
+        "Public",
+        "Obvious"
+      ],
+      "correct": 1,
+      "explanation": "'Clandestine' means done in secret. 'Secret' has the same meaning."
+    },
+    {
+      "id": 6,
+      "section": "Verbal Reasoning",
+      "question": "If CHAMPION is coded as DIBNQJPO, then WARRIOR is coded as:",
+      "options": [
+        "XBSSJPS",
+        "XBSSJOR",
+        "WBSSJPS",
+        "XCTTKPS"
+      ],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: C→D, H→I, A→B, M→N, P→Q, I→J, O→P, N→O. So W→X, A→B, R→S, R→S, I→J, O→P, R→S = XBSSJPS."
+    },
+    {
+      "id": 7,
+      "section": "Verbal Reasoning",
+      "question": "Choose the correctly spelt word:",
+      "options": [
+        "Conscientious",
+        "Consciencious",
+        "Conscientous",
+        "Conciencious"
+      ],
+      "correct": 0,
+      "explanation": "The correct spelling is 'Conscientious'."
+    },
+    {
+      "id": 8,
+      "section": "Verbal Reasoning",
+      "question": "Antonym of <strong>EXONERATE</strong>:",
+      "options": [
+        "Acquit",
+        "Convict",
+        "Release",
+        "Pardon"
+      ],
+      "correct": 1,
+      "explanation": "'Exonerate' means to clear of blame. 'Convict' means to declare guilty (opposite)."
+    },
+    {
+      "id": 9,
+      "section": "Verbal Reasoning",
+      "question": "Complete: <strong>Herpetology : Reptiles :: Ichthyology : ?</strong>",
+      "options": [
+        "Birds",
+        "Fish",
+        "Mammals",
+        "Amphibians"
+      ],
+      "correct": 1,
+      "explanation": "Herpetology is the study of reptiles. Ichthyology is the study of fish."
+    },
+    {
+      "id": 10,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>VORACIOUS</strong>:",
+      "options": [
+        "Modest",
+        "Greedy",
+        "Satisfied",
+        "Content"
+      ],
+      "correct": 1,
+      "explanation": "'Voracious' means wanting large quantities. 'Greedy' has a similar meaning."
+    },
+    {
+      "id": 11,
+      "section": "Verbal Reasoning",
+      "question": "Find the odd one out:",
+      "options": [
+        "Neutron",
+        "Proton",
+        "Electron",
+        "Photon"
+      ],
+      "correct": 3,
+      "explanation": "Neutron, Proton, and Electron are subatomic particles of an atom. Photon is a particle of light (odd one)."
+    },
+    {
+      "id": 12,
+      "section": "Verbal Reasoning",
+      "question": "Antonym of <strong>PROLIFIC</strong>:",
+      "options": [
+        "Productive",
+        "Unproductive",
+        "Fruitful",
+        "Creative"
+      ],
+      "correct": 1,
+      "explanation": "'Prolific' means producing much. 'Unproductive' means not producing (opposite)."
+    },
+    {
+      "id": 13,
+      "section": "Verbal Reasoning",
+      "question": "Complete the analogy: <strong>Numismatist : Coins :: Philatelist : ?</strong>",
+      "options": [
+        "Books",
+        "Stamps",
+        "Art",
+        "Jewels"
+      ],
+      "correct": 1,
+      "explanation": "A numismatist collects coins. A philatelist collects stamps."
+    },
+    {
+      "id": 14,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>IMPECCABLE</strong>:",
+      "options": [
+        "Flawed",
+        "Flawless",
+        "Average",
+        "Mediocre"
+      ],
+      "correct": 1,
+      "explanation": "'Impeccable' means without fault. 'Flawless' has the same meaning."
+    },
+    {
+      "id": 15,
+      "section": "Verbal Reasoning",
+      "question": "Choose the word that best completes: <strong>Optimist : Hope :: Pessimist : ?</strong>",
+      "options": [
+        "Joy",
+        "Despair",
+        "Happiness",
+        "Success"
+      ],
+      "correct": 1,
+      "explanation": "An optimist is characterized by hope. A pessimist is characterized by despair."
+    },
+    {
+      "id": 16,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many squares on a 7×7 grid?",
+      "options": [
+        "120",
+        "130",
+        "140",
+        "150"
+      ],
+      "correct": 2,
+      "explanation": "1×1:49, 2×2:36, 3×3:25, 4×4:16, 5×5:9, 6×6:4, 7×7:1. Total=49+36+25+16+9+4+1=140."
+    },
+    {
+      "id": 17,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many triangles from 15 points (no 3 collinear)?",
+      "options": [
+        "435",
+        "455",
+        "465",
+        "485"
+      ],
+      "correct": 1,
+      "explanation": "C(15,3) = 15×14×13/(3×2×1) = 455."
+    },
+    {
+      "id": 18,
+      "section": "Non-Verbal Reasoning",
+      "question": "The angle between clock hands at 8:20 is:",
+      "options": [
+        "125°",
+        "130°",
+        "135°",
+        "140°"
+      ],
+      "correct": 1,
+      "explanation": "Hour at 8:20 = (8×30)+(20×0.5) = 250°. Minute at 20×6 = 120°. Difference = 250-120 = 130°."
+    },
+    {
+      "id": 19,
+      "section": "Non-Verbal Reasoning",
+      "question": "A painted cube (10×10×10) cut into 1000 cubes. How many have 0 painted faces?",
+      "options": [
+        "343",
+        "480",
+        "512",
+        "600"
+      ],
+      "correct": 2,
+      "explanation": "Interior = (10-2)³ = 8³ = 512."
+    },
+    {
+      "id": 20,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many vertices on a soccer ball (truncated icosahedron)?",
+      "options": [
+        "48",
+        "56",
+        "60",
+        "64"
+      ],
+      "correct": 2,
+      "explanation": "A truncated icosahedron has 60 vertices."
+    },
+    {
+      "id": 21,
+      "section": "Non-Verbal Reasoning",
+      "question": "What comes next: A, C, F, J, O, ?",
+      "options": [
+        "T",
+        "U",
+        "V",
+        "W"
+      ],
+      "correct": 1,
+      "explanation": "Gaps increase: +2, +3, +4, +5, +6. O(15)+6 = U(21)."
+    },
+    {
+      "id": 22,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many rectangles on a 6×6 grid?",
+      "options": [
+        "400",
+        "441",
+        "484",
+        "529"
+      ],
+      "correct": 1,
+      "explanation": "C(7,2)×C(7,2) = 21×21 = 441."
+    },
+    {
+      "id": 23,
+      "section": "Non-Verbal Reasoning",
+      "question": "A painted cube (10×10×10): how many have exactly 1 face painted?",
+      "options": [
+        "364",
+        "384",
+        "400",
+        "416"
+      ],
+      "correct": 1,
+      "explanation": "Face-center cubes: (10-2)²=64 per face. 6×64 = 384."
+    },
+    {
+      "id": 24,
+      "section": "Non-Verbal Reasoning",
+      "question": "Which regular polygon has interior angle 156°?",
+      "options": [
+        "12-sided",
+        "15-sided",
+        "18-sided",
+        "20-sided"
+      ],
+      "correct": 1,
+      "explanation": "156 = (n-2)×180/n. 156n = 180n-360. 24n=360. n=15."
+    },
+    {
+      "id": 25,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many diagonals in a 25-sided polygon?",
+      "options": [
+        "265",
+        "270",
+        "275",
+        "280"
+      ],
+      "correct": 2,
+      "explanation": "Diagonals = n(n-3)/2 = 25×22/2 = 275."
+    },
+    {
+      "id": 26,
+      "section": "Non-Verbal Reasoning",
+      "question": "The angle at 1:40 between clock hands is:",
+      "options": [
+        "170°",
+        "175°",
+        "180°",
+        "185°"
+      ],
+      "correct": 0,
+      "explanation": "Hour hand at 1:40 = (1×30) + (40×0.5) = 50°. Minute hand at 40×6 = 240°. Difference = 240 - 50 = 190°. Smaller angle = 360 - 190 = 170°."
+    },
+    {
+      "id": 27,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many cubes visible from outside in a 6×6×6?",
+      "options": [
+        "152",
+        "168",
+        "176",
+        "184"
+      ],
+      "correct": 0,
+      "explanation": "Total cubes = 6³ = 216. Interior (hidden) cubes = (6-2)³ = 4³ = 64. Visible cubes = 216 - 64 = 152."
+    },
+    {
+      "id": 28,
+      "section": "Non-Verbal Reasoning",
+      "question": "Lines through 10 points (no 3 collinear)?",
+      "options": [
+        "40",
+        "42",
+        "45",
+        "48"
+      ],
+      "correct": 2,
+      "explanation": "C(10,2) = 10×9/2 = 45 lines."
+    },
+    {
+      "id": 29,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many regions are created by 5 lines (no 2 parallel, no 3 concurrent)?",
+      "options": [
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "correct": 2,
+      "explanation": "Regions = 1 + n + n(n-1)/2 = 1 + 5 + 10 = 16."
+    },
+    {
+      "id": 30,
+      "section": "Non-Verbal Reasoning",
+      "question": "Pattern: 4, 12, 36, 108, ?",
+      "options": [
+        "216",
+        "288",
+        "324",
+        "432"
+      ],
+      "correct": 2,
+      "explanation": "Each ×3: 4×3=12, 12×3=36, 36×3=108, 108×3=324."
+    },
+    {
+      "id": 31,
+      "section": "Numerical Ability",
+      "question": "What is 73% of 2200?",
+      "options": [
+        "1596",
+        "1601",
+        "1606",
+        "1611"
+      ],
+      "correct": 2,
+      "explanation": "73% of 2200 = (73/100) × 2200 = 1606."
+    },
+    {
+      "id": 32,
+      "section": "Numerical Ability",
+      "question": "If 5^x = 3125, what is x?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 2,
+      "explanation": "5^5 = 3125. So x = 5."
+    },
+    {
+      "id": 33,
+      "section": "Numerical Ability",
+      "question": "What is the next: 1, 3, 7, 15, 31, 63, ?",
+      "options": [
+        "95",
+        "111",
+        "127",
+        "135"
+      ],
+      "correct": 2,
+      "explanation": "Each = previous×2 + 1: 1×2+1=3, 3×2+1=7, 7×2+1=15, 15×2+1=31, 31×2+1=63, 63×2+1=127."
+    },
+    {
+      "id": 34,
+      "section": "Numerical Ability",
+      "question": "What is 156 × 8?",
+      "options": [
+        "1238",
+        "1243",
+        "1248",
+        "1253"
+      ],
+      "correct": 2,
+      "explanation": "156 × 8 = 1248."
+    },
+    {
+      "id": 35,
+      "section": "Numerical Ability",
+      "question": "A sum triples in 12 years at SI. Rate?",
+      "options": [
+        "12.5%",
+        "15%",
+        "16⅔%",
+        "20%"
+      ],
+      "correct": 2,
+      "explanation": "If triples, interest=2P. 2P=P×R×12/100. R=200/12=16⅔%."
+    },
+    {
+      "id": 36,
+      "section": "Numerical Ability",
+      "question": "What is √(1089)?",
+      "options": [
+        "31",
+        "32",
+        "33",
+        "34"
+      ],
+      "correct": 2,
+      "explanation": "√1089 = 33 because 33×33 = 1089."
+    },
+    {
+      "id": 37,
+      "section": "Numerical Ability",
+      "question": "If x² - 11x + 30 = 0, the values of x are:",
+      "options": [
+        "3, 10",
+        "5, 6",
+        "2, 15",
+        "4, 7"
+      ],
+      "correct": 1,
+      "explanation": "(x-5)(x-6)=0. So x=5 or x=6."
+    },
+    {
+      "id": 38,
+      "section": "Numerical Ability",
+      "question": "HCF of 252, 360, and 504?",
+      "options": [
+        "24",
+        "30",
+        "36",
+        "42"
+      ],
+      "correct": 2,
+      "explanation": "252=2²×3²×7, 360=2³×3²×5, 504=2³×3²×7. HCF = 2²×3² = 36."
+    },
+    {
+      "id": 39,
+      "section": "Numerical Ability",
+      "question": "Sum of squares of first 10 natural numbers?",
+      "options": [
+        "355",
+        "375",
+        "385",
+        "395"
+      ],
+      "correct": 2,
+      "explanation": "Sum = n(n+1)(2n+1)/6 = 10×11×21/6 = 2310/6 = 385."
+    },
+    {
+      "id": 40,
+      "section": "Numerical Ability",
+      "question": "Two pipes fill a tank in 15 and 20 hours. A drain empties in 30 hours. Time to fill when all open?",
+      "options": [
+        "10 hr",
+        "12 hr",
+        "15 hr",
+        "18 hr"
+      ],
+      "correct": 1,
+      "explanation": "Rate = 1/15+1/20-1/30 = (4+3-2)/60 = 5/60 = 1/12. Time = 12 hours."
+    },
+    {
+      "id": 41,
+      "section": "Coding-Decoding",
+      "question": "If EDUCATION = 5-4-21-3-1-20-9-15-14, then KNOWLEDGE = ?",
+      "options": [
+        "11-14-15-23-12-5-4-7-5",
+        "10-13-14-22-11-4-3-6-4",
+        "12-15-16-24-13-6-5-8-6",
+        "11-15-15-23-12-5-4-7-5"
+      ],
+      "correct": 0,
+      "explanation": "K=11, N=14, O=15, W=23, L=12, E=5, D=4, G=7, E=5. So KNOWLEDGE = 11-14-15-23-12-5-4-7-5."
+    },
+    {
+      "id": 42,
+      "section": "Coding-Decoding",
+      "question": "In a code, MISSION is written as NJTTJPO. How is VISION written?",
+      "options": [
+        "WJTJPO",
+        "WJTJOP",
+        "VJTJPO",
+        "WKUKPO"
+      ],
+      "correct": 0,
+      "explanation": "Each shifts +1: M→N, I→J, S→T, S→T, I→J, O→P, N→O. So V→W, I→J, S→T, I→J, O→P, N→O = WJTJPO."
+    },
+    {
+      "id": 43,
+      "section": "Coding-Decoding",
+      "question": "If MARATHON = 13-1-18-1-20-8-15-14, then OLYMPICS = ?",
+      "options": [
+        "15-12-25-13-16-9-3-19",
+        "14-11-24-12-15-8-2-18",
+        "16-13-26-14-17-10-4-20",
+        "15-13-25-13-16-9-3-19"
+      ],
+      "correct": 0,
+      "explanation": "O=15, L=12, Y=25, M=13, P=16, I=9, C=3, S=19. So OLYMPICS = 15-12-25-13-16-9-3-19."
+    },
+    {
+      "id": 44,
+      "section": "Coding-Decoding",
+      "question": "If ALPHA is coded as BMQIB, then OMEGA is coded as:",
+      "options": [
+        "PNFHB",
+        "PNGHB",
+        "OMFHB",
+        "POGIB"
+      ],
+      "correct": 0,
+      "explanation": "Each shifts +1: A→B, L→M, P→Q, H→I, A→B. So O→P, M→N, E→F, G→H, A→B = PNFHB."
+    },
+    {
+      "id": 45,
+      "section": "Coding-Decoding",
+      "question": "Complex code: odd positions +1, even positions +2. BEST = ?",
+      "options": [
+        "CGTV",
+        "CGUU",
+        "CFTU",
+        "CHTU"
+      ],
+      "correct": 0,
+      "explanation": "Odd positions +1, even positions +2: B(pos1,+1)=C, E(pos2,+2)=G, S(pos3,+1)=T, T(pos4,+2)=V → CGTV."
+    },
+    {
+      "id": 46,
+      "section": "Coding-Decoding",
+      "question": "If A=1, B=2..., sum of letters in 'FORCE'?",
+      "options": [
+        "45",
+        "47",
+        "49",
+        "51"
+      ],
+      "correct": 1,
+      "explanation": "F=6, O=15, R=18, C=3, E=5. Sum = 6 + 15 + 18 + 3 + 5 = 47."
+    },
+    {
+      "id": 47,
+      "section": "Coding-Decoding",
+      "question": "If SATELLITE = 19-1-20-5-12-12-9-20-5, then UNIVERSE = ?",
+      "options": [
+        "21-14-9-22-5-18-19-5",
+        "20-13-8-21-4-17-18-4",
+        "22-15-10-23-6-19-20-6",
+        "21-15-9-22-5-18-19-5"
+      ],
+      "correct": 0,
+      "explanation": "U=21, N=14, I=9, V=22, E=5, R=18, S=19, E=5. So UNIVERSE = 21-14-9-22-5-18-19-5."
+    },
+    {
+      "id": 48,
+      "section": "Coding-Decoding",
+      "question": "In a code, FUTURE = GVUVSF. What is PAST?",
+      "options": [
+        "QBTU",
+        "QBST",
+        "PAST",
+        "QCTU"
+      ],
+      "correct": 0,
+      "explanation": "Each shifts +1: F→G, U→V, T→U, U→V, R→S, E→F. So P→Q, A→B, S→T, T→U = QBTU."
+    },
+    {
+      "id": 49,
+      "section": "Coding-Decoding",
+      "question": "If 1=A, 26=Z, what letter is 24?",
+      "options": [
+        "V",
+        "W",
+        "X",
+        "Y"
+      ],
+      "correct": 2,
+      "explanation": "The 24th letter of the alphabet is X."
+    },
+    {
+      "id": 50,
+      "section": "Coding-Decoding",
+      "question": "If EXTRAORDINARY = 5-24-20-18-1-15-18-4-9-14-1-18-25, then MAGNIFICENT = ?",
+      "options": [
+        "13-1-7-14-9-6-9-3-5-14-20",
+        "12-1-6-13-8-5-8-2-4-13-19",
+        "14-2-8-15-10-7-10-4-6-15-21",
+        "13-2-7-14-9-6-9-3-5-14-20"
+      ],
+      "correct": 0,
+      "explanation": "M=13, A=1, G=7, N=14, I=9, F=6, I=9, C=3, E=5, N=14, T=20. So MAGNIFICENT = 13-1-7-14-9-6-9-3-5-14-20."
+    }
   ]
 }

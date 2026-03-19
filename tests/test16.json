@@ -5,61 +5,673 @@
   "totalQuestions": 50,
   "timeLimit": 1800,
   "sections": [
-    { "name": "Verbal Reasoning", "questionsCount": 15 },
-    { "name": "Non-Verbal Reasoning", "questionsCount": 15 },
-    { "name": "Numerical Ability", "questionsCount": 10 },
-    { "name": "Coding-Decoding", "questionsCount": 10 }
+    {
+      "name": "Verbal Reasoning",
+      "questionsCount": 15
+    },
+    {
+      "name": "Non-Verbal Reasoning",
+      "questionsCount": 15
+    },
+    {
+      "name": "Numerical Ability",
+      "questionsCount": 10
+    },
+    {
+      "name": "Coding-Decoding",
+      "questionsCount": 10
+    }
   ],
   "questions": [
-    {"id": 1, "section": "Verbal Reasoning", "question": "Synonym of <strong>AMBIGUOUS</strong>:", "options": ["Clear", "Vague", "Precise", "Definite"], "correct": 1, "explanation": "'Ambiguous' means open to more than one interpretation. 'Vague' has a similar meaning."},
-    {"id": 2, "section": "Verbal Reasoning", "question": "Antonym of <strong>ELOQUENT</strong>:", "options": ["Fluent", "Inarticulate", "Expressive", "Persuasive"], "correct": 1, "explanation": "'Eloquent' means fluent and persuasive in speech. 'Inarticulate' means unable to express clearly (opposite)."},
-    {"id": 3, "section": "Verbal Reasoning", "question": "Complete the analogy: <strong>Constitution : Country :: Charter : ?</strong>", "options": ["Army", "Organization", "Government", "State"], "correct": 1, "explanation": "A constitution governs a country. A charter governs an organization."},
-    {"id": 4, "section": "Verbal Reasoning", "question": "Find the odd one out:", "options": ["Democracy", "Monarchy", "Republic", "Parliament"], "correct": 3, "explanation": "Democracy, Monarchy, and Republic are forms of government. Parliament is a legislative body (odd one)."},
-    {"id": 5, "section": "Verbal Reasoning", "question": "Synonym of <strong>INEVITABLE</strong>:", "options": ["Avoidable", "Unavoidable", "Optional", "Possible"], "correct": 1, "explanation": "'Inevitable' means certain to happen. 'Unavoidable' has the same meaning."},
-    {"id": 6, "section": "Verbal Reasoning", "question": "If STRATEGY is coded as TUSBUFHZ, then TACTICS is coded as:", "options": ["UBDUJDT", "UBDUJDS", "TBDUJDT", "UCEVJET"], "correct": 0, "explanation": "Each letter shifts +1: S→T, T→U, R→S, A→B, T→U, E→F, G→H, Y→Z. So T→U, A→B, C→D, T→U, I→J, C→D, S→T = UBDUJDT."},
-    {"id": 7, "section": "Verbal Reasoning", "question": "Choose the correctly spelt word:", "options": ["Beaurocracy", "Bureaucracy", "Burocracy", "Beurocracy"], "correct": 1, "explanation": "The correct spelling is 'Bureaucracy'."},
-    {"id": 8, "section": "Verbal Reasoning", "question": "Antonym of <strong>PROSPERITY</strong>:", "options": ["Wealth", "Adversity", "Success", "Fortune"], "correct": 1, "explanation": "'Prosperity' means the state of being successful. 'Adversity' means difficulties or misfortune (opposite)."},
-    {"id": 9, "section": "Verbal Reasoning", "question": "Complete: <strong>Architect : Blueprint :: Cartographer : ?</strong>", "options": ["Globe", "Map", "Compass", "Atlas"], "correct": 1, "explanation": "An architect creates a blueprint. A cartographer creates a map."},
-    {"id": 10, "section": "Verbal Reasoning", "question": "Synonym of <strong>CANDID</strong>:", "options": ["Dishonest", "Frank", "Secretive", "Deceitful"], "correct": 1, "explanation": "'Candid' means truthful and straightforward. 'Frank' has the same meaning."},
-    {"id": 11, "section": "Verbal Reasoning", "question": "Find the odd one out:", "options": ["Sonnet", "Haiku", "Novel", "Limerick"], "correct": 2, "explanation": "Sonnet, Haiku, and Limerick are forms of poetry. Novel is prose (odd one)."},
-    {"id": 12, "section": "Verbal Reasoning", "question": "Antonym of <strong>OPTIMISTIC</strong>:", "options": ["Hopeful", "Pessimistic", "Positive", "Confident"], "correct": 1, "explanation": "'Optimistic' means hopeful about the future. 'Pessimistic' means expecting the worst (opposite)."},
-    {"id": 13, "section": "Verbal Reasoning", "question": "Complete the analogy: <strong>Stethoscope : Doctor :: Chisel : ?</strong>", "options": ["Artist", "Sculptor", "Carpenter", "Mason"], "correct": 1, "explanation": "A doctor uses a stethoscope. A sculptor uses a chisel."},
-    {"id": 14, "section": "Verbal Reasoning", "question": "Synonym of <strong>MEAGER</strong>:", "options": ["Plentiful", "Scanty", "Generous", "Ample"], "correct": 1, "explanation": "'Meager' means lacking in quantity. 'Scanty' has the same meaning."},
-    {"id": 15, "section": "Verbal Reasoning", "question": "Choose the word that best completes: <strong>Shallow : Deep :: Narrow : ?</strong>", "options": ["Thin", "Wide", "Slim", "Small"], "correct": 1, "explanation": "Shallow and Deep are opposites. Narrow and Wide are also opposites."},
-    {"id": 16, "section": "Non-Verbal Reasoning", "question": "What is the sum of exterior angles of any polygon?", "options": ["180°", "270°", "360°", "Depends on polygon"], "correct": 2, "explanation": "The sum of exterior angles of any convex polygon is always 360°."},
-    {"id": 17, "section": "Non-Verbal Reasoning", "question": "If a cube is painted and cut into 125 cubes (5×5×5), how many have exactly 2 faces painted?", "options": ["24", "32", "36", "40"], "correct": 2, "explanation": "Edge cubes (not corners): each edge has (5-2)=3 such cubes. 12 edges × 3 = 36."},
-    {"id": 18, "section": "Non-Verbal Reasoning", "question": "How many triangles in a figure with a triangle divided by 2 lines from each vertex to opposite side?", "options": ["6", "8", "10", "12"], "correct": 0, "explanation": "A triangle with all 3 medians creates 6 smaller triangles."},
-    {"id": 19, "section": "Non-Verbal Reasoning", "question": "For a tetrahedron, V - E + F = ?", "options": ["0", "1", "2", "3"], "correct": 2, "explanation": "Tetrahedron: V=4, E=6, F=4. 4-6+4 = 2 (Euler's formula)."},
-    {"id": 20, "section": "Non-Verbal Reasoning", "question": "How many vertices does an icosahedron have?", "options": ["8", "10", "12", "14"], "correct": 2, "explanation": "An icosahedron has 12 vertices."},
-    {"id": 21, "section": "Non-Verbal Reasoning", "question": "What comes next in binary: 1, 10, 11, 100, 101, ?", "options": ["110", "111", "1000", "200"], "correct": 0, "explanation": "These are binary representations of 1,2,3,4,5. Next is 6 = 110 in binary."},
-    {"id": 22, "section": "Non-Verbal Reasoning", "question": "If a cube is painted and cut into 216 cubes (6×6×6), how many have 0 faces painted?", "options": ["27", "36", "48", "64"], "correct": 3, "explanation": "Interior cubes = (6-2)³ = 4³ = 64."},
-    {"id": 23, "section": "Non-Verbal Reasoning", "question": "How many squares can be formed on a 4×4 grid?", "options": ["16", "20", "25", "30"], "correct": 3, "explanation": "1×1:16, 2×2:9, 3×3:4, 4×4:1. Total = 16+9+4+1 = 30."},
-    {"id": 24, "section": "Non-Verbal Reasoning", "question": "Which regular polygon tessellates (tiles a plane alone)?", "options": ["Pentagon", "Hexagon", "Octagon", "Heptagon"], "correct": 1, "explanation": "Only equilateral triangles, squares, and regular hexagons can tessellate a plane alone."},
-    {"id": 25, "section": "Non-Verbal Reasoning", "question": "How many diagonals does a 12-sided polygon have?", "options": ["48", "50", "52", "54"], "correct": 3, "explanation": "Diagonals = n(n-3)/2 = 12(12-3)/2 = 12×9/2 = 54."},
-    {"id": 26, "section": "Non-Verbal Reasoning", "question": "The angle between the minute and hour hands at 2:30 is:", "options": ["95°", "100°", "105°", "110°"], "correct": 2, "explanation": "At 2:30, hour hand at 75° (2.5×30), minute at 180°. Difference = 180-75 = 105°."},
-    {"id": 27, "section": "Non-Verbal Reasoning", "question": "What is the interior angle of a regular 15-sided polygon?", "options": ["150°", "152°", "156°", "160°"], "correct": 2, "explanation": "Interior angle = (n-2)×180/n = (15-2)×180/15 = 2340/15 = 156°."},
-    {"id": 28, "section": "Non-Verbal Reasoning", "question": "How many rectangles can be formed on a 3×3 grid?", "options": ["30", "36", "40", "42"], "correct": 1, "explanation": "Choose 2 of 4 horizontal lines × 2 of 4 vertical lines = C(4,2)×C(4,2) = 6×6 = 36."},
-    {"id": 29, "section": "Non-Verbal Reasoning", "question": "Mirror image of 'W' is:", "options": ["W", "M", "Reversed W", "E"], "correct": 0, "explanation": "'W' is horizontally symmetrical, so its mirror image looks the same."},
-    {"id": 30, "section": "Non-Verbal Reasoning", "question": "Which pattern: 2, 6, 14, 30, ?", "options": ["56", "60", "62", "66"], "correct": 2, "explanation": "Each = previous×2 + 2: 2×2+2=6, 6×2+2=14, 14×2+2=30, 30×2+2=62."},
-    {"id": 31, "section": "Numerical Ability", "question": "What is 28% of 1250?", "options": ["340", "345", "350", "355"], "correct": 2, "explanation": "28% of 1250 = (28/100) × 1250 = 350."},
-    {"id": 32, "section": "Numerical Ability", "question": "If x² + x = 42, what is the positive value of x?", "options": ["5", "6", "7", "8"], "correct": 1, "explanation": "x²+x-42=0. (x+7)(x-6)=0. x=-7 or x=6. Positive: 6."},
-    {"id": 33, "section": "Numerical Ability", "question": "What is the next: 2, 6, 18, 54, 162, ?", "options": ["324", "486", "512", "648"], "correct": 1, "explanation": "Each ×3: 2×3=6, 6×3=18, 18×3=54, 54×3=162, 162×3=486."},
-    {"id": 34, "section": "Numerical Ability", "question": "What is 67 × 9?", "options": ["593", "598", "603", "608"], "correct": 2, "explanation": "67 × 9 = 603."},
-    {"id": 35, "section": "Numerical Ability", "question": "A person invests ₹8000 at 5% SI. Interest after 3 years?", "options": ["₹1000", "₹1100", "₹1200", "₹1300"], "correct": 2, "explanation": "SI = PRT/100 = 8000×5×3/100 = ₹1200."},
-    {"id": 36, "section": "Numerical Ability", "question": "What is √(529)?", "options": ["21", "22", "23", "24"], "correct": 2, "explanation": "√529 = 23 because 23×23 = 529."},
-    {"id": 37, "section": "Numerical Ability", "question": "If 3x² - 12 = 0, what is the positive value of x?", "options": ["1", "2", "3", "4"], "correct": 1, "explanation": "3x²=12, x²=4, x=±2. Positive: 2."},
-    {"id": 38, "section": "Numerical Ability", "question": "What is 143% of 200?", "options": ["276", "281", "286", "291"], "correct": 2, "explanation": "143% of 200 = (143/100) × 200 = 286."},
-    {"id": 39, "section": "Numerical Ability", "question": "What comes next: 1, 3, 6, 10, 15, 21, ?", "options": ["25", "27", "28", "30"], "correct": 2, "explanation": "These are triangular numbers: differences are 2,3,4,5,6,7. So 21+7=28."},
-    {"id": 40, "section": "Numerical Ability", "question": "A and B together finish in 12 days. A alone in 20 days. B alone in?", "options": ["25 days", "28 days", "30 days", "32 days"], "correct": 2, "explanation": "1/12 - 1/20 = (5-3)/60 = 2/60 = 1/30. B alone = 30 days."},
-    {"id": 41, "section": "Coding-Decoding", "question": "If DEFENSE = 4-5-6-5-14-19-5, then OFFENSE = ?", "options": ["15-6-6-5-14-19-5", "14-5-5-4-13-18-4", "16-7-7-6-15-20-6", "15-7-6-5-14-19-5"], "correct": 0, "explanation": "O=15, F=6, F=6, E=5, N=14, S=19, E=5. So OFFENSE = 15-6-6-5-14-19-5."},
-    {"id": 42, "section": "Coding-Decoding", "question": "In a code, ANCHOR is written as BODIPS. How is BRIDGE written?", "options": ["CSJEHF", "CSJEGF", "BSJEHF", "CTKEHF"], "correct": 0, "explanation": "Each letter shifts +1: A→B, N→O, C→D, H→I, O→P, R→S. So B→C, R→S, I→J, D→E, G→H, E→F = CSJEHF."},
-    {"id": 43, "section": "Coding-Decoding", "question": "If LONDON = 12-15-14-4-15-14, then PARIS = ?", "options": ["16-1-18-9-19", "15-1-17-8-18", "17-2-19-10-20", "16-2-18-9-19"], "correct": 0, "explanation": "P=16, A=1, R=18, I=9, S=19. So PARIS = 16-1-18-9-19."},
-    {"id": 44, "section": "Coding-Decoding", "question": "If LONG is coded as MPOH, then SHORT is coded as:", "options": ["TIPSU", "TIPST", "SIPSU", "TJQSU"], "correct": 0, "explanation": "Each letter shifts +1: L→M, O→P, N→O, G→H. So S→T, H→I, O→P, R→S, T→U = TIPSU."},
-    {"id": 45, "section": "Coding-Decoding", "question": "In a code: 'cat dog' = XY, 'dog rat' = YZ, 'rat cat' = ZX, 'cat bird' = XW. What is 'bird'?", "options": ["W", "X", "Y", "Z"], "correct": 0, "explanation": "cat=X (appears in XY and ZX), dog=Y (XY and YZ), rat=Z (YZ and ZX). 'cat bird'=XW. cat=X, so bird=W."},
-    {"id": 46, "section": "Coding-Decoding", "question": "If A=1, B=2..., what is the sum of all vowels (A,E,I,O,U)?", "options": ["51", "55", "60", "65"], "correct": 1, "explanation": "A=1, E=5, I=9, O=15, U=21. Sum = 1+5+9+15+21 = 51. Wait that's option 0 (51). Let me recheck: 1+5=6, 6+9=15, 15+15=30, 30+21=51. So 51."},
-    {"id": 47, "section": "Coding-Decoding", "question": "If VICTORY = 22-9-3-20-15-18-25, then TRIUMPH = ?", "options": ["20-18-9-21-13-16-8", "19-17-8-20-12-15-7", "21-19-10-22-14-17-9", "20-19-9-21-13-16-8"], "correct": 0, "explanation": "T=20, R=18, I=9, U=21, M=13, P=16, H=8. So TRIUMPH = 20-18-9-21-13-16-8."},
-    {"id": 48, "section": "Coding-Decoding", "question": "In a code, ALPHA = BMQIB. What is DELTA?", "options": ["EFMUB", "EFLUB", "DFLUB", "EFMTA"], "correct": 0, "explanation": "Each letter shifts +1: A→B, L→M, P→Q, H→I, A→B. So D→E, E→F, L→M, T→U, A→B = EFMUB."},
-    {"id": 49, "section": "Coding-Decoding", "question": "If 1=A, 26=Z, what letter is 23?", "options": ["U", "V", "W", "X"], "correct": 2, "explanation": "The 23rd letter of the alphabet is W."},
-    {"id": 50, "section": "Coding-Decoding", "question": "If MATHEMATICS = 13-1-20-8-5-13-1-20-9-3-19, then PHYSICS is:", "options": ["16-8-25-19-9-3-19", "15-7-24-18-8-2-18", "17-9-26-20-10-4-20", "16-9-25-19-9-3-19"], "correct": 0, "explanation": "P=16, H=8, Y=25, S=19, I=9, C=3, S=19. So PHYSICS = 16-8-25-19-9-3-19."}
+    {
+      "id": 1,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>AMBIGUOUS</strong>:",
+      "options": [
+        "Clear",
+        "Vague",
+        "Precise",
+        "Definite"
+      ],
+      "correct": 1,
+      "explanation": "'Ambiguous' means open to more than one interpretation. 'Vague' has a similar meaning."
+    },
+    {
+      "id": 2,
+      "section": "Verbal Reasoning",
+      "question": "Antonym of <strong>ELOQUENT</strong>:",
+      "options": [
+        "Fluent",
+        "Inarticulate",
+        "Expressive",
+        "Persuasive"
+      ],
+      "correct": 1,
+      "explanation": "'Eloquent' means fluent and persuasive in speech. 'Inarticulate' means unable to express clearly (opposite)."
+    },
+    {
+      "id": 3,
+      "section": "Verbal Reasoning",
+      "question": "Complete the analogy: <strong>Constitution : Country :: Charter : ?</strong>",
+      "options": [
+        "Army",
+        "Organization",
+        "Government",
+        "State"
+      ],
+      "correct": 1,
+      "explanation": "A constitution governs a country. A charter governs an organization."
+    },
+    {
+      "id": 4,
+      "section": "Verbal Reasoning",
+      "question": "Find the odd one out:",
+      "options": [
+        "Democracy",
+        "Monarchy",
+        "Republic",
+        "Parliament"
+      ],
+      "correct": 3,
+      "explanation": "Democracy, Monarchy, and Republic are forms of government. Parliament is a legislative body (odd one)."
+    },
+    {
+      "id": 5,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>INEVITABLE</strong>:",
+      "options": [
+        "Avoidable",
+        "Unavoidable",
+        "Optional",
+        "Possible"
+      ],
+      "correct": 1,
+      "explanation": "'Inevitable' means certain to happen. 'Unavoidable' has the same meaning."
+    },
+    {
+      "id": 6,
+      "section": "Verbal Reasoning",
+      "question": "If STRATEGY is coded as TUSBUFHZ, then TACTICS is coded as:",
+      "options": [
+        "UBDUJDT",
+        "UBDUJDS",
+        "TBDUJDT",
+        "UCEVJET"
+      ],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: S→T, T→U, R→S, A→B, T→U, E→F, G→H, Y→Z. So T→U, A→B, C→D, T→U, I→J, C→D, S→T = UBDUJDT."
+    },
+    {
+      "id": 7,
+      "section": "Verbal Reasoning",
+      "question": "Choose the correctly spelt word:",
+      "options": [
+        "Beaurocracy",
+        "Bureaucracy",
+        "Burocracy",
+        "Beurocracy"
+      ],
+      "correct": 1,
+      "explanation": "The correct spelling is 'Bureaucracy'."
+    },
+    {
+      "id": 8,
+      "section": "Verbal Reasoning",
+      "question": "Antonym of <strong>PROSPERITY</strong>:",
+      "options": [
+        "Wealth",
+        "Adversity",
+        "Success",
+        "Fortune"
+      ],
+      "correct": 1,
+      "explanation": "'Prosperity' means the state of being successful. 'Adversity' means difficulties or misfortune (opposite)."
+    },
+    {
+      "id": 9,
+      "section": "Verbal Reasoning",
+      "question": "Complete: <strong>Architect : Blueprint :: Cartographer : ?</strong>",
+      "options": [
+        "Globe",
+        "Map",
+        "Compass",
+        "Atlas"
+      ],
+      "correct": 1,
+      "explanation": "An architect creates a blueprint. A cartographer creates a map."
+    },
+    {
+      "id": 10,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>CANDID</strong>:",
+      "options": [
+        "Dishonest",
+        "Frank",
+        "Secretive",
+        "Deceitful"
+      ],
+      "correct": 1,
+      "explanation": "'Candid' means truthful and straightforward. 'Frank' has the same meaning."
+    },
+    {
+      "id": 11,
+      "section": "Verbal Reasoning",
+      "question": "Find the odd one out:",
+      "options": [
+        "Sonnet",
+        "Haiku",
+        "Novel",
+        "Limerick"
+      ],
+      "correct": 2,
+      "explanation": "Sonnet, Haiku, and Limerick are forms of poetry. Novel is prose (odd one)."
+    },
+    {
+      "id": 12,
+      "section": "Verbal Reasoning",
+      "question": "Antonym of <strong>OPTIMISTIC</strong>:",
+      "options": [
+        "Hopeful",
+        "Pessimistic",
+        "Positive",
+        "Confident"
+      ],
+      "correct": 1,
+      "explanation": "'Optimistic' means hopeful about the future. 'Pessimistic' means expecting the worst (opposite)."
+    },
+    {
+      "id": 13,
+      "section": "Verbal Reasoning",
+      "question": "Complete the analogy: <strong>Stethoscope : Doctor :: Chisel : ?</strong>",
+      "options": [
+        "Artist",
+        "Sculptor",
+        "Carpenter",
+        "Mason"
+      ],
+      "correct": 1,
+      "explanation": "A doctor uses a stethoscope. A sculptor uses a chisel."
+    },
+    {
+      "id": 14,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>MEAGER</strong>:",
+      "options": [
+        "Plentiful",
+        "Scanty",
+        "Generous",
+        "Ample"
+      ],
+      "correct": 1,
+      "explanation": "'Meager' means lacking in quantity. 'Scanty' has the same meaning."
+    },
+    {
+      "id": 15,
+      "section": "Verbal Reasoning",
+      "question": "Choose the word that best completes: <strong>Shallow : Deep :: Narrow : ?</strong>",
+      "options": [
+        "Thin",
+        "Wide",
+        "Slim",
+        "Small"
+      ],
+      "correct": 1,
+      "explanation": "Shallow and Deep are opposites. Narrow and Wide are also opposites."
+    },
+    {
+      "id": 16,
+      "section": "Non-Verbal Reasoning",
+      "question": "What is the sum of exterior angles of any polygon?",
+      "options": [
+        "180°",
+        "270°",
+        "360°",
+        "Depends on polygon"
+      ],
+      "correct": 2,
+      "explanation": "The sum of exterior angles of any convex polygon is always 360°."
+    },
+    {
+      "id": 17,
+      "section": "Non-Verbal Reasoning",
+      "question": "If a cube is painted and cut into 125 cubes (5×5×5), how many have exactly 2 faces painted?",
+      "options": [
+        "24",
+        "32",
+        "36",
+        "40"
+      ],
+      "correct": 2,
+      "explanation": "Edge cubes (not corners): each edge has (5-2)=3 such cubes. 12 edges × 3 = 36."
+    },
+    {
+      "id": 18,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many triangles in a figure with a triangle divided by 2 lines from each vertex to opposite side?",
+      "options": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "correct": 0,
+      "explanation": "A triangle with all 3 medians creates 6 smaller triangles."
+    },
+    {
+      "id": 19,
+      "section": "Non-Verbal Reasoning",
+      "question": "For a tetrahedron, V - E + F = ?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 2,
+      "explanation": "Tetrahedron: V=4, E=6, F=4. 4-6+4 = 2 (Euler's formula)."
+    },
+    {
+      "id": 20,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many vertices does an icosahedron have?",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "correct": 2,
+      "explanation": "An icosahedron has 12 vertices."
+    },
+    {
+      "id": 21,
+      "section": "Non-Verbal Reasoning",
+      "question": "What comes next in binary: 1, 10, 11, 100, 101, ?",
+      "options": [
+        "110",
+        "111",
+        "1000",
+        "200"
+      ],
+      "correct": 0,
+      "explanation": "These are binary representations of 1,2,3,4,5. Next is 6 = 110 in binary."
+    },
+    {
+      "id": 22,
+      "section": "Non-Verbal Reasoning",
+      "question": "If a cube is painted and cut into 216 cubes (6×6×6), how many have 0 faces painted?",
+      "options": [
+        "27",
+        "36",
+        "48",
+        "64"
+      ],
+      "correct": 3,
+      "explanation": "Interior cubes = (6-2)³ = 4³ = 64."
+    },
+    {
+      "id": 23,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many squares can be formed on a 4×4 grid?",
+      "options": [
+        "16",
+        "20",
+        "25",
+        "30"
+      ],
+      "correct": 3,
+      "explanation": "1×1:16, 2×2:9, 3×3:4, 4×4:1. Total = 16+9+4+1 = 30."
+    },
+    {
+      "id": 24,
+      "section": "Non-Verbal Reasoning",
+      "question": "Which regular polygon tessellates (tiles a plane alone)?",
+      "options": [
+        "Pentagon",
+        "Hexagon",
+        "Octagon",
+        "Heptagon"
+      ],
+      "correct": 1,
+      "explanation": "Only equilateral triangles, squares, and regular hexagons can tessellate a plane alone."
+    },
+    {
+      "id": 25,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many diagonals does a 12-sided polygon have?",
+      "options": [
+        "48",
+        "50",
+        "52",
+        "54"
+      ],
+      "correct": 3,
+      "explanation": "Diagonals = n(n-3)/2 = 12(12-3)/2 = 12×9/2 = 54."
+    },
+    {
+      "id": 26,
+      "section": "Non-Verbal Reasoning",
+      "question": "The angle between the minute and hour hands at 2:30 is:",
+      "options": [
+        "95°",
+        "100°",
+        "105°",
+        "110°"
+      ],
+      "correct": 2,
+      "explanation": "At 2:30, hour hand at 75° (2.5×30), minute at 180°. Difference = 180-75 = 105°."
+    },
+    {
+      "id": 27,
+      "section": "Non-Verbal Reasoning",
+      "question": "What is the interior angle of a regular 15-sided polygon?",
+      "options": [
+        "150°",
+        "152°",
+        "156°",
+        "160°"
+      ],
+      "correct": 2,
+      "explanation": "Interior angle = (n-2)×180/n = (15-2)×180/15 = 2340/15 = 156°."
+    },
+    {
+      "id": 28,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many rectangles can be formed on a 3×3 grid?",
+      "options": [
+        "30",
+        "36",
+        "40",
+        "42"
+      ],
+      "correct": 1,
+      "explanation": "Choose 2 of 4 horizontal lines × 2 of 4 vertical lines = C(4,2)×C(4,2) = 6×6 = 36."
+    },
+    {
+      "id": 29,
+      "section": "Non-Verbal Reasoning",
+      "question": "Mirror image of 'W' is:",
+      "options": [
+        "W",
+        "M",
+        "Reversed W",
+        "E"
+      ],
+      "correct": 0,
+      "explanation": "'W' is horizontally symmetrical, so its mirror image looks the same."
+    },
+    {
+      "id": 30,
+      "section": "Non-Verbal Reasoning",
+      "question": "Which pattern: 2, 6, 14, 30, ?",
+      "options": [
+        "56",
+        "60",
+        "62",
+        "66"
+      ],
+      "correct": 2,
+      "explanation": "Each = previous×2 + 2: 2×2+2=6, 6×2+2=14, 14×2+2=30, 30×2+2=62."
+    },
+    {
+      "id": 31,
+      "section": "Numerical Ability",
+      "question": "What is 28% of 1250?",
+      "options": [
+        "340",
+        "345",
+        "350",
+        "355"
+      ],
+      "correct": 2,
+      "explanation": "28% of 1250 = (28/100) × 1250 = 350."
+    },
+    {
+      "id": 32,
+      "section": "Numerical Ability",
+      "question": "If x² + x = 42, what is the positive value of x?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": 1,
+      "explanation": "x²+x-42=0. (x+7)(x-6)=0. x=-7 or x=6. Positive: 6."
+    },
+    {
+      "id": 33,
+      "section": "Numerical Ability",
+      "question": "What is the next: 2, 6, 18, 54, 162, ?",
+      "options": [
+        "324",
+        "486",
+        "512",
+        "648"
+      ],
+      "correct": 1,
+      "explanation": "Each ×3: 2×3=6, 6×3=18, 18×3=54, 54×3=162, 162×3=486."
+    },
+    {
+      "id": 34,
+      "section": "Numerical Ability",
+      "question": "What is 67 × 9?",
+      "options": [
+        "593",
+        "598",
+        "603",
+        "608"
+      ],
+      "correct": 2,
+      "explanation": "67 × 9 = 603."
+    },
+    {
+      "id": 35,
+      "section": "Numerical Ability",
+      "question": "A person invests ₹8000 at 5% SI. Interest after 3 years?",
+      "options": [
+        "₹1000",
+        "₹1100",
+        "₹1200",
+        "₹1300"
+      ],
+      "correct": 2,
+      "explanation": "SI = PRT/100 = 8000×5×3/100 = ₹1200."
+    },
+    {
+      "id": 36,
+      "section": "Numerical Ability",
+      "question": "What is √(529)?",
+      "options": [
+        "21",
+        "22",
+        "23",
+        "24"
+      ],
+      "correct": 2,
+      "explanation": "√529 = 23 because 23×23 = 529."
+    },
+    {
+      "id": 37,
+      "section": "Numerical Ability",
+      "question": "If 3x² - 12 = 0, what is the positive value of x?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": 1,
+      "explanation": "3x²=12, x²=4, x=±2. Positive: 2."
+    },
+    {
+      "id": 38,
+      "section": "Numerical Ability",
+      "question": "What is 143% of 200?",
+      "options": [
+        "276",
+        "281",
+        "286",
+        "291"
+      ],
+      "correct": 2,
+      "explanation": "143% of 200 = (143/100) × 200 = 286."
+    },
+    {
+      "id": 39,
+      "section": "Numerical Ability",
+      "question": "What comes next: 1, 3, 6, 10, 15, 21, ?",
+      "options": [
+        "25",
+        "27",
+        "28",
+        "30"
+      ],
+      "correct": 2,
+      "explanation": "These are triangular numbers: differences are 2,3,4,5,6,7. So 21+7=28."
+    },
+    {
+      "id": 40,
+      "section": "Numerical Ability",
+      "question": "A and B together finish in 12 days. A alone in 20 days. B alone in?",
+      "options": [
+        "25 days",
+        "28 days",
+        "30 days",
+        "32 days"
+      ],
+      "correct": 2,
+      "explanation": "1/12 - 1/20 = (5-3)/60 = 2/60 = 1/30. B alone = 30 days."
+    },
+    {
+      "id": 41,
+      "section": "Coding-Decoding",
+      "question": "If DEFENSE = 4-5-6-5-14-19-5, then OFFENSE = ?",
+      "options": [
+        "15-6-6-5-14-19-5",
+        "14-5-5-4-13-18-4",
+        "16-7-7-6-15-20-6",
+        "15-7-6-5-14-19-5"
+      ],
+      "correct": 0,
+      "explanation": "O=15, F=6, F=6, E=5, N=14, S=19, E=5. So OFFENSE = 15-6-6-5-14-19-5."
+    },
+    {
+      "id": 42,
+      "section": "Coding-Decoding",
+      "question": "In a code, ANCHOR is written as BODIPS. How is BRIDGE written?",
+      "options": [
+        "CSJEHF",
+        "CSJEGF",
+        "BSJEHF",
+        "CTKEHF"
+      ],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: A→B, N→O, C→D, H→I, O→P, R→S. So B→C, R→S, I→J, D→E, G→H, E→F = CSJEHF."
+    },
+    {
+      "id": 43,
+      "section": "Coding-Decoding",
+      "question": "If LONDON = 12-15-14-4-15-14, then PARIS = ?",
+      "options": [
+        "16-1-18-9-19",
+        "15-1-17-8-18",
+        "17-2-19-10-20",
+        "16-2-18-9-19"
+      ],
+      "correct": 0,
+      "explanation": "P=16, A=1, R=18, I=9, S=19. So PARIS = 16-1-18-9-19."
+    },
+    {
+      "id": 44,
+      "section": "Coding-Decoding",
+      "question": "If LONG is coded as MPOH, then SHORT is coded as:",
+      "options": [
+        "TIPSU",
+        "TIPST",
+        "SIPSU",
+        "TJQSU"
+      ],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: L→M, O→P, N→O, G→H. So S→T, H→I, O→P, R→S, T→U = TIPSU."
+    },
+    {
+      "id": 45,
+      "section": "Coding-Decoding",
+      "question": "In a code: 'cat dog' = XY, 'dog rat' = YZ, 'rat cat' = ZX, 'cat bird' = XW. What is 'bird'?",
+      "options": [
+        "W",
+        "X",
+        "Y",
+        "Z"
+      ],
+      "correct": 0,
+      "explanation": "cat=X (appears in XY and ZX), dog=Y (XY and YZ), rat=Z (YZ and ZX). 'cat bird'=XW. cat=X, so bird=W."
+    },
+    {
+      "id": 46,
+      "section": "Coding-Decoding",
+      "question": "If A=1, B=2..., what is the sum of all vowels (A,E,I,O,U)?",
+      "options": [
+        "51",
+        "55",
+        "60",
+        "65"
+      ],
+      "correct": 0,
+      "explanation": "A=1, E=5, I=9, O=15, U=21. Sum = 1 + 5 + 9 + 15 + 21 = 51."
+    },
+    {
+      "id": 47,
+      "section": "Coding-Decoding",
+      "question": "If VICTORY = 22-9-3-20-15-18-25, then TRIUMPH = ?",
+      "options": [
+        "20-18-9-21-13-16-8",
+        "19-17-8-20-12-15-7",
+        "21-19-10-22-14-17-9",
+        "20-19-9-21-13-16-8"
+      ],
+      "correct": 0,
+      "explanation": "T=20, R=18, I=9, U=21, M=13, P=16, H=8. So TRIUMPH = 20-18-9-21-13-16-8."
+    },
+    {
+      "id": 48,
+      "section": "Coding-Decoding",
+      "question": "In a code, ALPHA = BMQIB. What is DELTA?",
+      "options": [
+        "EFMUB",
+        "EFLUB",
+        "DFLUB",
+        "EFMTA"
+      ],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: A→B, L→M, P→Q, H→I, A→B. So D→E, E→F, L→M, T→U, A→B = EFMUB."
+    },
+    {
+      "id": 49,
+      "section": "Coding-Decoding",
+      "question": "If 1=A, 26=Z, what letter is 23?",
+      "options": [
+        "U",
+        "V",
+        "W",
+        "X"
+      ],
+      "correct": 2,
+      "explanation": "The 23rd letter of the alphabet is W."
+    },
+    {
+      "id": 50,
+      "section": "Coding-Decoding",
+      "question": "If MATHEMATICS = 13-1-20-8-5-13-1-20-9-3-19, then PHYSICS is:",
+      "options": [
+        "16-8-25-19-9-3-19",
+        "15-7-24-18-8-2-18",
+        "17-9-26-20-10-4-20",
+        "16-9-25-19-9-3-19"
+      ],
+      "correct": 0,
+      "explanation": "P=16, H=8, Y=25, S=19, I=9, C=3, S=19. So PHYSICS = 16-8-25-19-9-3-19."
+    }
   ]
 }

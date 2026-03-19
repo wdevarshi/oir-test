@@ -5,61 +5,673 @@
   "totalQuestions": 50,
   "timeLimit": 1800,
   "sections": [
-    { "name": "Verbal Reasoning", "questionsCount": 15 },
-    { "name": "Non-Verbal Reasoning", "questionsCount": 15 },
-    { "name": "Numerical Ability", "questionsCount": 10 },
-    { "name": "Coding-Decoding", "questionsCount": 10 }
+    {
+      "name": "Verbal Reasoning",
+      "questionsCount": 15
+    },
+    {
+      "name": "Non-Verbal Reasoning",
+      "questionsCount": 15
+    },
+    {
+      "name": "Numerical Ability",
+      "questionsCount": 10
+    },
+    {
+      "name": "Coding-Decoding",
+      "questionsCount": 10
+    }
   ],
   "questions": [
-    {"id": 1, "section": "Verbal Reasoning", "question": "Synonym of <strong>AUTHENTIC</strong>:", "options": ["Fake", "Genuine", "False", "Copy"], "correct": 1, "explanation": "'Authentic' means genuine or real. 'Genuine' has the same meaning."},
-    {"id": 2, "section": "Verbal Reasoning", "question": "Antonym of <strong>ANCIENT</strong>:", "options": ["Old", "Modern", "Historic", "Antique"], "correct": 1, "explanation": "'Ancient' means very old. 'Modern' means current/recent (opposite)."},
-    {"id": 3, "section": "Verbal Reasoning", "question": "Complete the analogy: <strong>Boat : Oar :: Bicycle : ?</strong>", "options": ["Wheel", "Pedal", "Road", "Seat"], "correct": 1, "explanation": "An oar propels a boat. A pedal propels a bicycle."},
-    {"id": 4, "section": "Verbal Reasoning", "question": "Find the odd one out:", "options": ["Inch", "Foot", "Yard", "Gram"], "correct": 3, "explanation": "Inch, Foot, and Yard measure length. Gram measures weight (odd one)."},
-    {"id": 5, "section": "Verbal Reasoning", "question": "Synonym of <strong>PRUDENT</strong>:", "options": ["Reckless", "Wise", "Careless", "Foolish"], "correct": 1, "explanation": "'Prudent' means acting with careful thought. 'Wise' has a similar meaning."},
-    {"id": 6, "section": "Verbal Reasoning", "question": "If HEART is coded as IFBSU, then BRAIN is coded as:", "options": ["CSBJO", "CSBJO", "BSBJO", "CSAJO"], "correct": 0, "explanation": "Each letter shifts +1: H→I, E→F, A→B, R→S, T→U. So B→C, R→S, A→B, I→J, N→O = CSBJO."},
-    {"id": 7, "section": "Verbal Reasoning", "question": "Choose the correctly spelt word:", "options": ["Priviledge", "Privilege", "Privelege", "Previlege"], "correct": 1, "explanation": "The correct spelling is 'Privilege' with 'i' before 'lege'."},
-    {"id": 8, "section": "Verbal Reasoning", "question": "Antonym of <strong>HARMONY</strong>:", "options": ["Peace", "Discord", "Unity", "Agreement"], "correct": 1, "explanation": "'Harmony' means agreement or peace. 'Discord' means disagreement (opposite)."},
-    {"id": 9, "section": "Verbal Reasoning", "question": "Complete: <strong>Astronaut : Space :: Diver : ?</strong>", "options": ["Pool", "Ocean", "Suit", "Tank"], "correct": 1, "explanation": "An astronaut explores space. A diver explores the ocean."},
-    {"id": 10, "section": "Verbal Reasoning", "question": "Synonym of <strong>IMITATE</strong>:", "options": ["Create", "Copy", "Invent", "Design"], "correct": 1, "explanation": "'Imitate' means to reproduce or copy. 'Copy' has the same meaning."},
-    {"id": 11, "section": "Verbal Reasoning", "question": "Find the odd one out:", "options": ["Painting", "Sculpture", "Music", "Canvas"], "correct": 3, "explanation": "Painting, Sculpture, and Music are art forms. Canvas is a material (odd one)."},
-    {"id": 12, "section": "Verbal Reasoning", "question": "Antonym of <strong>MAJORITY</strong>:", "options": ["Most", "Minority", "Bulk", "Greater"], "correct": 1, "explanation": "'Majority' means the greater number. 'Minority' means the smaller number (opposite)."},
-    {"id": 13, "section": "Verbal Reasoning", "question": "Complete the analogy: <strong>Ink : Pen :: Paint : ?</strong>", "options": ["Color", "Brush", "Canvas", "Art"], "correct": 1, "explanation": "Ink flows from a pen. Paint flows from a brush."},
-    {"id": 14, "section": "Verbal Reasoning", "question": "Synonym of <strong>SCATTER</strong>:", "options": ["Gather", "Disperse", "Collect", "Arrange"], "correct": 1, "explanation": "'Scatter' means to throw in various directions. 'Disperse' has the same meaning."},
-    {"id": 15, "section": "Verbal Reasoning", "question": "Choose the word that best completes: <strong>Above : Below :: Ceiling : ?</strong>", "options": ["Wall", "Floor", "Room", "Roof"], "correct": 1, "explanation": "Above and Below are opposites. Ceiling (top) and Floor (bottom) are also opposites."},
-    {"id": 16, "section": "Non-Verbal Reasoning", "question": "What is the sum of interior angles of a quadrilateral?", "options": ["180°", "270°", "360°", "450°"], "correct": 2, "explanation": "Sum = (n-2) × 180 = (4-2) × 180 = 2 × 180 = 360°."},
-    {"id": 17, "section": "Non-Verbal Reasoning", "question": "If a cube is painted and cut into 8 smaller cubes, how many small cubes have 3 faces painted?", "options": ["4", "6", "8", "10"], "correct": 2, "explanation": "A 2×2×2 cube cut gives 8 pieces. Each is a corner piece with 3 painted faces. All 8 have 3 faces painted."},
-    {"id": 18, "section": "Non-Verbal Reasoning", "question": "Mirror image of 'P' is:", "options": ["P", "q", "d", "Reversed P"], "correct": 3, "explanation": "The mirror image (left-right flip) of 'P' is a reversed P (bump on left side)."},
-    {"id": 19, "section": "Non-Verbal Reasoning", "question": "What is the interior angle of a regular decagon?", "options": ["140°", "144°", "150°", "156°"], "correct": 1, "explanation": "Interior angle = (n-2)×180/n = (10-2)×180/10 = 1440/10 = 144°."},
-    {"id": 20, "section": "Non-Verbal Reasoning", "question": "How many vertices does an octahedron have?", "options": ["4", "6", "8", "10"], "correct": 1, "explanation": "An octahedron has 6 vertices."},
-    {"id": 21, "section": "Non-Verbal Reasoning", "question": "What comes next: SUN, MON, TUE, WED, THU, ?", "options": ["SAT", "FRI", "SUN", "MON"], "correct": 1, "explanation": "These are abbreviated days of the week. After Thursday comes Friday (FRI)."},
-    {"id": 22, "section": "Non-Verbal Reasoning", "question": "If a cube is painted and cut into 64 small cubes (4×4×4), how many have exactly 1 face painted?", "options": ["16", "20", "24", "28"], "correct": 2, "explanation": "Face-center cubes have 1 painted face. Each face has (4-2)² = 4 center cubes. 6 faces × 4 = 24."},
-    {"id": 23, "section": "Non-Verbal Reasoning", "question": "Water image of 'd' is:", "options": ["d", "q", "p", "b"], "correct": 1, "explanation": "Water image (vertical flip) of 'd' is 'q' (flipped upside down)."},
-    {"id": 24, "section": "Non-Verbal Reasoning", "question": "Which 3D shape has 4 triangular faces?", "options": ["Cube", "Tetrahedron", "Octahedron", "Pyramid"], "correct": 1, "explanation": "A tetrahedron has exactly 4 triangular faces."},
-    {"id": 25, "section": "Non-Verbal Reasoning", "question": "How many diagonals does a nonagon have?", "options": ["24", "27", "30", "33"], "correct": 1, "explanation": "Diagonals = n(n-3)/2 = 9(9-3)/2 = 9×6/2 = 27."},
-    {"id": 26, "section": "Non-Verbal Reasoning", "question": "If you rotate '8' 180°, it looks:", "options": ["Same", "Different", "Like 0", "Like ∞"], "correct": 0, "explanation": "'8' looks the same after 180° rotation."},
-    {"id": 27, "section": "Non-Verbal Reasoning", "question": "What is the exterior angle of a regular hexagon?", "options": ["40°", "50°", "60°", "70°"], "correct": 2, "explanation": "Exterior angle = 360°/n = 360°/6 = 60°."},
-    {"id": 28, "section": "Non-Verbal Reasoning", "question": "How many vertices does a dodecahedron have?", "options": ["12", "16", "20", "24"], "correct": 2, "explanation": "A dodecahedron has 20 vertices."},
-    {"id": 29, "section": "Non-Verbal Reasoning", "question": "Mirror image of 'T' is:", "options": ["T", "⊥", "Γ", "L"], "correct": 0, "explanation": "'T' is horizontally symmetrical, so its mirror image looks the same."},
-    {"id": 30, "section": "Non-Verbal Reasoning", "question": "Which pattern: AZ, BY, CX, DW, ?", "options": ["EV", "FU", "EU", "FV"], "correct": 0, "explanation": "First letter goes forward: A,B,C,D,E. Second goes backward: Z,Y,X,W,V. Next: EV."},
-    {"id": 31, "section": "Numerical Ability", "question": "What is 87.5% of 400?", "options": ["330", "340", "350", "360"], "correct": 2, "explanation": "87.5% = 7/8. 400 × 7/8 = 350."},
-    {"id": 32, "section": "Numerical Ability", "question": "If x³ = 729, what is x?", "options": ["7", "8", "9", "10"], "correct": 2, "explanation": "x³ = 729, so x = ∛729 = 9 (because 9×9×9=729)."},
-    {"id": 33, "section": "Numerical Ability", "question": "What is the next: 2, 3, 5, 8, 13, 21, ?", "options": ["29", "31", "34", "37"], "correct": 2, "explanation": "Each term = sum of previous two: 2+3=5, 3+5=8, 5+8=13, 8+13=21, 13+21=34."},
-    {"id": 34, "section": "Numerical Ability", "question": "What is 45 × 8?", "options": ["350", "355", "360", "365"], "correct": 2, "explanation": "45 × 8 = 360."},
-    {"id": 35, "section": "Numerical Ability", "question": "If CI on ₹10000 at 10% for 2 years is approximately:", "options": ["₹2000", "₹2100", "₹2200", "₹2300"], "correct": 1, "explanation": "CI = P(1+r/100)^n - P = 10000(1.1)² - 10000 = 12100 - 10000 = ₹2100."},
-    {"id": 36, "section": "Numerical Ability", "question": "What is the cube root of 1000?", "options": ["8", "9", "10", "11"], "correct": 2, "explanation": "∛1000 = 10 because 10 × 10 × 10 = 1000."},
-    {"id": 37, "section": "Numerical Ability", "question": "If 2x² = 50, what is x?", "options": ["3", "4", "5", "6"], "correct": 2, "explanation": "2x² = 50, so x² = 25, x = 5."},
-    {"id": 38, "section": "Numerical Ability", "question": "What is 16⅔% of 360?", "options": ["50", "55", "60", "65"], "correct": 2, "explanation": "16⅔% = 1/6. 360/6 = 60."},
-    {"id": 39, "section": "Numerical Ability", "question": "What comes next: 1, 2, 4, 7, 11, 16, ?", "options": ["20", "22", "24", "26"], "correct": 1, "explanation": "Differences: 1, 2, 3, 4, 5... (increasing by 1). Next difference: 6. So 16+6=22."},
-    {"id": 40, "section": "Numerical Ability", "question": "A boat goes 20 km upstream in 4 hours and 20 km downstream in 2 hours. Speed of current?", "options": ["1.5 km/h", "2 km/h", "2.5 km/h", "3 km/h"], "correct": 2, "explanation": "Upstream speed=20/4=5. Downstream speed=20/2=10. Current=(10-5)/2=2.5 km/h."},
-    {"id": 41, "section": "Coding-Decoding", "question": "If JUDGE = 10-21-4-7-5, then COURT = ?", "options": ["3-15-21-18-20", "2-14-20-17-19", "4-16-22-19-21", "3-16-21-18-20"], "correct": 0, "explanation": "C=3, O=15, U=21, R=18, T=20. So COURT = 3-15-21-18-20."},
-    {"id": 42, "section": "Coding-Decoding", "question": "In a code, PRIDE is written as QSJEF. How is SHAME written?", "options": ["TIBNF", "TIBMF", "SIBNF", "TICNF"], "correct": 0, "explanation": "Each letter shifts +1: P→Q, R→S, I→J, D→E, E→F. So S→T, H→I, A→B, M→N, E→F = TIBNF."},
-    {"id": 43, "section": "Coding-Decoding", "question": "If APPLE = 1-16-16-12-5, then MANGO = ?", "options": ["13-1-14-7-15", "12-1-13-6-14", "14-2-15-8-16", "13-2-14-7-15"], "correct": 0, "explanation": "M=13, A=1, N=14, G=7, O=15. So MANGO = 13-1-14-7-15."},
-    {"id": 44, "section": "Coding-Decoding", "question": "If AM is coded as BN, then PM is coded as:", "options": ["QN", "RN", "QM", "RO"], "correct": 0, "explanation": "Each letter shifts +1: A→B, M→N. So P→Q, M→N = QN."},
-    {"id": 45, "section": "Coding-Decoding", "question": "In a code: 'tall short' = PQ, 'short fat' = QR, 'fat tall' = RP. What is 'tall'?", "options": ["P", "Q", "R", "Cannot determine"], "correct": 0, "explanation": "'tall short'=PQ, 'fat tall'=RP. Tall appears with P in both. So tall=P."},
-    {"id": 46, "section": "Coding-Decoding", "question": "If A=1, B=2..., what is the average of letters in 'BAG'?", "options": ["3", "3.67", "4", "4.33"], "correct": 1, "explanation": "B=2, A=1, G=7. Average = (2+1+7)/3 = 10/3 = 3.33. Closest is 3.67. Actually 10/3=3.33, not 3.67. Let me recalculate: B=2, A=1, G=7. Sum=10. Avg=10/3≈3.33. None match exactly but 3.67 is closest."},
-    {"id": 47, "section": "Coding-Decoding", "question": "If SCHOOL is written as 19-3-8-15-15-12, then COLLEGE is:", "options": ["3-15-12-12-5-7-5", "2-14-11-11-4-6-4", "4-16-13-13-6-8-6", "3-16-12-12-5-7-5"], "correct": 0, "explanation": "C=3, O=15, L=12, L=12, E=5, G=7, E=5. So COLLEGE = 3-15-12-12-5-7-5."},
-    {"id": 48, "section": "Coding-Decoding", "question": "In a code, OPEN = PQFO. What is SHUT?", "options": ["TIVU", "TIUT", "SIVU", "TJVU"], "correct": 0, "explanation": "Each letter shifts +1: O→P, P→Q, E→F, N→O. Wait that's +1,+1,+1,+1. So S→T, H→I, U→V, T→U = TIVU."},
-    {"id": 49, "section": "Coding-Decoding", "question": "If 1=A, 26=Z, what letter is 4?", "options": ["B", "C", "D", "E"], "correct": 2, "explanation": "The 4th letter of the alphabet is D."},
-    {"id": 50, "section": "Coding-Decoding", "question": "If ELEPHANT is coded as 5-12-5-16-8-1-14-20, then GIRAFFE is:", "options": ["7-9-18-1-6-6-5", "6-8-17-1-5-5-4", "8-10-19-2-7-7-6", "7-10-18-1-6-6-5"], "correct": 0, "explanation": "G=7, I=9, R=18, A=1, F=6, F=6, E=5. So GIRAFFE = 7-9-18-1-6-6-5."}
+    {
+      "id": 1,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>AUTHENTIC</strong>:",
+      "options": [
+        "Fake",
+        "Genuine",
+        "False",
+        "Copy"
+      ],
+      "correct": 1,
+      "explanation": "'Authentic' means genuine or real. 'Genuine' has the same meaning."
+    },
+    {
+      "id": 2,
+      "section": "Verbal Reasoning",
+      "question": "Antonym of <strong>ANCIENT</strong>:",
+      "options": [
+        "Old",
+        "Modern",
+        "Historic",
+        "Antique"
+      ],
+      "correct": 1,
+      "explanation": "'Ancient' means very old. 'Modern' means current/recent (opposite)."
+    },
+    {
+      "id": 3,
+      "section": "Verbal Reasoning",
+      "question": "Complete the analogy: <strong>Boat : Oar :: Bicycle : ?</strong>",
+      "options": [
+        "Wheel",
+        "Pedal",
+        "Road",
+        "Seat"
+      ],
+      "correct": 1,
+      "explanation": "An oar propels a boat. A pedal propels a bicycle."
+    },
+    {
+      "id": 4,
+      "section": "Verbal Reasoning",
+      "question": "Find the odd one out:",
+      "options": [
+        "Inch",
+        "Foot",
+        "Yard",
+        "Gram"
+      ],
+      "correct": 3,
+      "explanation": "Inch, Foot, and Yard measure length. Gram measures weight (odd one)."
+    },
+    {
+      "id": 5,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>PRUDENT</strong>:",
+      "options": [
+        "Reckless",
+        "Wise",
+        "Careless",
+        "Foolish"
+      ],
+      "correct": 1,
+      "explanation": "'Prudent' means acting with careful thought. 'Wise' has a similar meaning."
+    },
+    {
+      "id": 6,
+      "section": "Verbal Reasoning",
+      "question": "If HEART is coded as IFBSU, then BRAIN is coded as:",
+      "options": [
+        "CSBJO",
+        "CSBJO",
+        "BSBJO",
+        "CSAJO"
+      ],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: H→I, E→F, A→B, R→S, T→U. So B→C, R→S, A→B, I→J, N→O = CSBJO."
+    },
+    {
+      "id": 7,
+      "section": "Verbal Reasoning",
+      "question": "Choose the correctly spelt word:",
+      "options": [
+        "Priviledge",
+        "Privilege",
+        "Privelege",
+        "Previlege"
+      ],
+      "correct": 1,
+      "explanation": "The correct spelling is 'Privilege' with 'i' before 'lege'."
+    },
+    {
+      "id": 8,
+      "section": "Verbal Reasoning",
+      "question": "Antonym of <strong>HARMONY</strong>:",
+      "options": [
+        "Peace",
+        "Discord",
+        "Unity",
+        "Agreement"
+      ],
+      "correct": 1,
+      "explanation": "'Harmony' means agreement or peace. 'Discord' means disagreement (opposite)."
+    },
+    {
+      "id": 9,
+      "section": "Verbal Reasoning",
+      "question": "Complete: <strong>Astronaut : Space :: Diver : ?</strong>",
+      "options": [
+        "Pool",
+        "Ocean",
+        "Suit",
+        "Tank"
+      ],
+      "correct": 1,
+      "explanation": "An astronaut explores space. A diver explores the ocean."
+    },
+    {
+      "id": 10,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>IMITATE</strong>:",
+      "options": [
+        "Create",
+        "Copy",
+        "Invent",
+        "Design"
+      ],
+      "correct": 1,
+      "explanation": "'Imitate' means to reproduce or copy. 'Copy' has the same meaning."
+    },
+    {
+      "id": 11,
+      "section": "Verbal Reasoning",
+      "question": "Find the odd one out:",
+      "options": [
+        "Painting",
+        "Sculpture",
+        "Music",
+        "Canvas"
+      ],
+      "correct": 3,
+      "explanation": "Painting, Sculpture, and Music are art forms. Canvas is a material (odd one)."
+    },
+    {
+      "id": 12,
+      "section": "Verbal Reasoning",
+      "question": "Antonym of <strong>MAJORITY</strong>:",
+      "options": [
+        "Most",
+        "Minority",
+        "Bulk",
+        "Greater"
+      ],
+      "correct": 1,
+      "explanation": "'Majority' means the greater number. 'Minority' means the smaller number (opposite)."
+    },
+    {
+      "id": 13,
+      "section": "Verbal Reasoning",
+      "question": "Complete the analogy: <strong>Ink : Pen :: Paint : ?</strong>",
+      "options": [
+        "Color",
+        "Brush",
+        "Canvas",
+        "Art"
+      ],
+      "correct": 1,
+      "explanation": "Ink flows from a pen. Paint flows from a brush."
+    },
+    {
+      "id": 14,
+      "section": "Verbal Reasoning",
+      "question": "Synonym of <strong>SCATTER</strong>:",
+      "options": [
+        "Gather",
+        "Disperse",
+        "Collect",
+        "Arrange"
+      ],
+      "correct": 1,
+      "explanation": "'Scatter' means to throw in various directions. 'Disperse' has the same meaning."
+    },
+    {
+      "id": 15,
+      "section": "Verbal Reasoning",
+      "question": "Choose the word that best completes: <strong>Above : Below :: Ceiling : ?</strong>",
+      "options": [
+        "Wall",
+        "Floor",
+        "Room",
+        "Roof"
+      ],
+      "correct": 1,
+      "explanation": "Above and Below are opposites. Ceiling (top) and Floor (bottom) are also opposites."
+    },
+    {
+      "id": 16,
+      "section": "Non-Verbal Reasoning",
+      "question": "What is the sum of interior angles of a quadrilateral?",
+      "options": [
+        "180°",
+        "270°",
+        "360°",
+        "450°"
+      ],
+      "correct": 2,
+      "explanation": "Sum = (n-2) × 180 = (4-2) × 180 = 2 × 180 = 360°."
+    },
+    {
+      "id": 17,
+      "section": "Non-Verbal Reasoning",
+      "question": "If a cube is painted and cut into 8 smaller cubes, how many small cubes have 3 faces painted?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct": 2,
+      "explanation": "A 2×2×2 cube cut gives 8 pieces. Each is a corner piece with 3 painted faces. All 8 have 3 faces painted."
+    },
+    {
+      "id": 18,
+      "section": "Non-Verbal Reasoning",
+      "question": "Mirror image of 'P' is:",
+      "options": [
+        "P",
+        "q",
+        "d",
+        "Reversed P"
+      ],
+      "correct": 3,
+      "explanation": "The mirror image (left-right flip) of 'P' is a reversed P (bump on left side)."
+    },
+    {
+      "id": 19,
+      "section": "Non-Verbal Reasoning",
+      "question": "What is the interior angle of a regular decagon?",
+      "options": [
+        "140°",
+        "144°",
+        "150°",
+        "156°"
+      ],
+      "correct": 1,
+      "explanation": "Interior angle = (n-2)×180/n = (10-2)×180/10 = 1440/10 = 144°."
+    },
+    {
+      "id": 20,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many vertices does an octahedron have?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "correct": 1,
+      "explanation": "An octahedron has 6 vertices."
+    },
+    {
+      "id": 21,
+      "section": "Non-Verbal Reasoning",
+      "question": "What comes next: SUN, MON, TUE, WED, THU, ?",
+      "options": [
+        "SAT",
+        "FRI",
+        "SUN",
+        "MON"
+      ],
+      "correct": 1,
+      "explanation": "These are abbreviated days of the week. After Thursday comes Friday (FRI)."
+    },
+    {
+      "id": 22,
+      "section": "Non-Verbal Reasoning",
+      "question": "If a cube is painted and cut into 64 small cubes (4×4×4), how many have exactly 1 face painted?",
+      "options": [
+        "16",
+        "20",
+        "24",
+        "28"
+      ],
+      "correct": 2,
+      "explanation": "Face-center cubes have 1 painted face. Each face has (4-2)² = 4 center cubes. 6 faces × 4 = 24."
+    },
+    {
+      "id": 23,
+      "section": "Non-Verbal Reasoning",
+      "question": "Water image of 'd' is:",
+      "options": [
+        "d",
+        "q",
+        "p",
+        "b"
+      ],
+      "correct": 1,
+      "explanation": "Water image (vertical flip) of 'd' is 'q' (flipped upside down)."
+    },
+    {
+      "id": 24,
+      "section": "Non-Verbal Reasoning",
+      "question": "Which 3D shape has 4 triangular faces?",
+      "options": [
+        "Cube",
+        "Tetrahedron",
+        "Octahedron",
+        "Pyramid"
+      ],
+      "correct": 1,
+      "explanation": "A tetrahedron has exactly 4 triangular faces."
+    },
+    {
+      "id": 25,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many diagonals does a nonagon have?",
+      "options": [
+        "24",
+        "27",
+        "30",
+        "33"
+      ],
+      "correct": 1,
+      "explanation": "Diagonals = n(n-3)/2 = 9(9-3)/2 = 9×6/2 = 27."
+    },
+    {
+      "id": 26,
+      "section": "Non-Verbal Reasoning",
+      "question": "If you rotate '8' 180°, it looks:",
+      "options": [
+        "Same",
+        "Different",
+        "Like 0",
+        "Like ∞"
+      ],
+      "correct": 0,
+      "explanation": "'8' looks the same after 180° rotation."
+    },
+    {
+      "id": 27,
+      "section": "Non-Verbal Reasoning",
+      "question": "What is the exterior angle of a regular hexagon?",
+      "options": [
+        "40°",
+        "50°",
+        "60°",
+        "70°"
+      ],
+      "correct": 2,
+      "explanation": "Exterior angle = 360°/n = 360°/6 = 60°."
+    },
+    {
+      "id": 28,
+      "section": "Non-Verbal Reasoning",
+      "question": "How many vertices does a dodecahedron have?",
+      "options": [
+        "12",
+        "16",
+        "20",
+        "24"
+      ],
+      "correct": 2,
+      "explanation": "A dodecahedron has 20 vertices."
+    },
+    {
+      "id": 29,
+      "section": "Non-Verbal Reasoning",
+      "question": "Mirror image of 'T' is:",
+      "options": [
+        "T",
+        "⊥",
+        "Γ",
+        "L"
+      ],
+      "correct": 0,
+      "explanation": "'T' is horizontally symmetrical, so its mirror image looks the same."
+    },
+    {
+      "id": 30,
+      "section": "Non-Verbal Reasoning",
+      "question": "Which pattern: AZ, BY, CX, DW, ?",
+      "options": [
+        "EV",
+        "FU",
+        "EU",
+        "FV"
+      ],
+      "correct": 0,
+      "explanation": "First letter goes forward: A,B,C,D,E. Second goes backward: Z,Y,X,W,V. Next: EV."
+    },
+    {
+      "id": 31,
+      "section": "Numerical Ability",
+      "question": "What is 87.5% of 400?",
+      "options": [
+        "330",
+        "340",
+        "350",
+        "360"
+      ],
+      "correct": 2,
+      "explanation": "87.5% = 7/8. 400 × 7/8 = 350."
+    },
+    {
+      "id": 32,
+      "section": "Numerical Ability",
+      "question": "If x³ = 729, what is x?",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "correct": 2,
+      "explanation": "x³ = 729, so x = ∛729 = 9 (because 9×9×9=729)."
+    },
+    {
+      "id": 33,
+      "section": "Numerical Ability",
+      "question": "What is the next: 2, 3, 5, 8, 13, 21, ?",
+      "options": [
+        "29",
+        "31",
+        "34",
+        "37"
+      ],
+      "correct": 2,
+      "explanation": "Each term = sum of previous two: 2+3=5, 3+5=8, 5+8=13, 8+13=21, 13+21=34."
+    },
+    {
+      "id": 34,
+      "section": "Numerical Ability",
+      "question": "What is 45 × 8?",
+      "options": [
+        "350",
+        "355",
+        "360",
+        "365"
+      ],
+      "correct": 2,
+      "explanation": "45 × 8 = 360."
+    },
+    {
+      "id": 35,
+      "section": "Numerical Ability",
+      "question": "If CI on ₹10000 at 10% for 2 years is approximately:",
+      "options": [
+        "₹2000",
+        "₹2100",
+        "₹2200",
+        "₹2300"
+      ],
+      "correct": 1,
+      "explanation": "CI = P(1+r/100)^n - P = 10000(1.1)² - 10000 = 12100 - 10000 = ₹2100."
+    },
+    {
+      "id": 36,
+      "section": "Numerical Ability",
+      "question": "What is the cube root of 1000?",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "correct": 2,
+      "explanation": "∛1000 = 10 because 10 × 10 × 10 = 1000."
+    },
+    {
+      "id": 37,
+      "section": "Numerical Ability",
+      "question": "If 2x² = 50, what is x?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 2,
+      "explanation": "2x² = 50, so x² = 25, x = 5."
+    },
+    {
+      "id": 38,
+      "section": "Numerical Ability",
+      "question": "What is 16⅔% of 360?",
+      "options": [
+        "50",
+        "55",
+        "60",
+        "65"
+      ],
+      "correct": 2,
+      "explanation": "16⅔% = 1/6. 360/6 = 60."
+    },
+    {
+      "id": 39,
+      "section": "Numerical Ability",
+      "question": "What comes next: 1, 2, 4, 7, 11, 16, ?",
+      "options": [
+        "20",
+        "22",
+        "24",
+        "26"
+      ],
+      "correct": 1,
+      "explanation": "Differences: 1, 2, 3, 4, 5... (increasing by 1). Next difference: 6. So 16+6=22."
+    },
+    {
+      "id": 40,
+      "section": "Numerical Ability",
+      "question": "A boat goes 20 km upstream in 4 hours and 20 km downstream in 2 hours. Speed of current?",
+      "options": [
+        "1.5 km/h",
+        "2 km/h",
+        "2.5 km/h",
+        "3 km/h"
+      ],
+      "correct": 2,
+      "explanation": "Upstream speed=20/4=5. Downstream speed=20/2=10. Current=(10-5)/2=2.5 km/h."
+    },
+    {
+      "id": 41,
+      "section": "Coding-Decoding",
+      "question": "If JUDGE = 10-21-4-7-5, then COURT = ?",
+      "options": [
+        "3-15-21-18-20",
+        "2-14-20-17-19",
+        "4-16-22-19-21",
+        "3-16-21-18-20"
+      ],
+      "correct": 0,
+      "explanation": "C=3, O=15, U=21, R=18, T=20. So COURT = 3-15-21-18-20."
+    },
+    {
+      "id": 42,
+      "section": "Coding-Decoding",
+      "question": "In a code, PRIDE is written as QSJEF. How is SHAME written?",
+      "options": [
+        "TIBNF",
+        "TIBMF",
+        "SIBNF",
+        "TICNF"
+      ],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: P→Q, R→S, I→J, D→E, E→F. So S→T, H→I, A→B, M→N, E→F = TIBNF."
+    },
+    {
+      "id": 43,
+      "section": "Coding-Decoding",
+      "question": "If APPLE = 1-16-16-12-5, then MANGO = ?",
+      "options": [
+        "13-1-14-7-15",
+        "12-1-13-6-14",
+        "14-2-15-8-16",
+        "13-2-14-7-15"
+      ],
+      "correct": 0,
+      "explanation": "M=13, A=1, N=14, G=7, O=15. So MANGO = 13-1-14-7-15."
+    },
+    {
+      "id": 44,
+      "section": "Coding-Decoding",
+      "question": "If AM is coded as BN, then PM is coded as:",
+      "options": [
+        "QN",
+        "RN",
+        "QM",
+        "RO"
+      ],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: A→B, M→N. So P→Q, M→N = QN."
+    },
+    {
+      "id": 45,
+      "section": "Coding-Decoding",
+      "question": "In a code: 'tall short' = PQ, 'short fat' = QR, 'fat tall' = RP. What is 'tall'?",
+      "options": [
+        "P",
+        "Q",
+        "R",
+        "Cannot determine"
+      ],
+      "correct": 0,
+      "explanation": "'tall short'=PQ, 'fat tall'=RP. Tall appears with P in both. So tall=P."
+    },
+    {
+      "id": 46,
+      "section": "Coding-Decoding",
+      "question": "If A=1, B=2..., what is the average of letters in 'BAG'?",
+      "options": [
+        "3",
+        "3.33",
+        "4",
+        "4.33"
+      ],
+      "correct": 1,
+      "explanation": "B=2, A=1, G=7. Sum = 10. Average = 10/3 ≈ 3.33."
+    },
+    {
+      "id": 47,
+      "section": "Coding-Decoding",
+      "question": "If SCHOOL is written as 19-3-8-15-15-12, then COLLEGE is:",
+      "options": [
+        "3-15-12-12-5-7-5",
+        "2-14-11-11-4-6-4",
+        "4-16-13-13-6-8-6",
+        "3-16-12-12-5-7-5"
+      ],
+      "correct": 0,
+      "explanation": "C=3, O=15, L=12, L=12, E=5, G=7, E=5. So COLLEGE = 3-15-12-12-5-7-5."
+    },
+    {
+      "id": 48,
+      "section": "Coding-Decoding",
+      "question": "In a code, OPEN = PQFO. What is SHUT?",
+      "options": [
+        "TIVU",
+        "TIUT",
+        "SIVU",
+        "TJVU"
+      ],
+      "correct": 0,
+      "explanation": "Each letter shifts +1: O→P, P→Q, E→F, N→O. Wait that's +1,+1,+1,+1. So S→T, H→I, U→V, T→U = TIVU."
+    },
+    {
+      "id": 49,
+      "section": "Coding-Decoding",
+      "question": "If 1=A, 26=Z, what letter is 4?",
+      "options": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correct": 2,
+      "explanation": "The 4th letter of the alphabet is D."
+    },
+    {
+      "id": 50,
+      "section": "Coding-Decoding",
+      "question": "If ELEPHANT is coded as 5-12-5-16-8-1-14-20, then GIRAFFE is:",
+      "options": [
+        "7-9-18-1-6-6-5",
+        "6-8-17-1-5-5-4",
+        "8-10-19-2-7-7-6",
+        "7-10-18-1-6-6-5"
+      ],
+      "correct": 0,
+      "explanation": "G=7, I=9, R=18, A=1, F=6, F=6, E=5. So GIRAFFE = 7-9-18-1-6-6-5."
+    }
   ]
 }

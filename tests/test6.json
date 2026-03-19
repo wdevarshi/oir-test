@@ -5,17 +5,34 @@
   "totalQuestions": 50,
   "timeLimit": 1800,
   "sections": [
-    { "name": "Verbal Reasoning", "questionsCount": 15 },
-    { "name": "Non-Verbal Reasoning", "questionsCount": 15 },
-    { "name": "Numerical Ability", "questionsCount": 10 },
-    { "name": "Coding-Decoding", "questionsCount": 10 }
+    {
+      "name": "Verbal Reasoning",
+      "questionsCount": 15
+    },
+    {
+      "name": "Non-Verbal Reasoning",
+      "questionsCount": 15
+    },
+    {
+      "name": "Numerical Ability",
+      "questionsCount": 10
+    },
+    {
+      "name": "Coding-Decoding",
+      "questionsCount": 10
+    }
   ],
   "questions": [
     {
       "id": 1,
       "section": "Verbal Reasoning",
       "question": "Synonym of <strong>FRAGILE</strong>:",
-      "options": ["Strong", "Delicate", "Tough", "Sturdy"],
+      "options": [
+        "Strong",
+        "Delicate",
+        "Tough",
+        "Sturdy"
+      ],
       "correct": 1,
       "explanation": "'Fragile' means easily broken or damaged. 'Delicate' has the same meaning."
     },
@@ -23,7 +40,12 @@
       "id": 2,
       "section": "Verbal Reasoning",
       "question": "Antonym of <strong>WEALTH</strong>:",
-      "options": ["Riches", "Poverty", "Fortune", "Money"],
+      "options": [
+        "Riches",
+        "Poverty",
+        "Fortune",
+        "Money"
+      ],
       "correct": 1,
       "explanation": "'Wealth' means abundance of valuable possessions. 'Poverty' means lack of wealth (opposite)."
     },
@@ -31,7 +53,12 @@
       "id": 3,
       "section": "Verbal Reasoning",
       "question": "Complete the analogy: <strong>Rain : Umbrella :: Sun : ?</strong>",
-      "options": ["Moon", "Sunglasses", "Cloud", "Star"],
+      "options": [
+        "Moon",
+        "Sunglasses",
+        "Cloud",
+        "Star"
+      ],
       "correct": 1,
       "explanation": "You use an umbrella for rain. You use sunglasses for sun (protection)."
     },
@@ -39,7 +66,12 @@
       "id": 4,
       "section": "Verbal Reasoning",
       "question": "Find the odd one out:",
-      "options": ["Cricket", "Football", "Hockey", "Chess"],
+      "options": [
+        "Cricket",
+        "Football",
+        "Hockey",
+        "Chess"
+      ],
       "correct": 3,
       "explanation": "Cricket, Football, and Hockey are outdoor sports. Chess is an indoor board game (odd one)."
     },
@@ -47,7 +79,12 @@
       "id": 5,
       "section": "Verbal Reasoning",
       "question": "Synonym of <strong>ASSIST</strong>:",
-      "options": ["Prevent", "Help", "Block", "Stop"],
+      "options": [
+        "Prevent",
+        "Help",
+        "Block",
+        "Stop"
+      ],
       "correct": 1,
       "explanation": "'Assist' means to help or support. 'Help' is a direct synonym."
     },
@@ -55,7 +92,12 @@
       "id": 6,
       "section": "Verbal Reasoning",
       "question": "If TRAIN is coded as USBJO, then PLANE is coded as:",
-      "options": ["QMBOF", "QMZOF", "QMBNE", "PMZOF"],
+      "options": [
+        "QMBOF",
+        "QMZOF",
+        "QMBNE",
+        "PMZOF"
+      ],
       "correct": 0,
       "explanation": "Each letter shifts +1: T→U, R→S, A→B, I→J, N→O. So P→Q, L→M, A→B, N→O, E→F = QMBOF."
     },
@@ -63,7 +105,12 @@
       "id": 7,
       "section": "Verbal Reasoning",
       "question": "Choose the correctly spelt word:",
-      "options": ["Begining", "Beginning", "Begginning", "Beggining"],
+      "options": [
+        "Begining",
+        "Beginning",
+        "Begginning",
+        "Beggining"
+      ],
       "correct": 1,
       "explanation": "The correct spelling is 'Beginning' with double 'n'."
     },
@@ -71,7 +118,12 @@
       "id": 8,
       "section": "Verbal Reasoning",
       "question": "Antonym of <strong>QUESTION</strong>:",
-      "options": ["Ask", "Answer", "Query", "Doubt"],
+      "options": [
+        "Ask",
+        "Answer",
+        "Query",
+        "Doubt"
+      ],
       "correct": 1,
       "explanation": "'Question' is asking something. 'Answer' is responding to a question (opposite)."
     },
@@ -79,7 +131,12 @@
       "id": 9,
       "section": "Verbal Reasoning",
       "question": "Complete: <strong>King : Palace :: Monk : ?</strong>",
-      "options": ["Church", "Monastery", "Temple", "House"],
+      "options": [
+        "Church",
+        "Monastery",
+        "Temple",
+        "House"
+      ],
       "correct": 1,
       "explanation": "A king lives in a palace. A monk lives in a monastery."
     },
@@ -87,7 +144,12 @@
       "id": 10,
       "section": "Verbal Reasoning",
       "question": "Synonym of <strong>CONFLICT</strong>:",
-      "options": ["Peace", "Dispute", "Agreement", "Harmony"],
+      "options": [
+        "Peace",
+        "Dispute",
+        "Agreement",
+        "Harmony"
+      ],
       "correct": 1,
       "explanation": "'Conflict' means a serious disagreement. 'Dispute' has the same meaning."
     },
@@ -95,7 +157,12 @@
       "id": 11,
       "section": "Verbal Reasoning",
       "question": "Find the odd one out:",
-      "options": ["Doctor", "Nurse", "Patient", "Surgeon"],
+      "options": [
+        "Doctor",
+        "Nurse",
+        "Patient",
+        "Surgeon"
+      ],
       "correct": 2,
       "explanation": "Doctor, Nurse, and Surgeon are medical professionals. Patient is someone receiving medical care (odd one)."
     },
@@ -103,7 +170,12 @@
       "id": 12,
       "section": "Verbal Reasoning",
       "question": "Antonym of <strong>ACCEPT</strong>:",
-      "options": ["Receive", "Reject", "Take", "Agree"],
+      "options": [
+        "Receive",
+        "Reject",
+        "Take",
+        "Agree"
+      ],
       "correct": 1,
       "explanation": "'Accept' means to receive willingly. 'Reject' means to refuse (opposite)."
     },
@@ -111,7 +183,12 @@
       "id": 13,
       "section": "Verbal Reasoning",
       "question": "Complete the analogy: <strong>Cow : Milk :: Bee : ?</strong>",
-      "options": ["Flower", "Honey", "Hive", "Sting"],
+      "options": [
+        "Flower",
+        "Honey",
+        "Hive",
+        "Sting"
+      ],
       "correct": 1,
       "explanation": "A cow gives milk. A bee gives honey."
     },
@@ -119,7 +196,12 @@
       "id": 14,
       "section": "Verbal Reasoning",
       "question": "Synonym of <strong>ENTIRE</strong>:",
-      "options": ["Partial", "Whole", "Some", "Few"],
+      "options": [
+        "Partial",
+        "Whole",
+        "Some",
+        "Few"
+      ],
       "correct": 1,
       "explanation": "'Entire' means complete or whole. 'Whole' has the same meaning."
     },
@@ -127,7 +209,12 @@
       "id": 15,
       "section": "Verbal Reasoning",
       "question": "Choose the word that best completes: <strong>Question : Answer :: Problem : ?</strong>",
-      "options": ["Issue", "Solution", "Trouble", "Difficulty"],
+      "options": [
+        "Issue",
+        "Solution",
+        "Trouble",
+        "Difficulty"
+      ],
       "correct": 1,
       "explanation": "A question has an answer. A problem has a solution."
     },
@@ -135,7 +222,12 @@
       "id": 16,
       "section": "Non-Verbal Reasoning",
       "question": "Which shape comes next: □ ■ □ ■ ?",
-      "options": ["□", "■", "○", "●"],
+      "options": [
+        "□",
+        "■",
+        "○",
+        "●"
+      ],
       "correct": 0,
       "explanation": "The pattern alternates: empty square, filled square. Next is empty (□)."
     },
@@ -143,7 +235,12 @@
       "id": 17,
       "section": "Non-Verbal Reasoning",
       "question": "If you flip a triangle vertically, which way does the point face?",
-      "options": ["Up", "Down", "Left", "Right"],
+      "options": [
+        "Up",
+        "Down",
+        "Left",
+        "Right"
+      ],
       "correct": 1,
       "explanation": "Vertical flip (water image) turns an upward-pointing triangle downward."
     },
@@ -151,7 +248,12 @@
       "id": 18,
       "section": "Non-Verbal Reasoning",
       "question": "How many diagonals does a square have?",
-      "options": ["1", "2", "3", "4"],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
       "correct": 1,
       "explanation": "A square has 2 diagonals connecting opposite corners."
     },
@@ -159,7 +261,12 @@
       "id": 19,
       "section": "Non-Verbal Reasoning",
       "question": "Mirror image of 'E' is:",
-      "options": ["Ǝ", "E", "3", "Є"],
+      "options": [
+        "Ǝ",
+        "E",
+        "3",
+        "Є"
+      ],
       "correct": 0,
       "explanation": "The mirror image (left-right flip) of 'E' is 'Ǝ' (reversed E)."
     },
@@ -167,7 +274,12 @@
       "id": 20,
       "section": "Non-Verbal Reasoning",
       "question": "Which shape has equal length and width?",
-      "options": ["Rectangle", "Square", "Triangle", "Oval"],
+      "options": [
+        "Rectangle",
+        "Square",
+        "Triangle",
+        "Oval"
+      ],
       "correct": 1,
       "explanation": "A square has all sides equal, including length and width."
     },
@@ -175,7 +287,12 @@
       "id": 21,
       "section": "Non-Verbal Reasoning",
       "question": "How many corners does a circle have?",
-      "options": ["0", "1", "2", "4"],
+      "options": [
+        "0",
+        "1",
+        "2",
+        "4"
+      ],
       "correct": 0,
       "explanation": "A circle has no corners (vertices) because it's a smooth curve."
     },
@@ -183,7 +300,12 @@
       "id": 22,
       "section": "Non-Verbal Reasoning",
       "question": "If you rotate a square 90°, does it look different?",
-      "options": ["Yes", "No", "Sometimes", "Depends"],
+      "options": [
+        "Yes",
+        "No",
+        "Sometimes",
+        "Depends"
+      ],
       "correct": 1,
       "explanation": "A square looks the same after 90° rotation because all sides and angles are equal."
     },
@@ -191,7 +313,12 @@
       "id": 23,
       "section": "Non-Verbal Reasoning",
       "question": "How many sides does a triangle have?",
-      "options": ["2", "3", "4", "5"],
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
       "correct": 1,
       "explanation": "A triangle is a 3-sided polygon."
     },
@@ -199,7 +326,12 @@
       "id": 24,
       "section": "Non-Verbal Reasoning",
       "question": "Water image of 'V' is:",
-      "options": ["V", "Λ", "∧", "^"],
+      "options": [
+        "V",
+        "Λ",
+        "∧",
+        "^"
+      ],
       "correct": 1,
       "explanation": "Water image (vertical flip) of 'V' is 'Λ' (upside down V)."
     },
@@ -207,7 +339,12 @@
       "id": 25,
       "section": "Non-Verbal Reasoning",
       "question": "How many lines of symmetry does a rectangle have?",
-      "options": ["1", "2", "3", "4"],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
       "correct": 1,
       "explanation": "A rectangle has 2 lines of symmetry (one vertical through center, one horizontal through center)."
     },
@@ -215,7 +352,12 @@
       "id": 26,
       "section": "Non-Verbal Reasoning",
       "question": "If a pattern is: ▽△▽△, what comes next?",
-      "options": ["▽", "△", "□", "○"],
+      "options": [
+        "▽",
+        "△",
+        "□",
+        "○"
+      ],
       "correct": 0,
       "explanation": "The pattern alternates: downward triangle, upward triangle. Next is downward (▽)."
     },
@@ -223,7 +365,12 @@
       "id": 27,
       "section": "Non-Verbal Reasoning",
       "question": "Which shape has 4 equal sides and 4 right angles?",
-      "options": ["Rectangle", "Square", "Rhombus", "Trapezoid"],
+      "options": [
+        "Rectangle",
+        "Square",
+        "Rhombus",
+        "Trapezoid"
+      ],
       "correct": 1,
       "explanation": "A square has 4 equal sides and 4 right angles (90° each)."
     },
@@ -231,7 +378,12 @@
       "id": 28,
       "section": "Non-Verbal Reasoning",
       "question": "How many faces does a cylinder have?",
-      "options": ["1", "2", "3", "4"],
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
       "correct": 2,
       "explanation": "A cylinder has 3 faces: 2 circular bases (top and bottom) + 1 curved surface."
     },
@@ -239,7 +391,12 @@
       "id": 29,
       "section": "Non-Verbal Reasoning",
       "question": "If you rotate 'Z' 180°, it looks like:",
-      "options": ["Z", "N", "S", "2"],
+      "options": [
+        "Z",
+        "N",
+        "S",
+        "2"
+      ],
       "correct": 0,
       "explanation": "Rotating 'Z' 180° makes it look like 'Z' (rotationally symmetrical)."
     },
@@ -247,7 +404,12 @@
       "id": 30,
       "section": "Non-Verbal Reasoning",
       "question": "Which figure completes the pattern: ◊ ◊ ◊ ?",
-      "options": ["◊", "□", "○", "△"],
+      "options": [
+        "◊",
+        "□",
+        "○",
+        "△"
+      ],
       "correct": 0,
       "explanation": "The pattern repeats the same shape: diamond. Next is also a diamond (◊)."
     },
@@ -255,7 +417,12 @@
       "id": 31,
       "section": "Numerical Ability",
       "question": "What is 35% of 200?",
-      "options": ["60", "65", "70", "75"],
+      "options": [
+        "60",
+        "65",
+        "70",
+        "75"
+      ],
       "correct": 2,
       "explanation": "35% of 200 = (35/100) × 200 = 70."
     },
@@ -263,7 +430,12 @@
       "id": 32,
       "section": "Numerical Ability",
       "question": "If 8x = 64, what is x?",
-      "options": ["6", "7", "8", "9"],
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
       "correct": 2,
       "explanation": "8x = 64, so x = 64 ÷ 8 = 8."
     },
@@ -271,7 +443,12 @@
       "id": 33,
       "section": "Numerical Ability",
       "question": "What is the next number: 1, 3, 9, 27, ?",
-      "options": ["54", "72", "81", "90"],
+      "options": [
+        "54",
+        "72",
+        "81",
+        "90"
+      ],
       "correct": 2,
       "explanation": "Each number is multiplied by 3: 1×3=3, 3×3=9, 9×3=27, 27×3=81."
     },
@@ -279,7 +456,12 @@
       "id": 34,
       "section": "Numerical Ability",
       "question": "What is 25 × 4?",
-      "options": ["90", "95", "100", "105"],
+      "options": [
+        "90",
+        "95",
+        "100",
+        "105"
+      ],
       "correct": 2,
       "explanation": "25 × 4 = 100."
     },
@@ -287,7 +469,12 @@
       "id": 35,
       "section": "Numerical Ability",
       "question": "If a bag costs ₹600 and is discounted 15%, what is the final price?",
-      "options": ["₹480", "₹490", "₹500", "₹510"],
+      "options": [
+        "₹480",
+        "₹490",
+        "₹500",
+        "₹510"
+      ],
       "correct": 3,
       "explanation": "15% of 600 = 90. Final price = 600 - 90 = ₹510."
     },
@@ -295,7 +482,12 @@
       "id": 36,
       "section": "Numerical Ability",
       "question": "What is the square root of 49?",
-      "options": ["5", "6", "7", "8"],
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
       "correct": 2,
       "explanation": "√49 = 7 because 7 × 7 = 49."
     },
@@ -303,7 +495,12 @@
       "id": 37,
       "section": "Numerical Ability",
       "question": "If 6x - 4 = 26, what is x?",
-      "options": ["3", "4", "5", "6"],
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
       "correct": 2,
       "explanation": "6x - 4 = 26, so 6x = 30, x = 5."
     },
@@ -311,7 +508,12 @@
       "id": 38,
       "section": "Numerical Ability",
       "question": "What is 60% of 150?",
-      "options": ["80", "85", "90", "95"],
+      "options": [
+        "80",
+        "85",
+        "90",
+        "95"
+      ],
       "correct": 2,
       "explanation": "60% of 150 = (60/100) × 150 = 90."
     },
@@ -319,7 +521,12 @@
       "id": 39,
       "section": "Numerical Ability",
       "question": "What comes next: 4, 8, 12, 16, ?",
-      "options": ["18", "20", "22", "24"],
+      "options": [
+        "18",
+        "20",
+        "22",
+        "24"
+      ],
       "correct": 1,
       "explanation": "The sequence increases by 4 each time: 4, 8, 12, 16, 20."
     },
@@ -327,7 +534,12 @@
       "id": 40,
       "section": "Numerical Ability",
       "question": "If a plane travels 900 km in 3 hours, what is its speed?",
-      "options": ["250 km/h", "275 km/h", "300 km/h", "325 km/h"],
+      "options": [
+        "250 km/h",
+        "275 km/h",
+        "300 km/h",
+        "325 km/h"
+      ],
       "correct": 2,
       "explanation": "Speed = Distance ÷ Time = 900 ÷ 3 = 300 km/h."
     },
@@ -335,7 +547,12 @@
       "id": 41,
       "section": "Coding-Decoding",
       "question": "If SUN = 191421, then SKY = ?",
-      "options": ["191125", "181125", "191126", "181126"],
+      "options": [
+        "191125",
+        "181125",
+        "191126",
+        "181126"
+      ],
       "correct": 0,
       "explanation": "S=19, U=21, N=14 → 191421. Similarly, S=19, K=11, Y=25 → 191125."
     },
@@ -343,7 +560,12 @@
       "id": 42,
       "section": "Coding-Decoding",
       "question": "In a code, SAND is written as TBOE. How is DUST written?",
-      "options": ["EVTU", "EVTV", "EVTU", "DUTU"],
+      "options": [
+        "EVTU",
+        "EVTV",
+        "EVTU",
+        "DUTU"
+      ],
       "correct": 0,
       "explanation": "Each letter shifts +1: S→T, A→B, N→O, D→E. So D→E, U→V, S→T, T→U = EVTU."
     },
@@ -351,7 +573,12 @@
       "id": 43,
       "section": "Coding-Decoding",
       "question": "If MOON = 13-15-15-14, then SUN = ?",
-      "options": ["19-21-14", "18-20-13", "20-22-15", "19-22-14"],
+      "options": [
+        "19-21-14",
+        "18-20-13",
+        "20-22-15",
+        "19-22-14"
+      ],
       "correct": 0,
       "explanation": "S=19, U=21, N=14. So SUN = 19-21-14."
     },
@@ -359,7 +586,12 @@
       "id": 44,
       "section": "Coding-Decoding",
       "question": "If HOT is coded as IPU, then COLD is coded as:",
-      "options": ["DPME", "DPMF", "CPLD", "DPMD"],
+      "options": [
+        "DPME",
+        "DPMF",
+        "CPLD",
+        "DPMD"
+      ],
       "correct": 0,
       "explanation": "Each letter shifts +1: H→I, O→P, T→U. So C→D, O→P, L→M, D→E = DPME."
     },
@@ -367,7 +599,12 @@
       "id": 45,
       "section": "Coding-Decoding",
       "question": "In a code, 456 means 'birds can fly', 789 means 'fish can swim'. What is the code for 'can'?",
-      "options": ["4", "5", "6", "None"],
+      "options": [
+        "4",
+        "5",
+        "6",
+        "None"
+      ],
       "correct": 3,
       "explanation": "'can' appears in both phrases but codes 456 and 789 have no common digit, so no direct match."
     },
@@ -375,15 +612,25 @@
       "id": 46,
       "section": "Coding-Decoding",
       "question": "If A=1, B=2, C=3..., what is the sum of letters in 'SUN'?",
-      "options": ["52", "53", "54", "55"],
-      "correct": 3,
-      "explanation": "S=19, U=21, N=14. Sum = 19 + 21 + 14 = 54. Wait, let me recalculate: 19+21=40, 40+14=54. Actually that's correct."
+      "options": [
+        "52",
+        "53",
+        "54",
+        "55"
+      ],
+      "correct": 2,
+      "explanation": "S=19, U=21, N=14. Sum = 19 + 21 + 14 = 54."
     },
     {
       "id": 47,
       "section": "Coding-Decoding",
       "question": "If CLOUD is written as 3-12-15-21-4, then RAIN is written as:",
-      "options": ["18-1-9-14", "17-1-8-13", "19-2-10-15", "18-2-9-14"],
+      "options": [
+        "18-1-9-14",
+        "17-1-8-13",
+        "19-2-10-15",
+        "18-2-9-14"
+      ],
       "correct": 0,
       "explanation": "R=18, A=1, I=9, N=14. So RAIN = 18-1-9-14."
     },
@@ -391,7 +638,12 @@
       "id": 48,
       "section": "Coding-Decoding",
       "question": "In a code, SEA = TFB. What is SKY?",
-      "options": ["TLZ", "TMZ", "TLY", "SLZ"],
+      "options": [
+        "TLZ",
+        "TMZ",
+        "TLY",
+        "SLZ"
+      ],
       "correct": 0,
       "explanation": "Each letter shifts +1: S→T, E→F, A→B. So S→T, K→L, Y→Z = TLZ."
     },
@@ -399,7 +651,12 @@
       "id": 49,
       "section": "Coding-Decoding",
       "question": "If 1=A, 26=Z, what letter is 25?",
-      "options": ["X", "Y", "Z", "W"],
+      "options": [
+        "X",
+        "Y",
+        "Z",
+        "W"
+      ],
       "correct": 1,
       "explanation": "The 25th letter of the alphabet is Y."
     },
@@ -407,7 +664,12 @@
       "id": 50,
       "section": "Coding-Decoding",
       "question": "If WATER is coded as 23-1-20-5-18, then FIRE is coded as:",
-      "options": ["6-9-18-5", "5-8-17-4", "7-10-19-6", "6-10-18-5"],
+      "options": [
+        "6-9-18-5",
+        "5-8-17-4",
+        "7-10-19-6",
+        "6-10-18-5"
+      ],
       "correct": 0,
       "explanation": "F=6, I=9, R=18, E=5. So FIRE = 6-9-18-5."
     }
