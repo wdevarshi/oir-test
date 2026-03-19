@@ -3,155 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progress Dashboard - OIR Practice</title>
+    <title>Dashboard — OIR Practice</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>📊 PROGRESS DASHBOARD</h1>
-            <p>Air Force Selection Board Preparation</p>
-            <p style="font-size: 0.9em; margin-top: 10px;">For Bhavisha | Target: May 4, 2026</p>
+            <h1>Dashboard</h1>
+            <p>Your progress at a glance</p>
+            <p class="personal">Bhavisha · Target: May 4, 2026</p>
         </div>
 
         <div class="dashboard-content">
-            <!-- Overall Stats -->
-            <section class="dashboard-section">
-                <h2>Overall Statistics</h2>
-                <div id="overallStats" class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-label">Tests Taken</div>
-                        <div class="stat-value" id="testsTaken">0</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-label">Unique Tests</div>
-                        <div class="stat-value" id="uniqueTests">0</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-label">Average Score</div>
-                        <div class="stat-value" id="avgScore">-</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-label">Best Score</div>
-                        <div class="stat-value" id="bestScore">-</div>
-                    </div>
+            <!-- Empty state — shown when no tests taken -->
+            <div id="emptyState" style="display: none; text-align: center; padding: 40px 20px;">
+                <p style="font-size: 2em; margin-bottom: 8px;">📊</p>
+                <h2 style="margin: 0 0 8px; color: #333;">No tests taken yet</h2>
+                <p style="color: #666; margin: 0 0 20px;">Take your first test to see your progress here.</p>
+                <a href="index.html" style="display: inline-block; padding: 12px 28px; background: #2563eb; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 600;" aria-label="Go to home page to start a test">Start a Test →</a>
+            </div>
+
+            <!-- Hero Stats -->
+            <div class="dashboard-hero" id="dashboardHero" style="display: none;" role="region" aria-label="Summary statistics">
+                <div class="hero-card primary">
+                    <div class="hero-card-label">Average Score</div>
+                    <div class="hero-card-value" id="heroAvg">–</div>
                 </div>
-            </section>
+                <div class="hero-card primary">
+                    <div class="hero-card-label">Best Score</div>
+                    <div class="hero-card-value" id="heroBest">–</div>
+                    <div class="hero-card-sub" id="heroBestTest"></div>
+                </div>
+                <div class="hero-card">
+                    <div class="hero-card-label">Tests Taken</div>
+                    <div class="hero-card-value" id="testsTaken">0</div>
+                </div>
+                <div class="hero-card">
+                    <div class="hero-card-label">Unique Tests</div>
+                    <div class="hero-card-value" id="uniqueTests">0</div>
+                    <div class="hero-card-sub" id="heroRemaining"></div>
+                </div>
+            </div>
+
+            <!-- Weakness Callout -->
+            <div class="weak-callout" id="weakCallout" style="display: none;" role="status" aria-label="Focus area recommendation">
+                <span class="weak-callout-icon">⚡</span>
+                <div class="weak-callout-text">
+                    Focus area: <strong id="weakSection">–</strong> — <span id="weakPct">–</span>
+                </div>
+            </div>
+
+            <!-- Overall Stats (hidden, kept for JS compatibility) -->
+            <div id="overallStats" style="display: none;">
+                <div id="avgScore"></div>
+                <div id="bestScore"></div>
+            </div>
 
             <!-- Test History -->
-            <section class="dashboard-section">
-                <h2>Test History</h2>
-                <div id="testHistory" class="test-history">
+            <section class="dashboard-section" id="historySection">
+                <h2>History</h2>
+                <div id="testHistory" class="test-history" role="list" aria-label="Test history">
                     <!-- History will be injected here -->
                 </div>
             </section>
 
             <!-- Section-wise Performance -->
-            <section class="dashboard-section">
-                <h2>Section-wise Performance (All Tests)</h2>
-                <div id="sectionPerformance" class="section-performance">
+            <section class="dashboard-section" id="sectionPerfSection">
+                <h2>Performance by Section</h2>
+                <div id="sectionPerformance" class="section-performance" role="list" aria-label="Performance by section">
                     <!-- Section stats will be injected here -->
                 </div>
             </section>
 
+            <!-- All Complete Banner -->
+            <div id="allCompleteBanner" style="display: none; background: #e8f5e9; border-radius: 10px; padding: 24px; text-align: center; margin: 20px 0;" role="status">
+                <p style="font-size: 1.5em; margin: 0 0 4px;">🏆</p>
+                <h3 style="color: #2e7d32; margin: 0 0 8px;">All 20 tests completed!</h3>
+                <p style="color: #1b5e20; margin: 0;">You've attempted every test. Review weak areas or retake for higher scores.</p>
+            </div>
+
             <!-- Actions -->
             <section class="dashboard-actions">
-                <button class="btn-primary" onclick="exportToCSV()">
-                    📥 Export Results (CSV)
+                <button class="btn-primary" onclick="location.href='index.html'" aria-label="Go to home page">
+                    Home
                 </button>
-                <button class="btn-secondary" onclick="location.href='index.html'">
-                    🏠 Back to Home
+                <button class="btn-secondary" onclick="exportToCSV()" aria-label="Export results as CSV">
+                    Export CSV
                 </button>
-                <button class="btn-danger" onclick="resetAllProgress()">
-                    🗑️ Reset All Data
+                <button class="btn-danger" onclick="if(resetAllProgress()) location.reload();" aria-label="Reset all progress data">
+                    Reset Data
                 </button>
             </section>
         </div>
 
         <div class="footer">
-            <p>Created with 🧈 by Tofu | For AFSB Preparation | May 4, 2026</p>
+            <p>Created with 🧈 by Tofu</p>
         </div>
     </div>
 
     <script src="storage.js"></script>
     <script>
-        window.addEventListener('DOMContentLoaded', function() {
+        window.addEventListener('DOMContentLoaded', function () {
             loadDashboard();
+
+            // Highlight results for a specific test if ?testId= is in URL
+            var params = new URLSearchParams(window.location.search);
+            var focusTestId = params.get('testId');
+            if (focusTestId) {
+                var target = document.querySelector('[data-test-id="' + focusTestId + '"]');
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    target.style.outline = '2px solid #2563eb';
+                    target.style.outlineOffset = '4px';
+                }
+            }
         });
 
+        function escapeHTMLDash(str) {
+            if (typeof str !== 'string') return String(str);
+            return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        }
+
         function loadDashboard() {
-            const results = getTestResults();
-            
+            var results = getTestResults();
+
             if (results.length === 0) {
-                document.getElementById('testHistory').innerHTML = `
-                    <div class="empty-state">
-                        <p>📭 No tests taken yet.</p>
-                        <p><a href="index.html">Start your first test →</a></p>
-                    </div>
-                `;
+                // Show empty state, hide data sections
+                document.getElementById('emptyState').style.display = 'block';
+                document.getElementById('historySection').style.display = 'none';
+                document.getElementById('sectionPerfSection').style.display = 'none';
                 return;
             }
 
-            // Load overall stats
-            const stats = getOverallStats();
+            // Load hero stats
+            var stats = getOverallStats();
+            if (!stats) return;
+
+            var heroEl = document.getElementById('dashboardHero');
+            heroEl.style.display = 'grid';
+
+            document.getElementById('heroAvg').textContent = stats.avgScore + '%';
+            document.getElementById('heroBest').textContent = stats.bestScore + '/50';
+            document.getElementById('heroBestTest').textContent = stats.bestTest || '';
             document.getElementById('testsTaken').textContent = stats.testsTaken;
             document.getElementById('uniqueTests').textContent = stats.uniqueTests;
+            var remaining = 20 - stats.uniqueTests;
+            document.getElementById('heroRemaining').textContent = remaining > 0 ? remaining + ' remaining' : 'All done!';
+
+            // All-complete banner
+            if (stats.uniqueTests >= 20) {
+                document.getElementById('allCompleteBanner').style.display = 'block';
+            }
+
+            // Weakness callout
+            if (stats.weakestSection) {
+                var weakEl = document.getElementById('weakCallout');
+                weakEl.style.display = 'flex';
+                document.getElementById('weakSection').textContent = stats.weakestSection;
+                document.getElementById('weakPct').textContent = stats.weakestPct + '% accuracy';
+            }
+
+            // Hidden fields for compatibility
             document.getElementById('avgScore').textContent = stats.avgScore + '%';
             document.getElementById('bestScore').textContent = stats.bestScore + '/50';
 
             // Load test history (most recent first)
-            const historyDiv = document.getElementById('testHistory');
+            var historyDiv = document.getElementById('testHistory');
             historyDiv.innerHTML = '';
-            
-            const sortedResults = results.sort((a, b) => b.timestamp - a.timestamp);
-            
-            sortedResults.forEach(result => {
-                const date = new Date(result.timestamp).toLocaleString('en-IN', {
+
+            var sortedResults = results.sort(function (a, b) { return b.timestamp - a.timestamp; });
+
+            sortedResults.forEach(function (result) {
+                var date = new Date(result.timestamp).toLocaleString('en-IN', {
                     dateStyle: 'medium',
                     timeStyle: 'short'
                 });
-                
-                const historyItem = document.createElement('div');
+
+                var historyItem = document.createElement('div');
                 historyItem.className = 'history-item';
-                historyItem.innerHTML = `
-                    <div class="history-header">
-                        <h3>${result.testTitle}</h3>
-                        <span class="history-date">${date}</span>
-                    </div>
-                    <div class="history-body">
-                        <div class="history-score">
-                            Score: <strong>${result.score}/50 (${result.percentage}%)</strong>
-                        </div>
-                        <div class="history-time">
-                            Time: ${Math.floor(result.timeTaken / 60)}m ${result.timeTaken % 60}s
-                        </div>
-                        <div class="history-sections">
-                            ${Object.entries(result.sectionScores).map(([section, data]) => `
-                                <span class="section-badge">${section}: ${data.score}/${data.total}</span>
-                            `).join('')}
-                        </div>
-                    </div>
-                `;
+                historyItem.setAttribute('data-test-id', result.testId);
+                historyItem.setAttribute('role', 'listitem');
+
+                var sectionsHTML = '';
+                if (result.sectionScores) {
+                    Object.entries(result.sectionScores).forEach(function (entry) {
+                        sectionsHTML += '<span class="section-badge">' + escapeHTMLDash(entry[0]) + ': ' + entry[1].score + '/' + entry[1].total + '</span>';
+                    });
+                }
+
+                var totalQ = result.totalQuestions || 50;
+                historyItem.innerHTML =
+                    '<div class="history-header">' +
+                    '<h3>' + escapeHTMLDash(result.testTitle || 'Test ' + result.testId) + '</h3>' +
+                    '<span class="history-date">' + escapeHTMLDash(date) + '</span>' +
+                    '</div>' +
+                    '<div class="history-body">' +
+                    '<div class="history-score"><strong>' + result.score + '/' + totalQ + ' (' + result.percentage + '%)</strong></div>' +
+                    '<div class="history-time">' + Math.floor(result.timeTaken / 60) + 'm ' + (result.timeTaken % 60) + 's</div>' +
+                    '<div class="history-sections">' + sectionsHTML + '</div>' +
+                    '</div>';
+
                 historyDiv.appendChild(historyItem);
             });
 
             // Load section-wise performance
-            const sectionDiv = document.getElementById('sectionPerformance');
-            const sectionTotals = stats.sectionPerformance;
-            
+            var sectionDiv = document.getElementById('sectionPerformance');
+            var sectionTotals = stats.sectionPerformance;
+
             sectionDiv.innerHTML = '';
-            Object.entries(sectionTotals).forEach(([section, data]) => {
-                const percentage = ((data.correct / data.total) * 100).toFixed(1);
-                const sectionCard = document.createElement('div');
+            Object.entries(sectionTotals).forEach(function (entry) {
+                var section = entry[0];
+                var data = entry[1];
+                var percentage = data.total > 0 ? ((data.correct / data.total) * 100).toFixed(1) : '0.0';
+                var sectionCard = document.createElement('div');
                 sectionCard.className = 'section-card';
-                sectionCard.innerHTML = `
-                    <h3>${section}</h3>
-                    <div class="section-score">${data.correct}/${data.total}</div>
-                    <div class="section-percentage">${percentage}%</div>
-                    <div class="section-bar">
-                        <div class="section-bar-fill" style="width: ${percentage}%"></div>
-                    </div>
-                `;
+                sectionCard.setAttribute('role', 'listitem');
+                sectionCard.innerHTML =
+                    '<h3>' + escapeHTMLDash(section) + '</h3>' +
+                    '<div class="section-score">' + data.correct + '/' + data.total + '</div>' +
+                    '<div class="section-percentage">' + percentage + '%</div>' +
+                    '<div class="section-bar"><div class="section-bar-fill" style="width: ' + percentage + '%"></div></div>';
                 sectionDiv.appendChild(sectionCard);
             });
         }

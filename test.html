@@ -3,38 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OIR Test - AFSB Preparation</title>
+    <title>OIR Test — AFSB Preparation</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1 id="testTitle">🎯 Loading Test...</h1>
-            <p>Air Force Selection Board Preparation</p>
-            <p style="font-size: 0.9em; margin-top: 10px;">50 Questions | 30 Minutes | For Bhavisha</p>
+            <h1 id="testTitle">Loading…</h1>
+            <p>50 questions · 30 minutes</p>
+            <p class="personal">Good luck, Bhavisha</p>
         </div>
+
+        <!-- Error section — shown when test data fails to load -->
+        <div id="errorSection" style="display: none;" role="alert" aria-live="assertive"></div>
 
         <div id="introSection">
             <div class="instructions">
-                <h3>📋 Instructions:</h3>
+                <h3>Before you begin</h3>
                 <ul>
                     <li>This test contains <strong>50 multiple-choice questions</strong></li>
-                    <li>Time limit: <strong>30 minutes (1800 seconds)</strong></li>
+                    <li>Time limit: <strong>30 minutes</strong></li>
                     <li>Each question carries <strong>1 mark</strong></li>
-                    <li>Select ONE option for each question</li>
-                    <li>Attempt ALL questions (no negative marking)</li>
+                    <li>Select one option for each question</li>
+                    <li>Attempt all questions — no negative marking</li>
                     <li>Click "Start Test" to begin the timer</li>
-                    <li><strong>Be honest about the timer - don't cheat yourself!</strong></li>
+                    <li><strong>Be honest about the timer</strong></li>
                 </ul>
             </div>
-            
+
             <div class="start-btn-container">
-                <button class="start-btn" onclick="startTest()">🚀 Start Test</button>
+                <button class="start-btn" onclick="startTest()" aria-label="Start the test">Start Test</button>
             </div>
         </div>
 
-        <div id="timerSection" class="timer-section" style="display: none;">
-            ⏱️ Time Remaining: <span id="timer">30:00</span>
+        <div id="timerSection" class="timer-section" style="display: none;" role="timer" aria-label="Test timer">
+            <span class="timer-label">Time Remaining</span>
+            <span id="timer" aria-live="off">30:00</span>
+        </div>
+
+        <div id="progressBar" class="test-progress" style="display: none;" role="progressbar" aria-valuemin="0" aria-valuemax="50" aria-valuenow="0" aria-label="Questions answered">
+            <div class="test-progress-bar">
+                <div class="test-progress-fill" id="progressFill"></div>
+            </div>
+            <span class="test-progress-text" id="progressText">0/50</span>
         </div>
 
         <div id="testSection" class="test-content">
@@ -46,11 +57,52 @@
         </div>
 
         <div class="footer">
-            <p>Created with 🧈 by Tofu | For AFSB Preparation | May 4, 2026</p>
+            <p>Created with 🧈 by Tofu</p>
         </div>
     </div>
 
     <script src="storage.js"></script>
     <script src="app.js"></script>
+    <script>
+        // Progress bar — tracks answered questions
+        (function () {
+            var orig = window.saveAnswer;
+            if (!orig) return;
+            window.saveAnswer = function (questionId, answerIndex) {
+                orig(questionId, answerIndex);
+                updateProgress();
+            };
+            function updateProgress() {
+                var answered = document.querySelectorAll('#testSection input[type="radio"]:checked').length;
+                var total = (window.currentTest && window.currentTest.questions) ? window.currentTest.questions.length : 50;
+                var pct = Math.round((answered / total) * 100);
+                var fill = document.getElementById('progressFill');
+                var text = document.getElementById('progressText');
+                var bar = document.getElementById('progressBar');
+                if (fill) fill.style.width = pct + '%';
+                if (text) text.textContent = answered + '/' + total;
+                if (bar) {
+                    bar.setAttribute('aria-valuenow', answered);
+                    bar.setAttribute('aria-valuemax', total);
+                }
+            }
+        })();
+
+        // Show progress bar when test starts
+        var origStart = window.startTest;
+        window.startTest = function () {
+            origStart();
+            var pb = document.getElementById('progressBar');
+            if (pb) pb.style.display = 'flex';
+        };
+
+        // Keyboard navigation: Enter/Space on radio labels selects the option
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' && e.target.tagName === 'INPUT' && e.target.type === 'radio') {
+                e.target.checked = true;
+                e.target.dispatchEvent(new Event('change', { bubbles: true }));
+            }
+        });
+    </script>
 </body>
 </html>
