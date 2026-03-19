@@ -74,13 +74,26 @@ a:hover {
 .header {
     margin-bottom: 2.5rem;
     padding: 0;
+    padding-bottom: 1.75rem;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.header::after {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 2px;
+    background: var(--accent);
+    margin-top: 1rem;
+    border-radius: 1px;
+    opacity: 0.7;
 }
 
 .header h1 {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--text);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.025em;
     line-height: 1.3;
 }
 
@@ -98,6 +111,20 @@ a:hover {
     margin-top: 0.5rem;
 }
 
+.countdown {
+    display: inline-block;
+    background: var(--accent-faint);
+    color: var(--accent);
+    font-size: 0.6875rem;
+    font-weight: 500;
+    font-style: normal;
+    padding: 0.1875rem 0.5rem;
+    border-radius: 3px;
+    margin-left: 0.25rem;
+    letter-spacing: 0.01em;
+    vertical-align: middle;
+}
+
 /* ────────────────────────────────────
    Stats
    ──────────────────────────────────── */
@@ -107,7 +134,8 @@ a:hover {
 }
 
 .stats-section h2,
-.tests-section h2 {
+.tests-section h2,
+.difficulty-group-label {
     font-size: 0.6875rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -195,12 +223,40 @@ a:hover {
     box-shadow: inset 3px 0 0 var(--success);
 }
 
-/* Visual grouping: space before difficulty transitions (cards 11 and 16) */
-.test-card:nth-child(11),
-.test-card:nth-child(16) {
-    border-top: 1px solid var(--border);
-    margin-top: -1px;
-    padding-top: 1rem;
+/* ── Difficulty Groups ── */
+.difficulty-group {
+    margin-bottom: 1.5rem;
+}
+
+.difficulty-group:last-child {
+    margin-bottom: 0;
+}
+
+.difficulty-group-label {
+    padding: 0;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.difficulty-group-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border-light);
+}
+
+.difficulty-group .tests-grid {
+    margin-bottom: 0;
+}
+
+.group-progress {
+    font-size: 0.625rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    font-variant-numeric: tabular-nums;
+    opacity: 0.7;
 }
 
 .test-header {
@@ -229,6 +285,21 @@ a:hover {
     letter-spacing: 0.03em;
     white-space: nowrap;
     flex-shrink: 0;
+}
+
+.difficulty-badge[data-level="medium"] {
+    color: #7a7358;
+    background: #f7f3ea;
+}
+
+.difficulty-badge[data-level="medium-hard"] {
+    color: #8a6340;
+    background: #faf0e4;
+}
+
+.difficulty-badge[data-level="hard"] {
+    color: #944040;
+    background: #faeaea;
 }
 
 .test-body {
@@ -291,13 +362,14 @@ a:hover {
     background: var(--accent);
     color: #fff;
     border: none;
-    padding: 0.5625rem 1.125rem;
+    padding: 0.625rem 1.25rem;
     border-radius: var(--radius-sm);
     font-size: 0.8125rem;
     font-weight: 500;
     cursor: pointer;
     transition: background 0.12s ease;
     line-height: 1.3;
+    min-height: 2.75rem;
 }
 
 .btn-primary:hover,
@@ -316,13 +388,14 @@ a:hover {
     background: transparent;
     color: var(--text-secondary);
     border: 1px solid var(--border);
-    padding: 0.5rem 1.125rem;
+    padding: 0.5625rem 1.25rem;
     border-radius: var(--radius-sm);
     font-size: 0.8125rem;
     font-weight: 500;
     cursor: pointer;
     transition: border-color 0.12s ease;
     line-height: 1.3;
+    min-height: 2.75rem;
 }
 
 .btn-secondary:hover {
@@ -358,6 +431,7 @@ a:hover {
     cursor: pointer;
     transition: background 0.12s ease;
     line-height: 1.3;
+    min-height: 2.75rem;
 }
 
 .action-btn:hover {
@@ -901,14 +975,14 @@ a:hover {
 
 .footer {
     text-align: center;
-    padding: 3rem 1rem 1rem;
+    padding: 3.5rem 1rem 1.5rem;
     font-size: 0.6875rem;
     color: var(--text-muted);
     letter-spacing: 0.02em;
 }
 
 .footer p {
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 /* ────────────────────────────────────
