@@ -1,5 +1,5 @@
-/* OIR Practice Platform — Designer Round 2
-   Font pairing · Compact grid · Collapsible sections · Personality */
+/* OIR Practice Platform — Designer Round 3 (final)
+   Readability · Selection feedback · Coherent spacing · Warm achievements */
 
 *,
 *::before,
@@ -20,6 +20,7 @@
     --accent: #c45d3e;
     --accent-hover: #a84d32;
     --accent-faint: rgba(196, 93, 62, 0.06);
+    --accent-light: rgba(196, 93, 62, 0.13);
     --success: #5a7a6b;
     --success-light: #eef5f0;
     --warning-bg: #fdf6ee;
@@ -156,7 +157,7 @@ a:hover {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at 65% 25%, rgba(196,93,62,0.18) 0%, transparent 55%);
+    background: radial-gradient(ellipse at 30% 80%, rgba(196,93,62,0.14) 0%, transparent 50%);
     pointer-events: none;
 }
 
@@ -407,11 +408,11 @@ a:hover {
 }
 
 .card-new {
-    font-size: 0.5625rem;
+    font-size: 0.625rem;
     text-transform: uppercase;
     letter-spacing: 0.06em;
     color: var(--accent);
-    opacity: 0.5;
+    opacity: 0.55;
     background: none;
     padding: 0;
     border-radius: 0;
@@ -448,7 +449,7 @@ a:hover {
 }
 
 .results-link {
-    font-size: 0.5625rem;
+    font-size: 0.625rem;
     color: var(--text-muted);
     opacity: 0;
     transition: opacity 0.15s;
@@ -654,7 +655,7 @@ a:hover {
 
 .test-progress-bar {
     flex: 1;
-    height: 3px;
+    height: 4px;
     background: var(--border-light);
     border-radius: 2px;
     overflow: hidden;
@@ -718,15 +719,13 @@ a:hover {
 }
 
 .timer-section.warning {
-    background: var(--warning-bg);
-    border-color: var(--warning-border);
-    color: var(--warning-text);
-    animation: pulse 1.5s ease-in-out infinite;
+    background: #fdf3ee;
+    border-color: var(--accent);
+    color: var(--accent-hover);
 }
 
-@keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.65; }
+.timer-section.warning #timer {
+    color: var(--accent);
 }
 
 /* ────────────────────────────────────
@@ -738,30 +737,34 @@ a:hover {
 }
 
 .section-header {
-    padding: 0.625rem 0;
-    margin: 2rem 0 0.875rem;
+    padding: 0.5rem 0;
+    margin: 2.5rem 0 1rem;
     font-family: var(--font-serif);
-    font-size: 0.8125rem;
+    font-size: 0.875rem;
     font-weight: 600;
-    letter-spacing: 0;
+    letter-spacing: -0.01em;
     color: var(--text);
     border-bottom: 1px solid var(--border);
     text-transform: none;
+}
+
+.section-header:first-child {
+    margin-top: 0;
 }
 
 .question {
     background: var(--card-bg);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 1.125rem;
-    margin-bottom: 0.875rem;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
 }
 
 .question-text {
-    font-size: 0.9rem;
+    font-size: 0.9375rem;
     margin-bottom: 0.875rem;
     color: var(--text);
-    line-height: 1.7;
+    line-height: 1.75;
 }
 
 .question-text strong {
@@ -792,7 +795,8 @@ a:hover {
 
 .option:has(input:checked) {
     border-color: var(--accent);
-    background: var(--accent-faint);
+    background: var(--accent-light);
+    box-shadow: inset 3px 0 0 var(--accent);
 }
 
 .option input[type="radio"] {
@@ -807,16 +811,22 @@ a:hover {
 .option label {
     cursor: pointer;
     flex: 1;
-    font-size: 0.8125rem;
-    line-height: 1.5;
+    font-size: 0.875rem;
+    line-height: 1.55;
 }
 
 .submit-btn {
     display: block;
-    margin: 1.75rem auto;
-    padding: 0.875rem 2.5rem;
-    font-size: 0.9375rem;
+    width: 100%;
+    margin: 2rem auto 0;
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 600;
     letter-spacing: 0.02em;
+    position: sticky;
+    bottom: 1rem;
+    z-index: 40;
+    box-shadow: 0 4px 16px rgba(196, 93, 62, 0.3), 0 0 0 1px rgba(196, 93, 62, 0.1);
 }
 
 /* ────────────────────────────────────
@@ -883,9 +893,9 @@ a:hover {
 }
 
 .section-scores .section-score h3 {
-    font-size: 0.5625rem;
+    font-size: 0.6875rem;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.06em;
     color: var(--text-muted);
     margin-bottom: 0.375rem;
     font-weight: 500;
@@ -1012,14 +1022,14 @@ a:hover {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at 65% 25%, rgba(196,93,62,0.18) 0%, transparent 55%);
+    background: radial-gradient(ellipse at 80% 70%, rgba(196,93,62,0.15) 0%, transparent 50%);
     pointer-events: none;
 }
 
 .hero-card-label {
-    font-size: 0.5625rem;
+    font-size: 0.6875rem;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     opacity: 0.5;
     margin-bottom: 0.25rem;
     font-weight: 500;
@@ -1163,11 +1173,11 @@ a:hover {
 }
 
 .section-badge {
-    padding: 0.125rem 0.4375rem;
+    padding: 0.1875rem 0.5rem;
     background: var(--bg);
     border-radius: 3px;
     font-family: var(--font-mono);
-    font-size: 0.5625rem;
+    font-size: 0.625rem;
     color: var(--text-muted);
     font-variant-numeric: tabular-nums;
 }
@@ -1237,12 +1247,21 @@ a:hover {
     transition: width 0.6s ease;
 }
 
+/* Warm achievement tones for high-performing sections */
+.section-bar-fill.good {
+    background: var(--success);
+}
+
+.section-bar-fill.excellent {
+    background: #c7943a;
+}
+
 .dashboard-actions {
     display: flex;
     gap: 0.625rem;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 1.75rem 0;
+    margin: 2rem 0;
 }
 
 .empty-state {
@@ -1269,19 +1288,68 @@ a:hover {
 }
 
 /* ────────────────────────────────────
+   Results inline-style overrides
+   (app.js uses inline styles — tame them)
+   ──────────────────────────────────── */
+
+.results .score-card p {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    position: relative;
+}
+
+/* Performance evaluation box from app.js */
+.results > div[style*="background: #e8f5e9"] {
+    background: var(--success-light) !important;
+    border: 1px solid #c2d8ca !important;
+    border-radius: var(--radius) !important;
+    padding: 1.25rem !important;
+}
+
+.results > div[style*="background: #e8f5e9"] h2 {
+    color: var(--success) !important;
+    font-family: var(--font-serif) !important;
+    font-size: 0.9375rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.results > div[style*="background: #e8f5e9"] p {
+    color: #3d5c4a !important;
+    font-size: 0.875rem !important;
+    line-height: 1.6 !important;
+}
+
+/* Perfect score box from app.js */
+.results > div[style*="background: #4caf50"] {
+    background: var(--success) !important;
+    border-radius: var(--radius) !important;
+    padding: 2rem 1.5rem !important;
+}
+
+.results > div[style*="background: #4caf50"] h2 {
+    font-family: var(--font-serif) !important;
+    font-size: 1.125rem !important;
+}
+
+.results > div[style*="background: #4caf50"] p {
+    font-size: 0.9375rem !important;
+}
+
+/* ────────────────────────────────────
    Footer
    ──────────────────────────────────── */
 
 .footer {
     text-align: center;
-    padding: 3.5rem 1rem 1.5rem;
+    padding: 3rem 1rem 1.5rem;
     font-size: 0.6875rem;
     color: var(--text-muted);
     letter-spacing: 0.02em;
 }
 
 .footer p {
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 /* ────────────────────────────────────
@@ -1314,7 +1382,7 @@ a:hover {
     }
 
     .stat-label {
-        font-size: 0.5rem;
+        font-size: 0.5625rem;
     }
 
     .tests-compact-grid {
