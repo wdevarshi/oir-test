@@ -15,8 +15,16 @@
         </div>
 
         <div class="dashboard-content">
+            <!-- Empty state — shown when no tests taken -->
+            <div id="emptyState" style="display: none; text-align: center; padding: 40px 20px;">
+                <p style="font-size: 2em; margin-bottom: 8px;">📊</p>
+                <h2 style="margin: 0 0 8px; color: #333;">No tests taken yet</h2>
+                <p style="color: #666; margin: 0 0 20px;">Take your first test to see your progress here.</p>
+                <a href="index.html" style="display: inline-block; padding: 12px 28px; background: #2563eb; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 600;" aria-label="Go to home page to start a test">Start a Test →</a>
+            </div>
+
             <!-- Hero Stats -->
-            <div class="dashboard-hero" id="dashboardHero" style="display: none;">
+            <div class="dashboard-hero" id="dashboardHero" style="display: none;" role="region" aria-label="Summary statistics">
                 <div class="hero-card primary">
                     <div class="hero-card-label">Average Score</div>
                     <div class="hero-card-value" id="heroAvg">–</div>
@@ -38,7 +46,7 @@
             </div>
 
             <!-- Weakness Callout -->
-            <div class="weak-callout" id="weakCallout" style="display: none;">
+            <div class="weak-callout" id="weakCallout" style="display: none;" role="status" aria-label="Focus area recommendation">
                 <span class="weak-callout-icon">⚡</span>
                 <div class="weak-callout-text">
                     Focus area: <strong id="weakSection">–</strong> — <span id="weakPct">–</span>
@@ -52,30 +60,37 @@
             </div>
 
             <!-- Test History -->
-            <section class="dashboard-section">
+            <section class="dashboard-section" id="historySection">
                 <h2>History</h2>
-                <div id="testHistory" class="test-history">
+                <div id="testHistory" class="test-history" role="list" aria-label="Test history">
                     <!-- History will be injected here -->
                 </div>
             </section>
 
             <!-- Section-wise Performance -->
-            <section class="dashboard-section">
+            <section class="dashboard-section" id="sectionPerfSection">
                 <h2>Performance by Section</h2>
-                <div id="sectionPerformance" class="section-performance">
+                <div id="sectionPerformance" class="section-performance" role="list" aria-label="Performance by section">
                     <!-- Section stats will be injected here -->
                 </div>
             </section>
 
+            <!-- All Complete Banner -->
+            <div id="allCompleteBanner" style="display: none; background: #e8f5e9; border-radius: 10px; padding: 24px; text-align: center; margin: 20px 0;" role="status">
+                <p style="font-size: 1.5em; margin: 0 0 4px;">🏆</p>
+                <h3 style="color: #2e7d32; margin: 0 0 8px;">All 20 tests completed!</h3>
+                <p style="color: #1b5e20; margin: 0;">You've attempted every test. Review weak areas or retake for higher scores.</p>
+            </div>
+
             <!-- Actions -->
             <section class="dashboard-actions">
-                <button class="btn-primary" onclick="location.href='index.html'">
+                <button class="btn-primary" onclick="location.href='index.html'" aria-label="Go to home page">
                     Home
                 </button>
-                <button class="btn-secondary" onclick="exportToCSV()">
+                <button class="btn-secondary" onclick="exportToCSV()" aria-label="Export results as CSV">
                     Export CSV
                 </button>
-                <button class="btn-danger" onclick="if(resetAllProgress()) location.reload();">
+                <button class="btn-danger" onclick="if(resetAllProgress()) location.reload();" aria-label="Reset all progress data">
                     Reset Data
                 </button>
             </section>
@@ -88,7 +103,7 @@
 
     <script src="storage.js"></script>
     <script>
-        window.addEventListener('DOMContentLoaded', function() {
+        window.addEventListener('DOMContentLoaded', function () {
             loadDashboard();
 
             // Highlight results for a specific test if ?testId= is in URL
@@ -104,25 +119,27 @@
             }
         });
 
+        function escapeHTMLDash(str) {
+            if (typeof str !== 'string') return String(str);
+            return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        }
+
         function loadDashboard() {
-            const results = getTestResults();
-            
+            var results = getTestResults();
+
             if (results.length === 0) {
-                document.getElementById('testHistory').innerHTML = `
-                    <div class="empty-state">
-                        <p>No tests taken yet.</p>
-                        <p><a href="index.html">Start your first test →</a></p>
-                    </div>
-                `;
-                // Hide sections that need data
-                const sectionPerf = document.getElementById('sectionPerformance');
-                if (sectionPerf) sectionPerf.closest('.dashboard-section').style.display = 'none';
+                // Show empty state, hide data sections
+                document.getElementById('emptyState').style.display = 'block';
+                document.getElementById('historySection').style.display = 'none';
+                document.getElementById('sectionPerfSection').style.display = 'none';
                 return;
             }
 
             // Load hero stats
-            const stats = getOverallStats();
-            const heroEl = document.getElementById('dashboardHero');
+            var stats = getOverallStats();
+            if (!stats) return;
+
+            var heroEl = document.getElementById('dashboardHero');
             heroEl.style.display = 'grid';
 
             document.getElementById('heroAvg').textContent = stats.avgScore + '%';
@@ -130,11 +147,17 @@
             document.getElementById('heroBestTest').textContent = stats.bestTest || '';
             document.getElementById('testsTaken').textContent = stats.testsTaken;
             document.getElementById('uniqueTests').textContent = stats.uniqueTests;
-            document.getElementById('heroRemaining').textContent = (20 - stats.uniqueTests) + ' remaining';
+            var remaining = 20 - stats.uniqueTests;
+            document.getElementById('heroRemaining').textContent = remaining > 0 ? remaining + ' remaining' : 'All done!';
+
+            // All-complete banner
+            if (stats.uniqueTests >= 20) {
+                document.getElementById('allCompleteBanner').style.display = 'block';
+            }
 
             // Weakness callout
             if (stats.weakestSection) {
-                const weakEl = document.getElementById('weakCallout');
+                var weakEl = document.getElementById('weakCallout');
                 weakEl.style.display = 'flex';
                 document.getElementById('weakSection').textContent = stats.weakestSection;
                 document.getElementById('weakPct').textContent = stats.weakestPct + '% accuracy';
@@ -145,59 +168,61 @@
             document.getElementById('bestScore').textContent = stats.bestScore + '/50';
 
             // Load test history (most recent first)
-            const historyDiv = document.getElementById('testHistory');
+            var historyDiv = document.getElementById('testHistory');
             historyDiv.innerHTML = '';
-            
-            const sortedResults = results.sort((a, b) => b.timestamp - a.timestamp);
-            
-            sortedResults.forEach(result => {
-                const date = new Date(result.timestamp).toLocaleString('en-IN', {
+
+            var sortedResults = results.sort(function (a, b) { return b.timestamp - a.timestamp; });
+
+            sortedResults.forEach(function (result) {
+                var date = new Date(result.timestamp).toLocaleString('en-IN', {
                     dateStyle: 'medium',
                     timeStyle: 'short'
                 });
-                
-                const historyItem = document.createElement('div');
+
+                var historyItem = document.createElement('div');
                 historyItem.className = 'history-item';
                 historyItem.setAttribute('data-test-id', result.testId);
-                historyItem.innerHTML = `
-                    <div class="history-header">
-                        <h3>${result.testTitle}</h3>
-                        <span class="history-date">${date}</span>
-                    </div>
-                    <div class="history-body">
-                        <div class="history-score">
-                            <strong>${result.score}/50 (${result.percentage}%)</strong>
-                        </div>
-                        <div class="history-time">
-                            ${Math.floor(result.timeTaken / 60)}m ${result.timeTaken % 60}s
-                        </div>
-                        <div class="history-sections">
-                            ${Object.entries(result.sectionScores).map(([section, data]) => `
-                                <span class="section-badge">${section}: ${data.score}/${data.total}</span>
-                            `).join('')}
-                        </div>
-                    </div>
-                `;
+                historyItem.setAttribute('role', 'listitem');
+
+                var sectionsHTML = '';
+                if (result.sectionScores) {
+                    Object.entries(result.sectionScores).forEach(function (entry) {
+                        sectionsHTML += '<span class="section-badge">' + escapeHTMLDash(entry[0]) + ': ' + entry[1].score + '/' + entry[1].total + '</span>';
+                    });
+                }
+
+                var totalQ = result.totalQuestions || 50;
+                historyItem.innerHTML =
+                    '<div class="history-header">' +
+                    '<h3>' + escapeHTMLDash(result.testTitle || 'Test ' + result.testId) + '</h3>' +
+                    '<span class="history-date">' + escapeHTMLDash(date) + '</span>' +
+                    '</div>' +
+                    '<div class="history-body">' +
+                    '<div class="history-score"><strong>' + result.score + '/' + totalQ + ' (' + result.percentage + '%)</strong></div>' +
+                    '<div class="history-time">' + Math.floor(result.timeTaken / 60) + 'm ' + (result.timeTaken % 60) + 's</div>' +
+                    '<div class="history-sections">' + sectionsHTML + '</div>' +
+                    '</div>';
+
                 historyDiv.appendChild(historyItem);
             });
 
             // Load section-wise performance
-            const sectionDiv = document.getElementById('sectionPerformance');
-            const sectionTotals = stats.sectionPerformance;
-            
+            var sectionDiv = document.getElementById('sectionPerformance');
+            var sectionTotals = stats.sectionPerformance;
+
             sectionDiv.innerHTML = '';
-            Object.entries(sectionTotals).forEach(([section, data]) => {
-                const percentage = ((data.correct / data.total) * 100).toFixed(1);
-                const sectionCard = document.createElement('div');
+            Object.entries(sectionTotals).forEach(function (entry) {
+                var section = entry[0];
+                var data = entry[1];
+                var percentage = data.total > 0 ? ((data.correct / data.total) * 100).toFixed(1) : '0.0';
+                var sectionCard = document.createElement('div');
                 sectionCard.className = 'section-card';
-                sectionCard.innerHTML = `
-                    <h3>${section}</h3>
-                    <div class="section-score">${data.correct}/${data.total}</div>
-                    <div class="section-percentage">${percentage}%</div>
-                    <div class="section-bar">
-                        <div class="section-bar-fill" style="width: ${percentage}%"></div>
-                    </div>
-                `;
+                sectionCard.setAttribute('role', 'listitem');
+                sectionCard.innerHTML =
+                    '<h3>' + escapeHTMLDash(section) + '</h3>' +
+                    '<div class="section-score">' + data.correct + '/' + data.total + '</div>' +
+                    '<div class="section-percentage">' + percentage + '%</div>' +
+                    '<div class="section-bar"><div class="section-bar-fill" style="width: ' + percentage + '%"></div></div>';
                 sectionDiv.appendChild(sectionCard);
             });
         }

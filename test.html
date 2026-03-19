@@ -14,6 +14,9 @@
             <p class="personal">Good luck, Bhavisha</p>
         </div>
 
+        <!-- Error section — shown when test data fails to load -->
+        <div id="errorSection" style="display: none;" role="alert" aria-live="assertive"></div>
+
         <div id="introSection">
             <div class="instructions">
                 <h3>Before you begin</h3>
@@ -27,18 +30,18 @@
                     <li><strong>Be honest about the timer</strong></li>
                 </ul>
             </div>
-            
+
             <div class="start-btn-container">
-                <button class="start-btn" onclick="startTest()">Start Test</button>
+                <button class="start-btn" onclick="startTest()" aria-label="Start the test">Start Test</button>
             </div>
         </div>
 
-        <div id="timerSection" class="timer-section" style="display: none;">
+        <div id="timerSection" class="timer-section" style="display: none;" role="timer" aria-live="polite" aria-label="Test timer">
             <span class="timer-label">Time Remaining</span>
-            <span id="timer">30:00</span>
+            <span id="timer" aria-live="off">30:00</span>
         </div>
 
-        <div id="progressBar" class="test-progress" style="display: none;">
+        <div id="progressBar" class="test-progress" style="display: none;" role="progressbar" aria-valuemin="0" aria-valuemax="50" aria-valuenow="0" aria-label="Questions answered">
             <div class="test-progress-bar">
                 <div class="test-progress-fill" id="progressFill"></div>
             </div>
@@ -62,33 +65,44 @@
     <script src="app.js"></script>
     <script>
         // Progress bar — tracks answered questions
-        (function() {
+        (function () {
             var orig = window.saveAnswer;
             if (!orig) return;
-            window.saveAnswer = function(questionId, answerIndex) {
+            window.saveAnswer = function (questionId, answerIndex) {
                 orig(questionId, answerIndex);
                 updateProgress();
             };
             function updateProgress() {
-                // userAnswers is declared with let in app.js, but saveAnswer writes to it
-                // Count by checking the radio buttons that are checked
                 var answered = document.querySelectorAll('#testSection input[type="radio"]:checked').length;
                 var total = (window.currentTest && window.currentTest.questions) ? window.currentTest.questions.length : 50;
                 var pct = Math.round((answered / total) * 100);
                 var fill = document.getElementById('progressFill');
                 var text = document.getElementById('progressText');
+                var bar = document.getElementById('progressBar');
                 if (fill) fill.style.width = pct + '%';
                 if (text) text.textContent = answered + '/' + total;
+                if (bar) {
+                    bar.setAttribute('aria-valuenow', answered);
+                    bar.setAttribute('aria-valuemax', total);
+                }
             }
         })();
 
         // Show progress bar when test starts
         var origStart = window.startTest;
-        window.startTest = function() {
+        window.startTest = function () {
             origStart();
             var pb = document.getElementById('progressBar');
             if (pb) pb.style.display = 'flex';
         };
+
+        // Keyboard navigation: Enter/Space on radio labels selects the option
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' && e.target.tagName === 'INPUT' && e.target.type === 'radio') {
+                e.target.checked = true;
+                e.target.dispatchEvent(new Event('change', { bubbles: true }));
+            }
+        });
     </script>
 </body>
 </html>

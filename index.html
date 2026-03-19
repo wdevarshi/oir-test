@@ -15,12 +15,12 @@
         </div>
 
         <!-- Countdown Hero -->
-        <div class="countdown-hero">
-            <div class="countdown-days" id="countdown">—</div>
+        <div class="countdown-hero" role="status" aria-label="Countdown to AFSB">
+            <div class="countdown-days" id="countdown" aria-live="polite">—</div>
             <div class="countdown-label">days until AFSB</div>
         </div>
 
-        <div class="stats-section">
+        <div class="stats-section" role="region" aria-label="Progress overview">
             <h2>Progress</h2>
             <div id="overallStats" class="stats-grid">
                 <div class="stat-card">
@@ -45,10 +45,10 @@
         </div>
 
         <div class="actions-section">
-            <button class="action-btn" onclick="location.href='dashboard.html'">
+            <button class="action-btn" onclick="location.href='dashboard.html'" aria-label="View dashboard">
                 Dashboard
             </button>
-            <button class="action-btn secondary" onclick="startRandomTest()">
+            <button class="action-btn secondary" onclick="startRandomTest()" aria-label="Start a random test">
                 Random Test
             </button>
         </div>
@@ -60,6 +60,11 @@
 
     <script src="storage.js"></script>
     <script>
+        function escapeHTMLIdx(str) {
+            if (typeof str !== 'string') return String(str);
+            return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        }
+
         // Load test status and stats on page load
         window.addEventListener('DOMContentLoaded', function() {
             loadStats();
@@ -173,6 +178,9 @@
 
                     const card = document.createElement('div');
                     card.className = 'test-card';
+                    card.setAttribute('role', 'button');
+                    card.setAttribute('tabindex', '0');
+                    card.setAttribute('aria-label', 'Test ' + testNum + (attemptCount > 0 ? ', best score ' + bestScore + ' out of 50' : ', not yet attempted'));
                     if (attemptCount > 0) card.classList.add('completed');
                     
                     card.innerHTML = `
@@ -188,13 +196,19 @@
                         <div class="card-bottom">
                             <span class="card-action">${attemptCount > 0 ? 'Retake →' : 'Start →'}</span>
                             ${attemptCount > 0 
-                                ? `<a href="javascript:void(0)" class="results-link" onclick="event.stopPropagation(); viewResults(${test.id})">results</a>` 
+                                ? `<a href="javascript:void(0)" class="results-link" onclick="event.stopPropagation(); viewResults(${test.id})" aria-label="View results for test ${testNum}">results</a>` 
                                 : ''}
                         </div>
                     `;
                     
                     card.addEventListener('click', function() {
                         startTest(test.id);
+                    });
+                    card.addEventListener('keydown', function(e) {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            startTest(test.id);
+                        }
                     });
 
                     grid.appendChild(card);
