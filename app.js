@@ -1,8 +1,17 @@
-var timeLeft = 1800; // 30 minutes in seconds
-var timerInterval;
+var timeLimit = 1800; // default 30 minutes, overridden by test JSON
+var timeLeft = 1800;
+var timerInterval = null;
 var userAnswers = {};
 var testStartTime;
+var testEndTime;
 var currentTest = null;
+var warningShown = false;
+
+// Escape plain-text values for safe innerHTML insertion
+function escapeHTML(str) {
+    if (typeof str !== 'string') return String(str);
+    return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
 
 // Get test ID from URL parameter
 function getTestId() {
@@ -24,6 +33,10 @@ async function loadTestData() {
         currentTest = await response.json();
         document.getElementById('testTitle').textContent = `🎯 ${currentTest.title}`;
         
+        // Use timeLimit from JSON if available, else default 1800s
+        timeLimit = currentTest.timeLimit || 1800;
+        timeLeft = timeLimit;
+        
     } catch (error) {
         console.error('Error loading test:', error);
         alert(`Error: Could not load Test ${testId}. Redirecting to home...`);
@@ -37,13 +50,20 @@ window.addEventListener('DOMContentLoaded', async function() {
 });
 
 function startTest() {
+    // Guard: don't start if test data hasn't loaded yet
+    if (!currentTest || !currentTest.questions) {
+        alert('Test data is still loading. Please wait a moment and try again.');
+        return;
+    }
+    
     // Hide intro, show test
     document.getElementById('introSection').style.display = 'none';
     document.getElementById('timerSection').style.display = 'flex';
     document.getElementById('testSection').style.display = 'block';
     
-    // Start timer
+    // Start timer using wall-clock deadline (resilient to throttled intervals)
     testStartTime = Date.now();
+    testEndTime = testStartTime + (timeLimit * 1000);
     startTimer();
     
     // Load questions
