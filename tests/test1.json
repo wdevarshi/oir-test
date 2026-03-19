@@ -391,7 +391,7 @@
       "id": 48,
       "section": "Coding-Decoding",
       "question": "In a code, FISH = HJTG. What is CODE?",
-      "options": "["EQFG", "DPEF", "EQFH", "CQDF"],
+      "options": ["EQFG", "DPEF", "EQFH", "CQDF"],
       "correct": 0,
       "explanation": "Each letter shifts +2: F→H, I→K, S→U, H→J (wait, pattern is F→H=+2, I→J=+1... actually inconsistent. Let me recalculate: F(6)→H(8)=+2, I(9)→J(10)=+1, S(19)→T(20)=+1, H(8)→G(7)=-1. This pattern is complex. For simplicity: if pattern is +2, C→E, O→Q, D→F, E→G = EQFG."
     },
