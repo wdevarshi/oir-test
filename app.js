@@ -7,6 +7,7 @@ var testEndTime;
 var currentTest = null;
 var warningShown = false;
 var testSubmitted = false;
+var listenersAttached = false;
 
 // Escape plain-text values for safe innerHTML insertion
 function escapeHTML(str) {
